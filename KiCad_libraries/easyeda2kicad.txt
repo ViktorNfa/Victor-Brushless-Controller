@@ -1,0 +1,2 @@
+I imported these symbols, footprints and 3D shapes from EasyEDA parts using the easyeda2kicad tool with the LCSC numbers.
+https://github.com/uPesy/easyeda2kicad.py
