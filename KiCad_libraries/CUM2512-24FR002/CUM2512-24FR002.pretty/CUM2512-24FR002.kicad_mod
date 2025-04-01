@@ -1,0 +1,170 @@
+(footprint "CUM2512-24FR002"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "3a8109c9-58f5-439a-869e-09c3e99d9e6c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "RES-SMD_L6.4-W3.2-R2512"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "6965567a-18e1-4742-b9ab-313678c8b2ae")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "104ecf63-057c-451f-9237-2be9333243c4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "60571899-4ed6-4b38-a57a-ea61061e28c9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aa0351f5-0fcc-4008-adf4-e6aa88f3a555")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -4.23 -2.01)
+		(end -2.79 -2.01)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8f9249bc-6778-4532-8e65-85d2bc1d2ed1")
+	)
+	(fp_line
+		(start -4.23 1.9)
+		(end -4.23 -2.01)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a90bab65-0b49-4aed-9b24-bbc4d6c792ae")
+	)
+	(fp_line
+		(start -2.79 1.9)
+		(end -4.23 1.9)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "80bcdc49-9407-461c-87ff-517f9731b03f")
+	)
+	(fp_line
+		(start 2.79 1.9)
+		(end 4.23 1.9)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "711437f4-4df4-49d4-a75a-ec622bd2cdf7")
+	)
+	(fp_line
+		(start 4.23 -2.01)
+		(end 2.79 -2.01)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1ed834ec-a400-42d5-902d-3f829ddcf4ce")
+	)
+	(fp_line
+		(start 4.23 1.9)
+		(end 4.23 -2.01)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d00530fb-691d-4191-adbf-cc1dd9221ab4")
+	)
+	(fp_circle
+		(center -3.2 1.6)
+		(end -3.17 1.6)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "ee01f729-3b12-4435-989d-e4c3514f62b8")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "737a1e4a-875e-4c41-ad4b-1484b50df581")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -3.07 0)
+		(size 2 3.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "12fbac08-99d5-45bf-b069-0e3d2c585c24")
+	)
+	(pad "2" smd rect
+		(at 3.07 0)
+		(size 2 3.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "793bb6c0-fdbc-408e-bb4b-64580064e997")
+	)
+	(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/CUM2512-24FR002/CUM2512-24FR002.3dshapes/CUM2512-24FR002.wrl"
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
