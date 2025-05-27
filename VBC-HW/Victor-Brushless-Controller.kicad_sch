@@ -13057,10 +13057,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "02f8bf4f-3a41-40a7-937a-e57d36948c96")
 		(property "Reference" "R5"
-			(at 194.31 101.6001 0)
+			(at 196.9339 99.1004 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13069,7 +13068,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 194.31 99.0601 0)
+			(at 194.31 98.552 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13411,7 +13410,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:SOP-8_L5.0-W5.0-P1.27-LS6.0_TPH4R008NH-L1Q"
+		(property "Footprint" "TPH4R008NH,L1Q(M:TPH4R008NH,L1Q(M"
 			(at 238.76 34.29 0)
 			(effects
 				(font
@@ -13775,7 +13774,7 @@
 				)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:TSSOP-14_L5.0-W4.4-P0.65-LS6.4-BL"
+		(property "Footprint" "AS5047P-ATSM:AS5047P-ATSM"
 			(at 139.7 55.88 0)
 			(effects
 				(font
@@ -14365,7 +14364,7 @@
 				)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:HTQFP-48_L7.0-W7.0-P0.50-LS9.0-BL-EP5.1"
+		(property "Footprint" "DRV8305NQPHPRQ1:DRV8305NQPHPRQ1"
 			(at 233.68 153.67 0)
 			(effects
 				(font
@@ -15525,7 +15524,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:SOP-8_L5.0-W5.0-P1.27-LS6.0_TPH4R008NH-L1Q"
+		(property "Footprint" "TPH4R008NH,L1Q(M:TPH4R008NH,L1Q(M"
 			(at 265.43 59.69 0)
 			(effects
 				(font
@@ -15957,7 +15956,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:SMA_L4.3-W2.6-LS5.2-RD"
+		(property "Footprint" "SMA6J24A:SMA6J24A"
 			(at 114.3 76.2 0)
 			(effects
 				(font
@@ -16398,7 +16397,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:SOP-8_L5.0-W5.0-P1.27-LS6.0_TPH4R008NH-L1Q"
+		(property "Footprint" "TPH4R008NH,L1Q(M:TPH4R008NH,L1Q(M"
 			(at 209.55 34.29 0)
 			(effects
 				(font
@@ -16829,7 +16828,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:SMA_L4.4-W2.6-LS5.0-RD"
+		(property "Footprint" "B230A-13-F:B230A-13-F"
 			(at 149.86 124.46 0)
 			(effects
 				(font
@@ -17785,7 +17784,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:SOP-8_L5.0-W5.0-P1.27-LS6.0_TPH4R008NH-L1Q"
+		(property "Footprint" "TPH4R008NH,L1Q(M:TPH4R008NH,L1Q(M"
 			(at 265.43 34.29 0)
 			(effects
 				(font
@@ -17884,7 +17883,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:SOP-8_L5.0-W5.0-P1.27-LS6.0_TPH4R008NH-L1Q"
+		(property "Footprint" "TPH4R008NH,L1Q(M:TPH4R008NH,L1Q(M"
 			(at 238.76 59.69 0)
 			(effects
 				(font
@@ -18052,7 +18051,7 @@
 				)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:SOT-323-5_L2.1-W1.3-P0.65-LS2.1-BL"
+		(property "Footprint" "STLM20W87F:STLM20W87F"
 			(at 81.28 31.75 0)
 			(effects
 				(font
@@ -19137,7 +19136,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:SOP-8_L5.0-W5.0-P1.27-LS6.0_TPH4R008NH-L1Q"
+		(property "Footprint" "TPH4R008NH,L1Q(M:TPH4R008NH,L1Q(M"
 			(at 209.55 59.69 0)
 			(effects
 				(font
@@ -20452,7 +20451,7 @@
 				)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:COMM-SMD_ESP-WROOM-32D"
+		(property "Footprint" "ESP-WROOM-32E:ESP-WROOM-32E"
 			(at 60.96 163.83 0)
 			(effects
 				(font
@@ -20772,7 +20771,7 @@
 				)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR"
+		(property "Footprint" "LMR14010ADDCR:LMR14010ADDCR"
 			(at 130.81 135.89 0)
 			(effects
 				(font
