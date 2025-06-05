@@ -208,13 +208,13 @@
 	)
 	(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/STLM20W87F/STLM20W87F.3dshapes/STLM20W87F.wrl"
 		(offset
-			(xyz 0 -0 -0)
+			(xyz 0 -0 0.1)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 270)
+			(xyz 0 0 -90)
 		)
 	)
 )

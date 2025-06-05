@@ -256,7 +256,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "d49dc385-f8a1-4e32-ba7b-d6d5d554cfcc")
 	)
-	(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/19-213/19-213.3dshapes/19-213.step"
+	(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/19-213/19-213.3dshapes/19-213.wrl"
 		(offset
 			(xyz -0.05 -0 -0)
 		)

@@ -200,9 +200,9 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "992a9cc0-cdc5-4aa3-afcc-176b7592cbb9")
 	)
-	(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/GRM21BR61H106KE43L/GRM21BR61H106KE43L.3dshapes/GRM21BR61H106KE43L.step"
+	(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/GRM21BR61H106KE43L/GRM21BR61H106KE43L.3dshapes/GRM21BR61H106KE43L.wrl"
 		(offset
-			(xyz -0 -0 -0)
+			(xyz -0 -0 0.6)
 		)
 		(scale
 			(xyz 1 1 1)

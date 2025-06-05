@@ -200,9 +200,9 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "1cb964ae-5c6c-45d9-81b9-2099c5ca1c4d")
 	)
-	(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/CL05A106MQ5NUNC/CL05A106MQ5NUNC.3dshapes/CL05A106MQ5NUNC.step"
+	(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/CL05A106MQ5NUNC/CL05A106MQ5NUNC.3dshapes/CL05A106MQ5NUNC.wrl"
 		(offset
-			(xyz 0 -0 -0)
+			(xyz 0 -0 0.25)
 		)
 		(scale
 			(xyz 1 1 1)

@@ -522,7 +522,7 @@
 	)
 	(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/DRV8305NPHPR/DRV8305NPHPR.3dshapes/DRV8305NPHPR.wrl"
 		(offset
-			(xyz 0 0 0)
+			(xyz 0 0 0.6)
 		)
 		(scale
 			(xyz 1 1 1)

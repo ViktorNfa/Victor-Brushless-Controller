@@ -118,7 +118,7 @@
 	)
 	(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/PIS3D18P-150M-T/PIS3D18P-150M-T.3dshapes/PIS3D18P-150M-T.wrl"
 		(offset
-			(xyz 0 0 -0)
+			(xyz 0 0 0.1)
 		)
 		(scale
 			(xyz 1 1 1)
