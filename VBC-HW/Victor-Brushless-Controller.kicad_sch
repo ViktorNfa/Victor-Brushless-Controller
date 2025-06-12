@@ -14592,7 +14592,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Power_Connector:Power_Connector"
 			(at 165.1 87.63 0)
 			(effects
 				(font
@@ -14659,7 +14659,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BLDC_Connector:BLDC_Connector"
 			(at 269.24 48.26 0)
 			(effects
 				(font
@@ -16035,7 +16035,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Phase "
+		(property "Value" "Phase"
 			(at 271.78 44.4499 0)
 			(effects
 				(font
@@ -16044,7 +16044,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BLDC_Connector:BLDC_Connector"
 			(at 269.24 43.18 0)
 			(effects
 				(font
@@ -16506,7 +16506,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Power_Connector:Power_Connector"
 			(at 165.1 64.77 0)
 			(effects
 				(font
@@ -16639,7 +16639,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BLDC_Connector:BLDC_Connector"
 			(at 269.24 53.34 0)
 			(effects
 				(font
