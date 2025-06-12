@@ -463,121 +463,6 @@
 				)
 			)
 		)
-		(symbol "BLDC_motor:BLDC_motor"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "M"
-				(at 0 2.286 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 1.27 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 1.27 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 1.27 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 1.27 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "BLDC_motor_1_1"
-				(rectangle
-					(start -3.81 3.81)
-					(end 3.81 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -2.54 -5.08 90)
-					(length 2.54)
-					(name "PA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "PB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "PC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "CUM2512-24FR002:CUM2512-24FR002"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -5065,7 +4950,7 @@
 		(uuid "00841c1c-61c9-4418-b9bd-39f3b954573f")
 	)
 	(junction
-		(at 255.27 25.4)
+		(at 248.92 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "00ca0355-9a68-4fe8-9347-c688d3a99de6")
@@ -5077,7 +4962,7 @@
 		(uuid "01fd090e-d470-4f43-805f-517f9fdc722d")
 	)
 	(junction
-		(at 228.6 50.8)
+		(at 223.52 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "038a1e94-5e95-4815-b412-ac50a9d80708")
@@ -5113,7 +4998,7 @@
 		(uuid "0ead8917-7a12-45f8-a85f-c56f19d6a43d")
 	)
 	(junction
-		(at 252.73 43.18)
+		(at 246.38 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "10986859-9875-48d6-b86e-ee71d94e1e2f")
@@ -5125,7 +5010,7 @@
 		(uuid "10e5ded4-dcd2-42bf-b733-d092ff412314")
 	)
 	(junction
-		(at 252.73 48.26)
+		(at 246.38 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "124ee5d9-3c32-45cf-affb-89bbd0614d7a")
@@ -5251,7 +5136,7 @@
 		(uuid "3a461606-12fe-4d0d-b269-f3c1d5471d41")
 	)
 	(junction
-		(at 250.19 25.4)
+		(at 243.84 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3fa18334-74f0-4c46-bf57-6fb49d0dfeef")
@@ -5293,7 +5178,7 @@
 		(uuid "501de529-9258-475c-9884-75a24e2caada")
 	)
 	(junction
-		(at 223.52 25.4)
+		(at 218.44 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "550a9335-0a51-4e1d-94c4-62aa67800711")
@@ -5329,7 +5214,7 @@
 		(uuid "66371d01-5069-432b-8cbf-88e508913172")
 	)
 	(junction
-		(at 252.73 50.8)
+		(at 246.38 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "67c83fec-e43d-492c-a6a3-eeea120e3e9b")
@@ -5365,7 +5250,7 @@
 		(uuid "6fda2c01-1ffb-471c-905a-1ead9987d17c")
 	)
 	(junction
-		(at 226.06 25.4)
+		(at 220.98 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "73856573-045b-462b-995a-35fc41e727e3")
@@ -5389,7 +5274,7 @@
 		(uuid "7d330060-0e4a-4f65-9536-be3d4114dc8d")
 	)
 	(junction
-		(at 252.73 25.4)
+		(at 246.38 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7d3808a0-6984-4831-abf0-8d768154c86e")
@@ -5407,7 +5292,7 @@
 		(uuid "7dc6d175-3480-4a93-97f3-26c7f56afbba")
 	)
 	(junction
-		(at 226.06 48.26)
+		(at 220.98 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "801535c9-9841-42c9-bfdf-e8ebd399de16")
@@ -5419,13 +5304,13 @@
 		(uuid "816db4e1-4f3e-48af-883d-eb66fae7ace8")
 	)
 	(junction
-		(at 250.19 50.8)
+		(at 243.84 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "84c4d814-d3af-48ff-a702-123515729af2")
 	)
 	(junction
-		(at 223.52 50.8)
+		(at 218.44 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "883dbb7c-d097-4a4f-8b26-874371d05abd")
@@ -5515,7 +5400,7 @@
 		(uuid "be327d44-e611-4460-a648-32771cf3b201")
 	)
 	(junction
-		(at 226.06 43.18)
+		(at 220.98 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c2872a5b-5adc-4ccf-b303-fb34f109d008")
@@ -5533,7 +5418,7 @@
 		(uuid "c58c9a9d-940a-4db3-a9a5-4dbd3a5e05ad")
 	)
 	(junction
-		(at 226.06 69.85)
+		(at 220.98 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ca6b98c8-b6dc-499c-8881-89aab07ecb9d")
@@ -5569,7 +5454,7 @@
 		(uuid "d6fcb120-cf2b-411a-97e6-e4f937272bc0")
 	)
 	(junction
-		(at 226.06 50.8)
+		(at 220.98 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d706cd9d-2103-48b5-9b32-9dd930c2d9f4")
@@ -5593,7 +5478,7 @@
 		(uuid "dad61a52-0664-433f-9057-b7cc41aa3577")
 	)
 	(junction
-		(at 255.27 50.8)
+		(at 248.92 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dd9b9da7-fd86-404e-9719-c1d99e61119d")
@@ -5623,7 +5508,7 @@
 		(uuid "e856fce2-367c-4949-af8c-7d99f38640fa")
 	)
 	(junction
-		(at 228.6 25.4)
+		(at 223.52 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f2b7d73f-3bda-4042-a2cf-0313f9ebc108")
@@ -5647,7 +5532,7 @@
 		(uuid "fbc040fe-cf4c-48b3-a1f9-0f4d3186ac42")
 	)
 	(junction
-		(at 252.73 69.85)
+		(at 246.38 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd1d25f0-c53a-47f0-8ccc-70e5ee90bde4")
@@ -5948,7 +5833,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 25.4) (xy 252.73 25.4)
+			(xy 243.84 25.4) (xy 246.38 25.4)
 		)
 		(stroke
 			(width 0)
@@ -6078,17 +5963,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 69.85) (xy 87.63 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14072d61-00c3-40b8-be5a-f5927501c106")
-	)
-	(wire
-		(pts
-			(xy 266.7 48.26) (xy 270.51 48.26)
+			(xy 260.35 48.26) (xy 264.16 48.26)
 		)
 		(stroke
 			(width 0)
@@ -6368,7 +6243,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 69.85) (xy 226.06 73.66)
+			(xy 220.98 69.85) (xy 220.98 73.66)
 		)
 		(stroke
 			(width 0)
@@ -6378,7 +6253,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 25.4) (xy 231.14 25.4)
+			(xy 223.52 25.4) (xy 226.06 25.4)
 		)
 		(stroke
 			(width 0)
@@ -6458,7 +6333,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 43.18) (xy 226.06 43.18)
+			(xy 218.44 43.18) (xy 220.98 43.18)
 		)
 		(stroke
 			(width 0)
@@ -6488,7 +6363,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 43.18) (xy 228.6 43.18)
+			(xy 220.98 43.18) (xy 223.52 43.18)
 		)
 		(stroke
 			(width 0)
@@ -6688,7 +6563,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 50.8) (xy 252.73 50.8)
+			(xy 243.84 50.8) (xy 246.38 50.8)
 		)
 		(stroke
 			(width 0)
@@ -6758,7 +6633,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 68.58) (xy 257.81 69.85)
+			(xy 251.46 68.58) (xy 251.46 69.85)
 		)
 		(stroke
 			(width 0)
@@ -6878,7 +6753,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 69.85) (xy 252.73 73.66)
+			(xy 246.38 69.85) (xy 246.38 73.66)
 		)
 		(stroke
 			(width 0)
@@ -6958,7 +6833,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 68.58) (xy 250.19 69.85)
+			(xy 243.84 68.58) (xy 243.84 69.85)
 		)
 		(stroke
 			(width 0)
@@ -7008,7 +6883,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 50.8) (xy 255.27 50.8)
+			(xy 246.38 50.8) (xy 248.92 50.8)
 		)
 		(stroke
 			(width 0)
@@ -7028,7 +6903,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 50.8) (xy 226.06 50.8)
+			(xy 218.44 50.8) (xy 220.98 50.8)
 		)
 		(stroke
 			(width 0)
@@ -7178,7 +7053,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 50.8) (xy 257.81 50.8)
+			(xy 248.92 50.8) (xy 251.46 50.8)
 		)
 		(stroke
 			(width 0)
@@ -7208,7 +7083,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 50.8) (xy 270.51 50.8)
+			(xy 260.35 53.34) (xy 264.16 53.34)
 		)
 		(stroke
 			(width 0)
@@ -7338,7 +7213,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 25.4) (xy 226.06 22.86)
+			(xy 220.98 25.4) (xy 220.98 22.86)
 		)
 		(stroke
 			(width 0)
@@ -7398,7 +7273,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 48.26) (xy 226.06 50.8)
+			(xy 220.98 48.26) (xy 220.98 50.8)
 		)
 		(stroke
 			(width 0)
@@ -7458,7 +7333,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 69.85) (xy 226.06 69.85)
+			(xy 223.52 69.85) (xy 220.98 69.85)
 		)
 		(stroke
 			(width 0)
@@ -7518,7 +7393,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 68.58) (xy 223.52 69.85)
+			(xy 218.44 68.58) (xy 218.44 69.85)
 		)
 		(stroke
 			(width 0)
@@ -7618,7 +7493,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 25.4) (xy 228.6 25.4)
+			(xy 220.98 25.4) (xy 223.52 25.4)
 		)
 		(stroke
 			(width 0)
@@ -7688,7 +7563,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 43.18) (xy 252.73 43.18)
+			(xy 243.84 43.18) (xy 246.38 43.18)
 		)
 		(stroke
 			(width 0)
@@ -7898,7 +7773,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 48.26) (xy 231.14 48.26)
+			(xy 220.98 48.26) (xy 226.06 48.26)
 		)
 		(stroke
 			(width 0)
@@ -7968,7 +7843,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 43.18) (xy 257.81 44.45)
+			(xy 251.46 43.18) (xy 251.46 44.45)
 		)
 		(stroke
 			(width 0)
@@ -8028,7 +7903,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 43.18) (xy 255.27 43.18)
+			(xy 246.38 43.18) (xy 248.92 43.18)
 		)
 		(stroke
 			(width 0)
@@ -8128,7 +8003,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 68.58) (xy 255.27 69.85)
+			(xy 248.92 68.58) (xy 248.92 69.85)
 		)
 		(stroke
 			(width 0)
@@ -8258,7 +8133,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 48.26) (xy 252.73 50.8)
+			(xy 246.38 48.26) (xy 246.38 50.8)
 		)
 		(stroke
 			(width 0)
@@ -8268,7 +8143,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 68.58) (xy 226.06 69.85)
+			(xy 220.98 68.58) (xy 220.98 69.85)
 		)
 		(stroke
 			(width 0)
@@ -8298,7 +8173,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 50.8) (xy 228.6 50.8)
+			(xy 220.98 50.8) (xy 223.52 50.8)
 		)
 		(stroke
 			(width 0)
@@ -8308,7 +8183,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 25.4) (xy 250.19 25.4)
+			(xy 241.3 25.4) (xy 243.84 25.4)
 		)
 		(stroke
 			(width 0)
@@ -8438,7 +8313,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 69.85) (xy 252.73 69.85)
+			(xy 243.84 69.85) (xy 246.38 69.85)
 		)
 		(stroke
 			(width 0)
@@ -8628,7 +8503,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 69.85) (xy 226.06 69.85)
+			(xy 218.44 69.85) (xy 220.98 69.85)
 		)
 		(stroke
 			(width 0)
@@ -8638,7 +8513,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 68.58) (xy 231.14 69.85)
+			(xy 226.06 68.58) (xy 226.06 69.85)
 		)
 		(stroke
 			(width 0)
@@ -8668,7 +8543,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 68.58) (xy 228.6 69.85)
+			(xy 223.52 68.58) (xy 223.52 69.85)
 		)
 		(stroke
 			(width 0)
@@ -8718,7 +8593,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 25.4) (xy 226.06 25.4)
+			(xy 218.44 25.4) (xy 220.98 25.4)
 		)
 		(stroke
 			(width 0)
@@ -8758,7 +8633,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 43.18) (xy 252.73 48.26)
+			(xy 246.38 43.18) (xy 246.38 48.26)
 		)
 		(stroke
 			(width 0)
@@ -8768,7 +8643,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 48.26) (xy 257.81 48.26)
+			(xy 246.38 48.26) (xy 251.46 48.26)
 		)
 		(stroke
 			(width 0)
@@ -8798,7 +8673,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 50.8) (xy 223.52 50.8)
+			(xy 215.9 50.8) (xy 218.44 50.8)
 		)
 		(stroke
 			(width 0)
@@ -8818,7 +8693,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 50.8) (xy 250.19 50.8)
+			(xy 241.3 50.8) (xy 243.84 50.8)
 		)
 		(stroke
 			(width 0)
@@ -8838,7 +8713,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 48.26) (xy 226.06 48.26)
+			(xy 214.63 48.26) (xy 220.98 48.26)
 		)
 		(stroke
 			(width 0)
@@ -8968,7 +8843,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 44.45) (xy 231.14 43.18)
+			(xy 226.06 44.45) (xy 226.06 43.18)
 		)
 		(stroke
 			(width 0)
@@ -8998,7 +8873,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 25.4) (xy 252.73 22.86)
+			(xy 246.38 25.4) (xy 246.38 22.86)
 		)
 		(stroke
 			(width 0)
@@ -9118,7 +8993,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 43.18) (xy 226.06 48.26)
+			(xy 220.98 43.18) (xy 220.98 48.26)
 		)
 		(stroke
 			(width 0)
@@ -9298,7 +9173,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 25.4) (xy 223.52 25.4)
+			(xy 215.9 25.4) (xy 218.44 25.4)
 		)
 		(stroke
 			(width 0)
@@ -9498,7 +9373,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 25.4) (xy 257.81 25.4)
+			(xy 248.92 25.4) (xy 251.46 25.4)
 		)
 		(stroke
 			(width 0)
@@ -9828,7 +9703,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 25.4) (xy 255.27 25.4)
+			(xy 246.38 25.4) (xy 248.92 25.4)
 		)
 		(stroke
 			(width 0)
@@ -10328,7 +10203,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 48.26) (xy 252.73 48.26)
+			(xy 240.03 48.26) (xy 246.38 48.26)
 		)
 		(stroke
 			(width 0)
@@ -10368,7 +10243,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 69.85) (xy 252.73 69.85)
+			(xy 248.92 69.85) (xy 246.38 69.85)
 		)
 		(stroke
 			(width 0)
@@ -10438,7 +10313,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 50.8) (xy 231.14 50.8)
+			(xy 223.52 50.8) (xy 226.06 50.8)
 		)
 		(stroke
 			(width 0)
@@ -10468,7 +10343,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 45.72) (xy 270.51 45.72)
+			(xy 260.35 43.18) (xy 264.16 43.18)
 		)
 		(stroke
 			(width 0)
@@ -10498,7 +10373,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 68.58) (xy 252.73 69.85)
+			(xy 246.38 68.58) (xy 246.38 69.85)
 		)
 		(stroke
 			(width 0)
@@ -10728,7 +10603,7 @@
 		(uuid "f421955d-669b-43a8-a640-217a2f8698cc")
 	)
 	(label "PC"
-		(at 246.38 48.26 0)
+		(at 240.03 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10783,7 +10658,7 @@
 		(uuid "1d1ebdb5-94e9-4fef-8f8f-a04832fe5bc6")
 	)
 	(label "SLB"
-		(at 226.06 73.66 0)
+		(at 220.98 73.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10816,7 +10691,7 @@
 		(uuid "351505a5-06f3-4cd5-9155-3e2375ea94f7")
 	)
 	(label "PB"
-		(at 219.71 48.26 0)
+		(at 214.63 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10838,7 +10713,7 @@
 		(uuid "40ca068b-4cf2-41ec-a327-3edfca81d0f1")
 	)
 	(label "GLC"
-		(at 257.81 69.85 0)
+		(at 251.46 69.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10849,7 +10724,7 @@
 		(uuid "4161d969-ff62-4ec0-ab8a-16a785158f3d")
 	)
 	(label "GHC"
-		(at 257.81 44.45 0)
+		(at 251.46 44.45 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10860,7 +10735,7 @@
 		(uuid "4677d8aa-aead-4f50-b9e1-f985e79af807")
 	)
 	(label "PC"
-		(at 266.7 50.8 0)
+		(at 260.35 53.34 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10926,7 +10801,7 @@
 		(uuid "7d8dbbba-7bef-4973-9c5b-caf089f087a2")
 	)
 	(label "SHB"
-		(at 231.14 48.26 0)
+		(at 226.06 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10937,7 +10812,7 @@
 		(uuid "856aca0e-a5f0-4d96-bdde-d4fabaad8f3e")
 	)
 	(label "SHC"
-		(at 257.81 48.26 0)
+		(at 251.46 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10981,7 +10856,7 @@
 		(uuid "b8988ee8-ca3d-41a9-946c-a5585144c529")
 	)
 	(label "SLC"
-		(at 252.73 73.66 0)
+		(at 246.38 73.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10992,7 +10867,7 @@
 		(uuid "be616237-0663-40aa-8616-cc414d3f30a4")
 	)
 	(label "GHB"
-		(at 231.14 44.45 0)
+		(at 226.06 44.45 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11003,7 +10878,7 @@
 		(uuid "c427b893-47a1-41cc-8ddd-38e62c734ba6")
 	)
 	(label "GLB"
-		(at 231.14 69.85 0)
+		(at 226.06 69.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11036,7 +10911,7 @@
 		(uuid "e188eb8a-e67b-443a-9f95-738c81ac90be")
 	)
 	(label "PA"
-		(at 266.7 45.72 0)
+		(at 260.35 43.18 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11080,7 +10955,7 @@
 		(uuid "fa414c61-4a29-462d-9974-3c87b62c9582")
 	)
 	(label "PB"
-		(at 266.7 48.26 0)
+		(at 260.35 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13385,7 +13260,7 @@
 	)
 	(symbol
 		(lib_id "TPH4R008NH,L1Q(M:TPH4R008NH,L1Q(M")
-		(at 226.06 34.29 90)
+		(at 220.98 34.29 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13393,7 +13268,7 @@
 		(dnp no)
 		(uuid "107affdb-9648-4367-938e-799948a6be16")
 		(property "Reference" "Q3"
-			(at 224.79 33.02 90)
+			(at 219.71 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13402,7 +13277,7 @@
 			)
 		)
 		(property "Value" "TPH4R008NH"
-			(at 219.71 35.56 90)
+			(at 214.63 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13411,7 +13286,7 @@
 			)
 		)
 		(property "Footprint" "TPH4R008NH,L1Q(M:TPH4R008NH,L1Q(M"
-			(at 238.76 34.29 0)
+			(at 233.68 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13420,7 +13295,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/New-Arrivals_TOSHIBA-TPH4R008NH-L1Q-M_C396039.html"
-			(at 241.3 34.29 0)
+			(at 236.22 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13429,7 +13304,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 226.06 34.29 0)
+			(at 220.98 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13438,7 +13313,7 @@
 			)
 		)
 		(property "LCSC Part" "C396039"
-			(at 243.84 34.29 0)
+			(at 238.76 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14022,7 +13897,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
 			(at 119.38 161.29 0)
 			(effects
 				(font
@@ -14757,6 +14632,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 269.24 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3daf9a5b-36ef-47fc-9513-ae0e7d48cda6")
+		(property "Reference" "PB1"
+			(at 271.78 46.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Phase"
+			(at 271.78 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 269.24 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 269.24 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 269.24 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "81d75cc3-d59a-4d2c-bde6-4a8d3994d647")
+		)
+		(instances
+			(project "Victor-Brushless-Controller"
+				(path "/282b2da8-f349-4f67-95c5-e0d84d3b690b"
+					(reference "PB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 269.24 87.63 90)
 		(unit 1)
@@ -14849,7 +14791,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 135.89 161.29 0)
 			(effects
 				(font
@@ -14966,7 +14908,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 87.63 68.58 0)
+		(at 87.63 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14975,7 +14917,7 @@
 		(fields_autoplaced yes)
 		(uuid "4e6c5a98-36cb-4d31-af3c-e47b9c0980b9")
 		(property "Reference" "#PWR026"
-			(at 87.63 72.39 0)
+			(at 87.63 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14984,7 +14926,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 87.63 63.5 0)
+			(at 87.63 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14992,7 +14934,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 68.58 0)
+			(at 87.63 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15001,7 +14943,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 68.58 0)
+			(at 87.63 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15010,7 +14952,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 87.63 68.58 0)
+			(at 87.63 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15499,7 +15441,7 @@
 	)
 	(symbol
 		(lib_id "TPH4R008NH,L1Q(M:TPH4R008NH,L1Q(M")
-		(at 252.73 59.69 90)
+		(at 246.38 59.69 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15507,7 +15449,7 @@
 		(dnp no)
 		(uuid "56d1a7ac-d7b7-4f73-a9d7-5428849cfcfa")
 		(property "Reference" "Q6"
-			(at 251.46 58.42 90)
+			(at 245.11 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15516,7 +15458,7 @@
 			)
 		)
 		(property "Value" "TPH4R008NH"
-			(at 246.38 60.96 90)
+			(at 240.03 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15525,7 +15467,7 @@
 			)
 		)
 		(property "Footprint" "TPH4R008NH,L1Q(M:TPH4R008NH,L1Q(M"
-			(at 265.43 59.69 0)
+			(at 259.08 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15534,7 +15476,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/New-Arrivals_TOSHIBA-TPH4R008NH-L1Q-M_C396039.html"
-			(at 267.97 59.69 0)
+			(at 261.62 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15543,7 +15485,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 252.73 59.69 0)
+			(at 246.38 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15552,7 +15494,7 @@
 			)
 		)
 		(property "LCSC Part" "C396039"
-			(at 270.51 59.69 0)
+			(at 264.16 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16075,6 +16017,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 269.24 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "65db88af-654a-41c2-b6a0-3dfc3bc0d67f")
+		(property "Reference" "PA1"
+			(at 271.78 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Phase "
+			(at 271.78 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 269.24 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 269.24 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 269.24 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a1820d48-db65-4597-b5f8-fe8f435d424b")
+		)
+		(instances
+			(project "Victor-Brushless-Controller"
+				(path "/282b2da8-f349-4f67-95c5-e0d84d3b690b"
+					(reference "PA1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 209.55 152.4 180)
 		(unit 1)
@@ -16310,7 +16319,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical"
 			(at 160.02 165.1 0)
 			(effects
 				(font
@@ -16603,6 +16612,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 269.24 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "750dc3e8-6e92-4777-bee5-ef48bbdd4274")
+		(property "Reference" "PC1"
+			(at 271.78 52.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Phase"
+			(at 271.78 54.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 269.24 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 269.24 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 269.24 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9cefc8cf-1e80-4d40-b86e-6603360d5da1")
+		)
+		(instances
+			(project "Victor-Brushless-Controller"
+				(path "/282b2da8-f349-4f67-95c5-e0d84d3b690b"
+					(reference "PC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 203.2 143.51 180)
 		(unit 1)
@@ -16671,7 +16747,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 252.73 22.86 0)
+		(at 246.38 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16679,7 +16755,7 @@
 		(dnp no)
 		(uuid "797dc427-be9b-4886-a7f7-980901827ea7")
 		(property "Reference" "#PWR05"
-			(at 252.73 26.67 0)
+			(at 246.38 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16688,7 +16764,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 252.73 17.78 0)
+			(at 246.38 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16696,7 +16772,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 252.73 22.86 0)
+			(at 246.38 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16705,7 +16781,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 252.73 22.86 0)
+			(at 246.38 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16714,7 +16790,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 252.73 22.86 0)
+			(at 246.38 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17759,7 +17835,7 @@
 	)
 	(symbol
 		(lib_id "TPH4R008NH,L1Q(M:TPH4R008NH,L1Q(M")
-		(at 252.73 34.29 90)
+		(at 246.38 34.29 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17767,7 +17843,7 @@
 		(dnp no)
 		(uuid "9ddaba5b-3db2-4b43-a8cf-eea4087956e4")
 		(property "Reference" "Q5"
-			(at 251.46 33.02 90)
+			(at 245.11 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17776,7 +17852,7 @@
 			)
 		)
 		(property "Value" "TPH4R008NH"
-			(at 246.38 35.56 90)
+			(at 240.03 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17785,7 +17861,7 @@
 			)
 		)
 		(property "Footprint" "TPH4R008NH,L1Q(M:TPH4R008NH,L1Q(M"
-			(at 265.43 34.29 0)
+			(at 259.08 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17794,7 +17870,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/New-Arrivals_TOSHIBA-TPH4R008NH-L1Q-M_C396039.html"
-			(at 267.97 34.29 0)
+			(at 261.62 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17803,7 +17879,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 252.73 34.29 0)
+			(at 246.38 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17812,7 +17888,7 @@
 			)
 		)
 		(property "LCSC Part" "C396039"
-			(at 270.51 34.29 0)
+			(at 264.16 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17858,7 +17934,7 @@
 	)
 	(symbol
 		(lib_id "TPH4R008NH,L1Q(M:TPH4R008NH,L1Q(M")
-		(at 226.06 59.69 90)
+		(at 220.98 59.69 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17866,7 +17942,7 @@
 		(dnp no)
 		(uuid "9debc5a4-7271-48b9-9f52-139b7766b45d")
 		(property "Reference" "Q4"
-			(at 224.79 58.42 90)
+			(at 219.71 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17875,7 +17951,7 @@
 			)
 		)
 		(property "Value" "TPH4R008NH"
-			(at 219.71 60.96 90)
+			(at 214.63 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17884,7 +17960,7 @@
 			)
 		)
 		(property "Footprint" "TPH4R008NH,L1Q(M:TPH4R008NH,L1Q(M"
-			(at 238.76 59.69 0)
+			(at 233.68 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17893,7 +17969,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/New-Arrivals_TOSHIBA-TPH4R008NH-L1Q-M_C396039.html"
-			(at 241.3 59.69 0)
+			(at 236.22 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17902,7 +17978,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 226.06 59.69 0)
+			(at 220.98 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17911,7 +17987,7 @@
 			)
 		)
 		(property "LCSC Part" "C396039"
-			(at 243.84 59.69 0)
+			(at 238.76 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18801,7 +18877,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 154.94 193.04 0)
 			(effects
 				(font
@@ -19431,7 +19507,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 119.38 189.23 0)
 			(effects
 				(font
@@ -19680,78 +19756,6 @@
 		)
 	)
 	(symbol
-		(lib_id "BLDC_motor:BLDC_motor")
-		(at 275.59 48.26 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ccdd89d7-d6c6-4163-accb-a254dacec3f1")
-		(property "Reference" "M1"
-			(at 277.876 46.736 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 274.955 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 267.97 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 267.97 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 267.97 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0817687a-1ca2-4139-bba5-5b42d5786f59")
-		)
-		(pin "3"
-			(uuid "c3d47350-f4f9-4784-8cca-bee77718c153")
-		)
-		(pin "2"
-			(uuid "4fffa4be-d475-404e-9859-a7a3df384b7a")
-		)
-		(instances
-			(project "Victor-Brushless-Controller"
-				(path "/282b2da8-f349-4f67-95c5-e0d84d3b690b"
-					(reference "M1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "CUM2512-24FR002:CUM2512-24FR002")
 		(at 185.42 132.08 0)
 		(unit 1)
@@ -19963,7 +19967,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 226.06 22.86 0)
+		(at 220.98 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19972,7 +19976,7 @@
 		(fields_autoplaced yes)
 		(uuid "d4f5bc86-bdb5-4a48-99b2-845fd70ff8bb")
 		(property "Reference" "#PWR04"
-			(at 226.06 26.67 0)
+			(at 220.98 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19981,7 +19985,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 226.06 17.78 0)
+			(at 220.98 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19989,7 +19993,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 226.06 22.86 0)
+			(at 220.98 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19998,7 +20002,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 226.06 22.86 0)
+			(at 220.98 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20007,7 +20011,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 226.06 22.86 0)
+			(at 220.98 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20861,7 +20865,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
 			(at 81.28 181.61 0)
 			(effects
 				(font
