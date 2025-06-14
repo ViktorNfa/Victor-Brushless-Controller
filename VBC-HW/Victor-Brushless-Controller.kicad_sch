@@ -13426,7 +13426,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_SPST"
+		(property "Value" "BOOT"
 			(at 27.94 162.56 0)
 			(effects
 				(font
@@ -14581,7 +14581,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_SPST"
+		(property "Value" "RESET"
 			(at 27.94 171.45 0)
 			(effects
 				(font
@@ -15135,7 +15135,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Phase"
+		(property "Value" "B"
 			(at 271.78 49.5299 0)
 			(effects
 				(font
@@ -16454,7 +16454,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Phase"
+		(property "Value" "A"
 			(at 271.78 44.4499 0)
 			(effects
 				(font
@@ -16964,7 +16964,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Phase"
+		(property "Value" "C"
 			(at 271.78 54.6099 0)
 			(effects
 				(font
