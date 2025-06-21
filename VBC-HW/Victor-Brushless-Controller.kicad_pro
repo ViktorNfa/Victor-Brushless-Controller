@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 5.84,
-          "width": 3.94
+          "height": 1.0,
+          "width": 2.0
         },
         "silk_line_width": 0.09999999999999999,
         "silk_text_italic": false,
@@ -468,7 +468,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../../../../Downloads/Victor-Brushless-Controller.step",
       "svg": "",
       "vrml": ""
     },

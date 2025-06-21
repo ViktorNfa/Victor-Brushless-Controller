@@ -142,12 +142,11 @@
 	(net 60 "Vtemp IO39")
 	(net 61 "unconnected-(U2-P_GND-Pad39)")
 	(net 62 "unconnected-(U2-NC-Pad32)")
-	(net 63 "IO15")
-	(net 64 "A IO32")
-	(net 65 "unconnected-(U5-NC-Pad1)")
-	(net 66 "unconnected-(U7-V-Pad9)")
-	(net 67 "unconnected-(U7-W{slash}PWM-Pad8)")
-	(net 68 "unconnected-(U7-U-Pad10)")
+	(net 63 "A IO32")
+	(net 64 "unconnected-(U5-NC-Pad1)")
+	(net 65 "unconnected-(U7-V-Pad9)")
+	(net 66 "unconnected-(U7-W{slash}PWM-Pad8)")
+	(net 67 "unconnected-(U7-U-Pad10)")
 	(footprint "0402B102K500NT:0402B102K500NT"
 		(layer "F.Cu")
 		(uuid "0169c6b4-0be6-49ba-8c5d-24eb16ebb036")
@@ -351,217 +350,6 @@
 		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/0402B102K500NT/0402B102K500NT.3dshapes/0402B102K500NT.wrl"
 			(offset
 				(xyz 0 -0 0.2)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
-		(layer "F.Cu")
-		(uuid "020c5f45-735f-4546-96e2-554f780d9fb4")
-		(at 136.07 95.6)
-		(property "Reference" "C35"
-			(at 0 -4 0)
-			(layer "F.SilkS")
-			(uuid "3808a7bb-701c-49f4-b4f8-7f56591d1f65")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "10uF"
-			(at 0 4 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4e25cf68-7d63-4867-9ab7-67492ed8cb8b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ef989b8a-9ae8-4416-8d97-4a643e438b7b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1b76b86b-8433-452e-99be-6b5b9a5a2f68")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8b5d8326-9d41-4cb9-9859-7c2f429ae08f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property ki_fp_filters "C_*")
-		(path "/d0ccad39-0081-4cde-a727-ae05965e2306")
-		(sheetname "Root")
-		(sheetfile "Victor-Brushless-Controller.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -1.96 0.75)
-			(end -1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "309881cc-067d-45e7-a473-834334ce827f")
-		)
-		(fp_line
-			(start -1.81 -0.9)
-			(end -0.4 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "448abf7d-6c11-4f3b-a9c9-bfa0cdebd4c5")
-		)
-		(fp_line
-			(start -0.4 0.9)
-			(end -1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "7727bf7b-4f3d-4b1d-86d0-43fbe2bd1aaa")
-		)
-		(fp_line
-			(start 0.4 0.9)
-			(end 1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d547e940-54f1-4d0d-969b-c7ce8ebdce63")
-		)
-		(fp_line
-			(start 1.81 -0.9)
-			(end 0.4 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "cb0209b1-3653-416c-bf7c-d10760f719b7")
-		)
-		(fp_line
-			(start 1.96 0.75)
-			(end 1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "ecf78880-6ded-462f-953e-c571449885aa")
-		)
-		(fp_arc
-			(start -1.96 -0.75)
-			(mid -1.916066 -0.856066)
-			(end -1.81 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "04c275d8-dfdb-4f71-ab27-5d9d6c29a8c7")
-		)
-		(fp_arc
-			(start -1.81 0.9)
-			(mid -1.916066 0.856066)
-			(end -1.96 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "6805ae98-a958-4b97-9b41-265283d4ae95")
-		)
-		(fp_arc
-			(start 1.81 -0.9)
-			(mid 1.916066 -0.856066)
-			(end 1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "cd8a72d0-3f23-4218-8fac-9dde491d59ca")
-		)
-		(fp_arc
-			(start 1.96 0.75)
-			(mid 1.916066 0.856066)
-			(end 1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "67b6578d-dac5-4b49-8e29-4f7667c653b5")
-		)
-		(fp_circle
-			(center -1 0.63)
-			(end -0.97 0.63)
-			(stroke
-				(width 0.06)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Fab")
-			(uuid "de5fc52f-3ef6-470f-b8a4-51d7c4c84006")
-		)
-		(pad "1" smd rect
-			(at -1 0)
-			(size 1.41 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 6 "VCC")
-			(pintype "passive")
-			(uuid "fc561578-1789-4612-b341-3aa66100f86e")
-		)
-		(pad "2" smd rect
-			(at 1 0)
-			(size 1.41 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 2 "GND")
-			(pintype "passive")
-			(uuid "0fbc95d1-aaec-4bb9-91ea-e381dd16d3ae")
-		)
-		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/GRM21BR61H106KE43L/GRM21BR61H106KE43L.3dshapes/GRM21BR61H106KE43L.wrl"
-			(offset
-				(xyz -0 -0 0.6)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -859,234 +647,24 @@
 			)
 		)
 	)
-	(footprint "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
-		(layer "F.Cu")
-		(uuid "06407755-3608-4d1b-a3a4-1a338eded492")
-		(at 131 101.5)
-		(property "Reference" "C32"
-			(at 0 -4 0)
-			(layer "F.SilkS")
-			(uuid "6bc4f0e7-f295-4754-9500-bfe00ab9b756")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "10uF"
-			(at 0 4 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "dac26069-8232-4027-bd5f-b8dbe96db6e4")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "28ab1f74-a519-4866-b887-0a4e8112708b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ee303785-ad01-4e6b-ba13-9ca9ff667c8e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "163a2b08-4b1f-4955-a8ad-d71de32b88d8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property ki_fp_filters "C_*")
-		(path "/a5c63303-3b90-446a-9e49-510ee1530f62")
-		(sheetname "Root")
-		(sheetfile "Victor-Brushless-Controller.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -1.96 0.75)
-			(end -1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "e49d4b00-989f-4183-9956-a3c21746a136")
-		)
-		(fp_line
-			(start -1.81 -0.9)
-			(end -0.4 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f8dd397f-402d-4867-9b67-d2df8b621ed2")
-		)
-		(fp_line
-			(start -0.4 0.9)
-			(end -1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f2b6d89f-d46a-49b8-a83c-b92ea9c710cb")
-		)
-		(fp_line
-			(start 0.4 0.9)
-			(end 1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "bea8bf6b-7030-4bef-918e-3cab278b6d17")
-		)
-		(fp_line
-			(start 1.81 -0.9)
-			(end 0.4 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f8183cd6-ee18-4d32-a335-de214af3c066")
-		)
-		(fp_line
-			(start 1.96 0.75)
-			(end 1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "a48875dd-7a8c-4395-92e2-5b5593402d07")
-		)
-		(fp_arc
-			(start -1.96 -0.75)
-			(mid -1.916066 -0.856066)
-			(end -1.81 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "92983837-8d3e-4398-87a3-5b8fecd61a0b")
-		)
-		(fp_arc
-			(start -1.81 0.9)
-			(mid -1.916066 0.856066)
-			(end -1.96 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "8bbdc335-45e8-40bd-8799-bfb0d0176ad8")
-		)
-		(fp_arc
-			(start 1.81 -0.9)
-			(mid 1.916066 -0.856066)
-			(end 1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "ab06659a-fb6c-4b5b-81b9-19ca990c9882")
-		)
-		(fp_arc
-			(start 1.96 0.75)
-			(mid 1.916066 0.856066)
-			(end 1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d8b96395-4cfc-4b56-8af3-4cab502b395a")
-		)
-		(fp_circle
-			(center -1 0.63)
-			(end -0.97 0.63)
-			(stroke
-				(width 0.06)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Fab")
-			(uuid "6d970774-bcd3-4d25-af1b-0be643b1966b")
-		)
-		(pad "1" smd rect
-			(at -1 0)
-			(size 1.41 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 6 "VCC")
-			(pintype "passive")
-			(uuid "4ea647a1-e7f5-4cd4-ae14-3d81225b490c")
-		)
-		(pad "2" smd rect
-			(at 1 0)
-			(size 1.41 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 2 "GND")
-			(pintype "passive")
-			(uuid "d59b68e2-037b-47b7-bdd6-80d654df3de6")
-		)
-		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/GRM21BR61H106KE43L/GRM21BR61H106KE43L.3dshapes/GRM21BR61H106KE43L.wrl"
-			(offset
-				(xyz -0 -0 0.6)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
 	(footprint "0402WGF1002TCE:0402WGF1002TCE"
 		(layer "F.Cu")
 		(uuid "0bf86b1c-2fab-443a-bc81-07e6821c57ce")
-		(at 140.26 77.85)
+		(at 175.75 92.82 -90)
 		(property "Reference" "R5"
-			(at 0 -4 0)
+			(at 1.93 0 180)
 			(layer "F.SilkS")
 			(uuid "be679cf7-f090-4f5f-bf51-2175924a2337")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
 		(property "Value" "10k"
-			(at 0 4 0)
+			(at 0 4 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ce33676e-4105-4a3a-bc15-9139e872e7b8")
@@ -1098,7 +676,7 @@
 			)
 		)
 		(property "Footprint" "0402WGF1002TCE:0402WGF1002TCE"
-			(at 0 0 0)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1110,7 +688,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1122,7 +700,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 0 0 0)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1138,16 +716,6 @@
 		(sheetname "Root")
 		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
-		(fp_line
-			(start -0.94 -0.5)
-			(end -0.23 -0.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "8f15ab87-8870-4460-9a44-9d3bbca16949")
-		)
 		(fp_line
 			(start -0.94 0.5)
 			(end -0.94 -0.5)
@@ -1179,16 +747,6 @@
 			(uuid "cce45ff7-f022-4765-9916-2d56d1d7396a")
 		)
 		(fp_line
-			(start 0.94 -0.5)
-			(end 0.23 -0.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "804173f7-b1f4-4fea-8921-acb63ac3477b")
-		)
-		(fp_line
 			(start 0.94 0.5)
 			(end 0.94 -0.5)
 			(stroke
@@ -1197,6 +755,26 @@
 			)
 			(layer "F.SilkS")
 			(uuid "c9082126-dd00-4e7d-b6df-71a09478c46c")
+		)
+		(fp_line
+			(start -0.94 -0.5)
+			(end -0.23 -0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8f15ab87-8870-4460-9a44-9d3bbca16949")
+		)
+		(fp_line
+			(start 0.94 -0.5)
+			(end 0.23 -0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "804173f7-b1f4-4fea-8921-acb63ac3477b")
 		)
 		(fp_circle
 			(center -0.5 0.25)
@@ -1210,7 +788,7 @@
 			(uuid "ca31e6b3-a162-4195-8c99-369467be7603")
 		)
 		(pad "1" smd rect
-			(at -0.43 0)
+			(at -0.43 0 270)
 			(size 0.57 0.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 14 "3V3A")
@@ -1218,7 +796,7 @@
 			(uuid "19e556a0-dcfc-41e5-adfd-c17ebba655bd")
 		)
 		(pad "2" smd rect
-			(at 0.43 0)
+			(at 0.43 0 270)
 			(size 0.57 0.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 39 "nFault IO4")
@@ -1240,20 +818,21 @@
 	(footprint "CL05A105KA5NQNC:CL05A105KA5NQNC"
 		(layer "F.Cu")
 		(uuid "11302d40-845d-4c63-aac3-d4711cce51fa")
-		(at 137.46 112.8)
+		(at 171.25 93 90)
 		(property "Reference" "C6"
-			(at 0 -4 0)
+			(at -1.75 0 0)
 			(layer "F.SilkS")
 			(uuid "07b75a89-f347-40c3-b27c-28e00d8ae3cc")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
 		(property "Value" "1uF"
-			(at 0 4 0)
+			(at 0 4 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8b36b728-50bb-490f-9960-e5701e5b286e")
@@ -1265,7 +844,7 @@
 			)
 		)
 		(property "Footprint" "CL05A105KA5NQNC:CL05A105KA5NQNC"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1277,7 +856,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1289,7 +868,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1306,14 +885,14 @@
 		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -1.17 0.35)
-			(end -1.17 -0.35)
+			(start 1.02 -0.5)
+			(end 0.23 -0.5)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "6e9b396e-5e5b-449a-8331-5581638f28bb")
+			(uuid "2a6f5de0-2dd7-4d9e-8bd2-d443a89a4b8a")
 		)
 		(fp_line
 			(start -1.02 -0.5)
@@ -1326,14 +905,24 @@
 			(uuid "0b9503c6-3141-4294-906d-e59174fff100")
 		)
 		(fp_line
-			(start -0.23 0.5)
-			(end -1.02 0.5)
+			(start 1.17 0.35)
+			(end 1.17 -0.35)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "d6380b53-9e2c-493c-8dca-d117ae2a1c11")
+			(uuid "df97ccdf-8764-43e9-b3eb-d6fa11152427")
+		)
+		(fp_line
+			(start -1.17 0.35)
+			(end -1.17 -0.35)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6e9b396e-5e5b-449a-8331-5581638f28bb")
 		)
 		(fp_line
 			(start 0.23 0.5)
@@ -1346,46 +935,14 @@
 			(uuid "1bb1a6f0-97bb-4063-9e07-8c27de3f58d2")
 		)
 		(fp_line
-			(start 1.02 -0.5)
-			(end 0.23 -0.5)
+			(start -0.23 0.5)
+			(end -1.02 0.5)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "2a6f5de0-2dd7-4d9e-8bd2-d443a89a4b8a")
-		)
-		(fp_line
-			(start 1.17 0.35)
-			(end 1.17 -0.35)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "df97ccdf-8764-43e9-b3eb-d6fa11152427")
-		)
-		(fp_arc
-			(start -1.17 -0.35)
-			(mid -1.126066 -0.456066)
-			(end -1.02 -0.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "cf7b6b10-4d6c-4e93-96ba-458b604bae20")
-		)
-		(fp_arc
-			(start -1.02 0.5)
-			(mid -1.126066 0.456066)
-			(end -1.17 0.35)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "7e1d8dea-ede4-43e4-9622-2274167d5667")
+			(uuid "d6380b53-9e2c-493c-8dca-d117ae2a1c11")
 		)
 		(fp_arc
 			(start 1.02 -0.5)
@@ -1399,6 +956,17 @@
 			(uuid "df46141e-68e1-454f-b5d4-88118ae0fc47")
 		)
 		(fp_arc
+			(start -1.17 -0.35)
+			(mid -1.126066 -0.456066)
+			(end -1.02 -0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "cf7b6b10-4d6c-4e93-96ba-458b604bae20")
+		)
+		(fp_arc
 			(start 1.17 0.35)
 			(mid 1.126066 0.456066)
 			(end 1.02 0.5)
@@ -1408,6 +976,17 @@
 			)
 			(layer "F.SilkS")
 			(uuid "d9ae5f61-38a4-4634-83dc-4cae62a69ad7")
+		)
+		(fp_arc
+			(start -1.02 0.5)
+			(mid -1.126066 0.456066)
+			(end -1.17 0.35)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7e1d8dea-ede4-43e4-9622-2274167d5667")
 		)
 		(fp_circle
 			(center -0.5 0.25)
@@ -1421,7 +1000,7 @@
 			(uuid "2a91799f-e1f4-46f0-9d40-ec9c2adb6359")
 		)
 		(pad "1" smd rect
-			(at -0.55 0)
+			(at -0.55 0 90)
 			(size 0.79 0.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 7 "Net-(U1-VCP_LSD)")
@@ -1429,7 +1008,7 @@
 			(uuid "602d429f-eea5-4df3-b956-2f26637f8479")
 		)
 		(pad "2" smd rect
-			(at 0.55 0)
+			(at 0.55 0 90)
 			(size 0.79 0.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 2 "GND")
@@ -1451,10 +1030,11 @@
 	(footprint "19-213:19-213"
 		(layer "F.Cu")
 		(uuid "12eba8f2-8632-4d5e-8d66-783755193504")
-		(at 142.31 93.79)
+		(at 186.5 93.25)
 		(property "Reference" "LED3"
 			(at 0 -4 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "9b539460-b92d-425d-bf5d-baa2e0334ea3")
 			(effects
 				(font
@@ -1463,14 +1043,15 @@
 				)
 			)
 		)
-		(property "Value" "Yellow"
-			(at 0 4 0)
-			(layer "F.Fab")
+		(property "Value" "IO15"
+			(at 0 1.25 0)
+			(layer "F.SilkS")
 			(uuid "8aebf79c-4d05-4277-b287-075b530df86d")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
@@ -1719,20 +1300,21 @@
 	(footprint "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
 		(layer "F.Cu")
 		(uuid "13e9f173-b374-4dec-86a7-d839bfa23b3d")
-		(at 131 95.6)
+		(at 178.5 102.5 90)
 		(property "Reference" "C27"
-			(at 0 -4 0)
+			(at 0 -1.3 270)
 			(layer "F.SilkS")
 			(uuid "df7703ce-91e7-4985-b6e8-ab9620d487be")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
 		(property "Value" "10uF"
-			(at 0 4 0)
+			(at 0 4 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a3c91d26-6a79-43b4-8d2f-34af0778af0e")
@@ -1744,7 +1326,7 @@
 			)
 		)
 		(property "Footprint" "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1756,7 +1338,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1768,7 +1350,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1785,14 +1367,14 @@
 		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -1.96 0.75)
-			(end -1.96 -0.75)
+			(start 1.81 -0.9)
+			(end 0.4 -0.9)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "2eeae026-3281-4799-90d4-5df9e5178ae8")
+			(uuid "f914454a-8f08-4648-ab77-dc068a484e86")
 		)
 		(fp_line
 			(start -1.81 -0.9)
@@ -1805,14 +1387,24 @@
 			(uuid "b2ac40e1-5182-4ffc-8f16-c6807181e04e")
 		)
 		(fp_line
-			(start -0.4 0.9)
-			(end -1.81 0.9)
+			(start 1.96 0.75)
+			(end 1.96 -0.75)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "0d7551f9-124a-4b6f-8dfd-e4aac6e73940")
+			(uuid "06b094d8-fb24-44c9-836c-69cdd176c50a")
+		)
+		(fp_line
+			(start -1.96 0.75)
+			(end -1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2eeae026-3281-4799-90d4-5df9e5178ae8")
 		)
 		(fp_line
 			(start 0.4 0.9)
@@ -1825,46 +1417,14 @@
 			(uuid "2bb40b5d-b70d-4717-8ec6-7543adb01699")
 		)
 		(fp_line
-			(start 1.81 -0.9)
-			(end 0.4 -0.9)
+			(start -0.4 0.9)
+			(end -1.81 0.9)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "f914454a-8f08-4648-ab77-dc068a484e86")
-		)
-		(fp_line
-			(start 1.96 0.75)
-			(end 1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "06b094d8-fb24-44c9-836c-69cdd176c50a")
-		)
-		(fp_arc
-			(start -1.96 -0.75)
-			(mid -1.916066 -0.856066)
-			(end -1.81 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "2f5d7075-78d7-4c3d-b020-c331bd5b622a")
-		)
-		(fp_arc
-			(start -1.81 0.9)
-			(mid -1.916066 0.856066)
-			(end -1.96 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "a6d4e439-0be4-4b14-8f50-8ef790c93012")
+			(uuid "0d7551f9-124a-4b6f-8dfd-e4aac6e73940")
 		)
 		(fp_arc
 			(start 1.81 -0.9)
@@ -1878,6 +1438,17 @@
 			(uuid "d3a06faa-6c6a-4109-9de2-36cd8617034e")
 		)
 		(fp_arc
+			(start -1.96 -0.75)
+			(mid -1.916066 -0.856066)
+			(end -1.81 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2f5d7075-78d7-4c3d-b020-c331bd5b622a")
+		)
+		(fp_arc
 			(start 1.96 0.75)
 			(mid 1.916066 0.856066)
 			(end 1.81 0.9)
@@ -1887,6 +1458,17 @@
 			)
 			(layer "F.SilkS")
 			(uuid "24aa9128-a620-4254-abdf-43c3da156ad0")
+		)
+		(fp_arc
+			(start -1.81 0.9)
+			(mid -1.916066 0.856066)
+			(end -1.96 0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a6d4e439-0be4-4b14-8f50-8ef790c93012")
 		)
 		(fp_circle
 			(center -1 0.63)
@@ -1900,7 +1482,7 @@
 			(uuid "4fe5b2df-039e-424f-8933-f93a9a075a4c")
 		)
 		(pad "1" smd rect
-			(at -1 0)
+			(at -1 0 90)
 			(size 1.41 1.35)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 6 "VCC")
@@ -1908,7 +1490,7 @@
 			(uuid "4254bda7-5e22-455e-bf3b-eb8923fdd991")
 		)
 		(pad "2" smd rect
-			(at 1 0)
+			(at 1 0 90)
 			(size 1.41 1.35)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 2 "GND")
@@ -2139,20 +1721,21 @@
 	(footprint "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
 		(layer "F.Cu")
 		(uuid "1619bf57-221d-4796-8a97-64e8660b7a59")
-		(at 125.93 98.55)
+		(at 173 102.5 90)
 		(property "Reference" "C23"
-			(at 0 -4 0)
+			(at 0 -1.25 270)
 			(layer "F.SilkS")
 			(uuid "f73346fb-c423-4cac-bd3c-19349aaf021c")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
 		(property "Value" "10uF"
-			(at 0 4 0)
+			(at 0 4 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7d923d8f-c260-40c8-ad0c-300a9ee9ae31")
@@ -2164,7 +1747,7 @@
 			)
 		)
 		(property "Footprint" "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2176,7 +1759,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2188,7 +1771,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2205,14 +1788,14 @@
 		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -1.96 0.75)
-			(end -1.96 -0.75)
+			(start 1.81 -0.9)
+			(end 0.4 -0.9)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "f8903f5d-adf2-4977-83bb-5d83019b362d")
+			(uuid "3dc8f084-f33a-4a08-bae9-a86b85f66125")
 		)
 		(fp_line
 			(start -1.81 -0.9)
@@ -2225,14 +1808,24 @@
 			(uuid "f2802819-56b1-490a-a435-8309468cc4b5")
 		)
 		(fp_line
-			(start -0.4 0.9)
-			(end -1.81 0.9)
+			(start 1.96 0.75)
+			(end 1.96 -0.75)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "6ab8af48-f5bc-4456-b363-34663cd850d2")
+			(uuid "88507042-daed-4da2-ae56-5d45bd1219a6")
+		)
+		(fp_line
+			(start -1.96 0.75)
+			(end -1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f8903f5d-adf2-4977-83bb-5d83019b362d")
 		)
 		(fp_line
 			(start 0.4 0.9)
@@ -2245,46 +1838,14 @@
 			(uuid "b3979423-59f9-461a-a630-c1053c2cd59d")
 		)
 		(fp_line
-			(start 1.81 -0.9)
-			(end 0.4 -0.9)
+			(start -0.4 0.9)
+			(end -1.81 0.9)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "3dc8f084-f33a-4a08-bae9-a86b85f66125")
-		)
-		(fp_line
-			(start 1.96 0.75)
-			(end 1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "88507042-daed-4da2-ae56-5d45bd1219a6")
-		)
-		(fp_arc
-			(start -1.96 -0.75)
-			(mid -1.916066 -0.856066)
-			(end -1.81 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d29ac8f8-fd67-410c-84ea-917d927b5c0b")
-		)
-		(fp_arc
-			(start -1.81 0.9)
-			(mid -1.916066 0.856066)
-			(end -1.96 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "dd213485-314e-4b8a-bbec-12864d2e7090")
+			(uuid "6ab8af48-f5bc-4456-b363-34663cd850d2")
 		)
 		(fp_arc
 			(start 1.81 -0.9)
@@ -2298,6 +1859,17 @@
 			(uuid "c67c4b5f-c499-447a-a07f-987b3ac51108")
 		)
 		(fp_arc
+			(start -1.96 -0.75)
+			(mid -1.916066 -0.856066)
+			(end -1.81 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d29ac8f8-fd67-410c-84ea-917d927b5c0b")
+		)
+		(fp_arc
 			(start 1.96 0.75)
 			(mid 1.916066 0.856066)
 			(end 1.81 0.9)
@@ -2307,6 +1879,17 @@
 			)
 			(layer "F.SilkS")
 			(uuid "e9fd25a3-26dc-4ac5-9689-e3994c256ded")
+		)
+		(fp_arc
+			(start -1.81 0.9)
+			(mid -1.916066 0.856066)
+			(end -1.96 0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "dd213485-314e-4b8a-bbec-12864d2e7090")
 		)
 		(fp_circle
 			(center -1 0.63)
@@ -2320,7 +1903,7 @@
 			(uuid "a1c00d78-5798-4b2d-a5aa-d069d310a0f7")
 		)
 		(pad "1" smd rect
-			(at -1 0)
+			(at -1 0 90)
 			(size 1.41 1.35)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 6 "VCC")
@@ -2328,7 +1911,7 @@
 			(uuid "9fc2b888-b639-4e36-8cfd-4c094bfcfefb")
 		)
 		(pad "2" smd rect
-			(at 1 0)
+			(at 1 0 90)
 			(size 1.41 1.35)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 2 "GND")
@@ -2709,10 +2292,11 @@
 	(footprint "KT-0603R:KT-0603R"
 		(layer "F.Cu")
 		(uuid "19bc9a7a-5773-4f95-b8e3-9fe2d1192873")
-		(at 153 89.5)
+		(at 180.5 93.25 180)
 		(property "Reference" "LED1"
-			(at 0 -4 0)
+			(at 0 -4 180)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "207f7b63-2259-4b1c-83fe-3626249624d2")
 			(effects
 				(font
@@ -2721,19 +2305,20 @@
 				)
 			)
 		)
-		(property "Value" "Red"
-			(at 0 4 0)
-			(layer "F.Fab")
+		(property "Value" "nFault"
+			(at 0 -1.25 180)
+			(layer "F.SilkS")
 			(uuid "b5a93eae-71b2-4167-aa1f-58ecf50f52d5")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
 		(property "Footprint" "KT-0603R:KT-0603R"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2745,7 +2330,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2757,7 +2342,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2774,144 +2359,14 @@
 		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -1.49 -0.45)
-			(end -1.19 -0.75)
+			(start 1.39 -0.75)
+			(end 1.39 0.73)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "12c1d154-5b77-449f-b036-9c59eaac58cb")
-		)
-		(fp_line
-			(start -1.49 -0.35)
-			(end -1.49 -0.45)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "0661910f-7354-4d06-9080-07aaabd24b91")
-		)
-		(fp_line
-			(start -1.49 -0.35)
-			(end -1.49 0.35)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "2c660651-1bfb-4c6c-985a-42b6a68b7f02")
-		)
-		(fp_line
-			(start -1.49 0.35)
-			(end -1.49 0.45)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "9ce07669-6370-463c-93f6-671f714e45f2")
-		)
-		(fp_line
-			(start -1.49 0.45)
-			(end -1.19 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "25d08eeb-0f88-44e6-b9db-f863fbcbf44f")
-		)
-		(fp_line
-			(start -0.14 -0.75)
-			(end -1.19 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "7d670b4b-e5cf-422b-aeb5-a014f3b19fb5")
-		)
-		(fp_line
-			(start -0.14 0.75)
-			(end -1.19 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "16091f5c-4484-4d88-9cd5-147d167ab3f3")
-		)
-		(fp_line
-			(start 0.21 0.33)
-			(end -0.12 0)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f3f79486-36d5-45d7-9ef9-904c9f797246")
-		)
-		(fp_line
-			(start 0.22 -0.35)
-			(end 0.22 -0.34)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "7fe505dc-c98f-4caa-a2f2-b7975d81d972")
-		)
-		(fp_line
-			(start 0.22 -0.35)
-			(end 0.22 0.33)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "1aa93d53-a376-49ca-9b10-783b3c3e854f")
-		)
-		(fp_line
-			(start 0.22 -0.34)
-			(end -0.12 0)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "53b4f2bb-5445-4947-85d3-103b9186218a")
-		)
-		(fp_line
-			(start 0.22 0)
-			(end -0.12 0)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "2dfbc2e4-91bb-42a3-912c-450e8a6e00c5")
-		)
-		(fp_line
-			(start 0.22 0.33)
-			(end 0.21 0.33)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "976a2186-f9dc-4745-841b-7c693516b505")
-		)
-		(fp_line
-			(start 0.24 -0.75)
-			(end 1.39 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "76bc2731-0780-4a9e-8508-1313a6b7859b")
+			(uuid "658a435d-0710-400a-ad4a-0e38dd1ac960")
 		)
 		(fp_line
 			(start 0.24 0.75)
@@ -2924,14 +2379,144 @@
 			(uuid "505f1316-a14c-40ac-ab2f-746dcbcd6ef7")
 		)
 		(fp_line
-			(start 1.39 -0.75)
-			(end 1.39 0.73)
+			(start 0.24 -0.75)
+			(end 1.39 -0.75)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "658a435d-0710-400a-ad4a-0e38dd1ac960")
+			(uuid "76bc2731-0780-4a9e-8508-1313a6b7859b")
+		)
+		(fp_line
+			(start 0.22 0.33)
+			(end 0.21 0.33)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "976a2186-f9dc-4745-841b-7c693516b505")
+		)
+		(fp_line
+			(start 0.22 0)
+			(end -0.12 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2dfbc2e4-91bb-42a3-912c-450e8a6e00c5")
+		)
+		(fp_line
+			(start 0.22 -0.34)
+			(end -0.12 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "53b4f2bb-5445-4947-85d3-103b9186218a")
+		)
+		(fp_line
+			(start 0.22 -0.35)
+			(end 0.22 0.33)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "1aa93d53-a376-49ca-9b10-783b3c3e854f")
+		)
+		(fp_line
+			(start 0.22 -0.35)
+			(end 0.22 -0.34)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7fe505dc-c98f-4caa-a2f2-b7975d81d972")
+		)
+		(fp_line
+			(start 0.21 0.33)
+			(end -0.12 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f3f79486-36d5-45d7-9ef9-904c9f797246")
+		)
+		(fp_line
+			(start -0.14 0.75)
+			(end -1.19 0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "16091f5c-4484-4d88-9cd5-147d167ab3f3")
+		)
+		(fp_line
+			(start -0.14 -0.75)
+			(end -1.19 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7d670b4b-e5cf-422b-aeb5-a014f3b19fb5")
+		)
+		(fp_line
+			(start -1.49 0.45)
+			(end -1.19 0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "25d08eeb-0f88-44e6-b9db-f863fbcbf44f")
+		)
+		(fp_line
+			(start -1.49 0.35)
+			(end -1.49 0.45)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9ce07669-6370-463c-93f6-671f714e45f2")
+		)
+		(fp_line
+			(start -1.49 -0.35)
+			(end -1.49 0.35)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2c660651-1bfb-4c6c-985a-42b6a68b7f02")
+		)
+		(fp_line
+			(start -1.49 -0.35)
+			(end -1.49 -0.45)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0661910f-7354-4d06-9080-07aaabd24b91")
+		)
+		(fp_line
+			(start -1.49 -0.45)
+			(end -1.19 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "12c1d154-5b77-449f-b036-9c59eaac58cb")
 		)
 		(fp_circle
 			(center -0.8 0.4)
@@ -2945,7 +2530,7 @@
 			(uuid "39ef1af1-e71a-4276-8929-5e3608840726")
 		)
 		(pad "1" smd rect
-			(at -0.8 0 90)
+			(at -0.8 0 270)
 			(size 0.8 0.8)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 26 "Net-(LED1-K)")
@@ -2954,7 +2539,7 @@
 			(uuid "1a8c1e88-9dca-427d-822f-4bc99fa62025")
 		)
 		(pad "2" smd rect
-			(at 0.8 0 90)
+			(at 0.8 0 270)
 			(size 0.8 0.8)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 14 "3V3A")
@@ -2977,15 +2562,16 @@
 	(footprint "LMR14010ADDCR:LMR14010ADDCR"
 		(layer "F.Cu")
 		(uuid "19f5551e-c856-4f8a-8418-2cd1343d0733")
-		(at 167.5 83.5 180)
+		(at 167.5 82.5 180)
 		(property "Reference" "U3"
-			(at -2.385 -2.22 180)
+			(at -1.5 -2.25 180)
 			(layer "F.SilkS")
 			(uuid "f252df8b-43e7-4e15-94cf-4f97bb12d5bc")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
@@ -3176,20 +2762,21 @@
 	(footprint "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
 		(layer "F.Cu")
 		(uuid "1c1f79f9-e651-42d5-8bbe-25ae124462a1")
-		(at 131 89.7)
+		(at 175.75 102.5 90)
 		(property "Reference" "C25"
-			(at 0 -4 0)
+			(at 0 -1.25 270)
 			(layer "F.SilkS")
 			(uuid "b62c1f42-f8e5-4853-a330-67447ca97a75")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
 		(property "Value" "10uF"
-			(at 0 4 0)
+			(at 0 4 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d62f6437-c7a4-485d-93aa-6cb75245d431")
@@ -3201,7 +2788,7 @@
 			)
 		)
 		(property "Footprint" "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3213,7 +2800,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3225,7 +2812,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3242,14 +2829,14 @@
 		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -1.96 0.75)
-			(end -1.96 -0.75)
+			(start 1.81 -0.9)
+			(end 0.4 -0.9)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "81af0d89-ad01-49d1-832c-2d9cf2f74c2c")
+			(uuid "89feb384-d6b2-472b-bc73-450eae47f7a6")
 		)
 		(fp_line
 			(start -1.81 -0.9)
@@ -3262,14 +2849,24 @@
 			(uuid "b40e537b-63ed-46ed-8b7f-5bc3231d0efe")
 		)
 		(fp_line
-			(start -0.4 0.9)
-			(end -1.81 0.9)
+			(start 1.96 0.75)
+			(end 1.96 -0.75)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "74ac991d-263c-45a4-b73c-58ae19afc545")
+			(uuid "e01ed9d5-3b93-46c2-a7c1-da4a7e1fe9c0")
+		)
+		(fp_line
+			(start -1.96 0.75)
+			(end -1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "81af0d89-ad01-49d1-832c-2d9cf2f74c2c")
 		)
 		(fp_line
 			(start 0.4 0.9)
@@ -3282,46 +2879,14 @@
 			(uuid "18de1669-32b9-417f-9e2b-d695c28241a8")
 		)
 		(fp_line
-			(start 1.81 -0.9)
-			(end 0.4 -0.9)
+			(start -0.4 0.9)
+			(end -1.81 0.9)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "89feb384-d6b2-472b-bc73-450eae47f7a6")
-		)
-		(fp_line
-			(start 1.96 0.75)
-			(end 1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "e01ed9d5-3b93-46c2-a7c1-da4a7e1fe9c0")
-		)
-		(fp_arc
-			(start -1.96 -0.75)
-			(mid -1.916066 -0.856066)
-			(end -1.81 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "8d70f9ee-5b79-41a8-bc86-3817aeba3bf1")
-		)
-		(fp_arc
-			(start -1.81 0.9)
-			(mid -1.916066 0.856066)
-			(end -1.96 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "9fe7731d-4bed-470c-a7dd-7b9b3fdba56b")
+			(uuid "74ac991d-263c-45a4-b73c-58ae19afc545")
 		)
 		(fp_arc
 			(start 1.81 -0.9)
@@ -3335,6 +2900,17 @@
 			(uuid "68a1145c-6492-447d-a72b-f129bb2e78e1")
 		)
 		(fp_arc
+			(start -1.96 -0.75)
+			(mid -1.916066 -0.856066)
+			(end -1.81 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8d70f9ee-5b79-41a8-bc86-3817aeba3bf1")
+		)
+		(fp_arc
 			(start 1.96 0.75)
 			(mid 1.916066 0.856066)
 			(end 1.81 0.9)
@@ -3344,6 +2920,17 @@
 			)
 			(layer "F.SilkS")
 			(uuid "186e1104-342a-48fc-a341-e60e620b46c9")
+		)
+		(fp_arc
+			(start -1.81 0.9)
+			(mid -1.916066 0.856066)
+			(end -1.96 0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9fe7731d-4bed-470c-a7dd-7b9b3fdba56b")
 		)
 		(fp_circle
 			(center -1 0.63)
@@ -3357,7 +2944,7 @@
 			(uuid "225d63fa-4530-462f-a159-3fce8d90c638")
 		)
 		(pad "1" smd rect
-			(at -1 0)
+			(at -1 0 90)
 			(size 1.41 1.35)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 6 "VCC")
@@ -3365,7 +2952,7 @@
 			(uuid "aefcb218-cc17-438a-92b8-a1c3d6a019b1")
 		)
 		(pad "2" smd rect
-			(at 1 0)
+			(at 1 0 90)
 			(size 1.41 1.35)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 2 "GND")
@@ -3599,20 +3186,21 @@
 	(footprint "CL05B104KO5NNNC:CL05B104KO5NNNC"
 		(layer "F.Cu")
 		(uuid "21595483-4290-4689-bb01-b8bbab4d0308")
-		(at 140.95 108.5)
+		(at 177.5 93 90)
 		(property "Reference" "C12"
-			(at 0 -4 0)
+			(at -1.75 0.05 0)
 			(layer "F.SilkS")
 			(uuid "42055f77-6df9-4057-a36b-6b187c8253bd")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
 		(property "Value" "100nF"
-			(at 0 4 0)
+			(at 0 4 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e14b73b1-d47f-4cc1-afe1-822829da1dfc")
@@ -3624,7 +3212,7 @@
 			)
 		)
 		(property "Footprint" "CL05B104KO5NNNC:CL05B104KO5NNNC"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3636,7 +3224,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3648,7 +3236,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3665,14 +3253,14 @@
 		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -1.17 0.35)
-			(end -1.17 -0.35)
+			(start 1.02 -0.5)
+			(end 0.23 -0.5)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "80bae402-2571-49d2-ade8-6e1333948102")
+			(uuid "46ab02bb-0f20-4e67-9766-2a05b038240f")
 		)
 		(fp_line
 			(start -1.02 -0.5)
@@ -3685,14 +3273,24 @@
 			(uuid "b150c586-da34-42a7-bfde-c933c22b3d6b")
 		)
 		(fp_line
-			(start -0.23 0.5)
-			(end -1.02 0.5)
+			(start 1.17 0.35)
+			(end 1.17 -0.35)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "b13f5005-5477-4fb1-853f-31b4a1faec2b")
+			(uuid "5a83d2ac-346b-4421-af8c-d871ee9d996c")
+		)
+		(fp_line
+			(start -1.17 0.35)
+			(end -1.17 -0.35)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "80bae402-2571-49d2-ade8-6e1333948102")
 		)
 		(fp_line
 			(start 0.23 0.5)
@@ -3705,46 +3303,14 @@
 			(uuid "b842fd7e-8a7a-4b2f-a9fe-ac25ff65f795")
 		)
 		(fp_line
-			(start 1.02 -0.5)
-			(end 0.23 -0.5)
+			(start -0.23 0.5)
+			(end -1.02 0.5)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "46ab02bb-0f20-4e67-9766-2a05b038240f")
-		)
-		(fp_line
-			(start 1.17 0.35)
-			(end 1.17 -0.35)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "5a83d2ac-346b-4421-af8c-d871ee9d996c")
-		)
-		(fp_arc
-			(start -1.17 -0.35)
-			(mid -1.126066 -0.456066)
-			(end -1.02 -0.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "a21b43a1-5df3-4d6d-ab89-2c1a1b94b2ee")
-		)
-		(fp_arc
-			(start -1.02 0.5)
-			(mid -1.126066 0.456066)
-			(end -1.17 0.35)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "c0b95bb1-6351-4706-8b25-52df4ec2746d")
+			(uuid "b13f5005-5477-4fb1-853f-31b4a1faec2b")
 		)
 		(fp_arc
 			(start 1.02 -0.5)
@@ -3758,6 +3324,17 @@
 			(uuid "56cf8dff-5f67-4691-874d-f27e8dcd1e78")
 		)
 		(fp_arc
+			(start -1.17 -0.35)
+			(mid -1.126066 -0.456066)
+			(end -1.02 -0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a21b43a1-5df3-4d6d-ab89-2c1a1b94b2ee")
+		)
+		(fp_arc
 			(start 1.17 0.35)
 			(mid 1.126066 0.456066)
 			(end 1.02 0.5)
@@ -3767,6 +3344,17 @@
 			)
 			(layer "F.SilkS")
 			(uuid "25e9a93d-911d-47ef-bcc9-43dc161186f4")
+		)
+		(fp_arc
+			(start -1.02 0.5)
+			(mid -1.126066 0.456066)
+			(end -1.17 0.35)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c0b95bb1-6351-4706-8b25-52df4ec2746d")
 		)
 		(fp_circle
 			(center -0.5 0.25)
@@ -3780,7 +3368,7 @@
 			(uuid "806e1aa9-f9cd-4601-b031-46b36e21d294")
 		)
 		(pad "1" smd rect
-			(at -0.55 0)
+			(at -0.55 0 90)
 			(size 0.79 0.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 2 "GND")
@@ -3788,7 +3376,7 @@
 			(uuid "2b411daf-55fa-41a2-b688-adae3568faab")
 		)
 		(pad "2" smd rect
-			(at 0.55 0)
+			(at 0.55 0 90)
 			(size 0.79 0.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 14 "3V3A")
@@ -3810,20 +3398,21 @@
 	(footprint "CL10A226MQ8NRNC:CL10A226MQ8NRNC"
 		(layer "F.Cu")
 		(uuid "23607509-aaa9-4d35-bd6d-deae52afdc85")
-		(at 149.64 99.63)
+		(at 167.5 72.994564 180)
 		(property "Reference" "C17"
-			(at 0 -4 0)
+			(at -2 0.494564 180)
 			(layer "F.SilkS")
 			(uuid "efeacab9-a77a-4d7a-9f69-fc2883f00fcf")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.3 0.3)
+					(thickness 0.075)
+					(bold yes)
 				)
 			)
 		)
 		(property "Value" "22uF"
-			(at 0 4 0)
+			(at 0 4 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8741d470-beb9-4fda-b58f-f96e589b3051")
@@ -3835,7 +3424,7 @@
 			)
 		)
 		(property "Footprint" "CL10A226MQ8NRNC:CL10A226MQ8NRNC"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3847,7 +3436,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3859,7 +3448,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3876,44 +3465,14 @@
 		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -1.39 0.4)
-			(end -1.39 -0.4)
+			(start 1.39 -0.4)
+			(end 1.39 0.4)
 			(stroke
 				(width 0.25)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "6778d3e3-e1e9-48ec-b23a-6a90ae1326fe")
-		)
-		(fp_line
-			(start -0.28 -0.71)
-			(end -1.08 -0.71)
-			(stroke
-				(width 0.25)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d8c851d8-231b-4f75-924f-eba6824fa45a")
-		)
-		(fp_line
-			(start -0.28 0.71)
-			(end -1.08 0.71)
-			(stroke
-				(width 0.25)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "a72c43ea-2197-417e-8e59-5473510a2f3c")
-		)
-		(fp_line
-			(start 0.28 -0.71)
-			(end 1.08 -0.71)
-			(stroke
-				(width 0.25)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "9a076fe7-1dcd-44f9-b314-f1e0d86d2d02")
+			(uuid "2ed3ad7a-7d69-4073-adaa-9d53cc1c7028")
 		)
 		(fp_line
 			(start 0.28 0.71)
@@ -3926,36 +3485,55 @@
 			(uuid "0c041a75-bc64-4228-a6f8-cbba81920f3f")
 		)
 		(fp_line
-			(start 1.39 -0.4)
-			(end 1.39 0.4)
+			(start 0.28 -0.71)
+			(end 1.08 -0.71)
 			(stroke
 				(width 0.25)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "2ed3ad7a-7d69-4073-adaa-9d53cc1c7028")
+			(uuid "9a076fe7-1dcd-44f9-b314-f1e0d86d2d02")
 		)
-		(fp_arc
-			(start -1.39 -0.4)
-			(mid -1.299203 -0.619203)
+		(fp_line
+			(start -0.28 0.71)
+			(end -1.08 0.71)
+			(stroke
+				(width 0.25)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a72c43ea-2197-417e-8e59-5473510a2f3c")
+		)
+		(fp_line
+			(start -0.28 -0.71)
 			(end -1.08 -0.71)
 			(stroke
 				(width 0.25)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "982e7ece-c08a-43ae-b0c9-051734a82e33")
+			(uuid "d8c851d8-231b-4f75-924f-eba6824fa45a")
 		)
-		(fp_arc
-			(start -1.08 0.71)
-			(mid -1.299203 0.619203)
-			(end -1.39 0.4)
+		(fp_line
+			(start -1.39 0.4)
+			(end -1.39 -0.4)
 			(stroke
 				(width 0.25)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "979e0b4f-92df-46c9-a57e-b2e494a1f00d")
+			(uuid "6778d3e3-e1e9-48ec-b23a-6a90ae1326fe")
+		)
+		(fp_arc
+			(start 1.39 0.4)
+			(mid 1.299203 0.619203)
+			(end 1.08 0.71)
+			(stroke
+				(width 0.25)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d15c74a3-be66-4154-b990-8a19502a2612")
 		)
 		(fp_arc
 			(start 1.08 -0.71)
@@ -3969,15 +3547,26 @@
 			(uuid "3ca31740-b438-483d-a16b-83397787cb5d")
 		)
 		(fp_arc
-			(start 1.39 0.4)
-			(mid 1.299203 0.619203)
-			(end 1.08 0.71)
+			(start -1.08 0.71)
+			(mid -1.299203 0.619203)
+			(end -1.39 0.4)
 			(stroke
 				(width 0.25)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "d15c74a3-be66-4154-b990-8a19502a2612")
+			(uuid "979e0b4f-92df-46c9-a57e-b2e494a1f00d")
+		)
+		(fp_arc
+			(start -1.39 -0.4)
+			(mid -1.299203 -0.619203)
+			(end -1.08 -0.71)
+			(stroke
+				(width 0.25)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "982e7ece-c08a-43ae-b0c9-051734a82e33")
 		)
 		(fp_circle
 			(center -0.8 0.4)
@@ -3991,7 +3580,7 @@
 			(uuid "f32d926e-1bb2-44a8-8d2a-e206f109bdb1")
 		)
 		(pad "1" smd rect
-			(at -0.7 0)
+			(at -0.7 0 180)
 			(size 0.8 0.9)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 17 "3V3")
@@ -3999,7 +3588,7 @@
 			(uuid "2476d35f-538e-4522-859e-915ae55ebef5")
 		)
 		(pad "2" smd rect
-			(at 0.7 0)
+			(at 0.7 0 180)
 			(size 0.8 0.9)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 2 "GND")
@@ -4021,20 +3610,21 @@
 	(footprint "RC0402FR-07110KL:RC0402FR-07110KL"
 		(layer "F.Cu")
 		(uuid "23c2203a-7a6e-4a01-874a-6536f5bfde24")
-		(at 146.32 75.7)
+		(at 164.25 84.25 90)
 		(property "Reference" "R12"
-			(at 0 -4 0)
+			(at 0 -1 -90)
 			(layer "F.SilkS")
 			(uuid "d24c4647-bb09-479a-937a-fe10c18ee535")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
 		(property "Value" "110k"
-			(at 0 4 0)
+			(at 0 4 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "46520e26-8962-43e9-bf20-6a71c5e484c2")
@@ -4046,7 +3636,7 @@
 			)
 		)
 		(property "Footprint" "RC0402FR-07110KL:RC0402FR-07110KL"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4058,7 +3648,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4070,7 +3660,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4087,6 +3677,16 @@
 		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
+			(start 0.94 -0.5)
+			(end 0.23 -0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b0be12b4-88c4-401c-b747-ede69b6a3062")
+		)
+		(fp_line
 			(start -0.94 -0.5)
 			(end -0.23 -0.5)
 			(stroke
@@ -4097,24 +3697,14 @@
 			(uuid "b2b63314-474e-412b-8f4b-e762265de109")
 		)
 		(fp_line
-			(start -0.94 0.5)
-			(end -0.94 -0.5)
+			(start 0.94 0.5)
+			(end 0.94 -0.5)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "eda1762c-74cb-4029-9131-996ed74737f8")
-		)
-		(fp_line
-			(start -0.23 0.5)
-			(end -0.94 0.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f5e3e8e7-c87c-4d94-84a8-5f22131fcb64")
+			(uuid "459224f7-c2ed-4c32-91af-4ddc593ad656")
 		)
 		(fp_line
 			(start 0.23 0.5)
@@ -4127,24 +3717,24 @@
 			(uuid "e5977634-2a24-4cc3-9328-80b895be3c12")
 		)
 		(fp_line
-			(start 0.94 -0.5)
-			(end 0.23 -0.5)
+			(start -0.23 0.5)
+			(end -0.94 0.5)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "b0be12b4-88c4-401c-b747-ede69b6a3062")
+			(uuid "f5e3e8e7-c87c-4d94-84a8-5f22131fcb64")
 		)
 		(fp_line
-			(start 0.94 0.5)
-			(end 0.94 -0.5)
+			(start -0.94 0.5)
+			(end -0.94 -0.5)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "459224f7-c2ed-4c32-91af-4ddc593ad656")
+			(uuid "eda1762c-74cb-4029-9131-996ed74737f8")
 		)
 		(fp_circle
 			(center -0.5 0.25)
@@ -4158,7 +3748,7 @@
 			(uuid "33c40535-cd19-4ebc-8574-87aa63317534")
 		)
 		(pad "1" smd rect
-			(at -0.43 0)
+			(at -0.43 0 90)
 			(size 0.57 0.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 41 "Net-(U3-FB)")
@@ -4166,7 +3756,7 @@
 			(uuid "e076fb38-e76f-4804-a1bb-917aab11226c")
 		)
 		(pad "2" smd rect
-			(at 0.43 0)
+			(at 0.43 0 90)
 			(size 0.57 0.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 17 "3V3")
@@ -4412,10 +4002,11 @@
 	(footprint "19-217:19-217"
 		(layer "F.Cu")
 		(uuid "2c2f3b25-f8a5-4f7f-9713-34164d1a63e7")
-		(at 142.31 91.14)
+		(at 193.25 92)
 		(property "Reference" "LED2"
 			(at 0 -4 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "0cec57ae-0a0a-41cf-ae0a-aea439606d3b")
 			(effects
 				(font
@@ -4424,14 +4015,15 @@
 				)
 			)
 		)
-		(property "Value" "Blue"
-			(at 0 4 0)
-			(layer "F.Fab")
+		(property "Value" "VD"
+			(at 0 1.21 0)
+			(layer "F.SilkS")
 			(uuid "354b8094-8caf-4866-ab5e-840637b5017c")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
@@ -4680,15 +4272,16 @@
 	(footprint "0402WGF2201TCE:0402WGF2201TCE"
 		(layer "F.Cu")
 		(uuid "336a47ad-1ee1-46bd-9b26-ce7a1b596ece")
-		(at 146.32 80)
+		(at 193.25 94.25)
 		(property "Reference" "R15"
-			(at 0 -4 0)
+			(at -1.75 0 0)
 			(layer "F.SilkS")
 			(uuid "fe7404dd-2599-42ba-a9ef-18ad763f73ba")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
@@ -4835,217 +4428,6 @@
 		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/0402WGF2201TCE/0402WGF2201TCE.3dshapes/0402WGF2201TCE.wrl"
 			(offset
 				(xyz 0 -0 -0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
-		(layer "F.Cu")
-		(uuid "3491a0b8-cd6f-4e76-b537-0daa75dd19ad")
-		(at 136.07 92.65)
-		(property "Reference" "C34"
-			(at 0 -4 0)
-			(layer "F.SilkS")
-			(uuid "36529721-f43a-4cb0-b6f6-f7b7deb68d8a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "10uF"
-			(at 0 4 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "989482c2-0a62-4c39-b45e-073f104344bd")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "83bb19a0-0987-44bb-b8d2-e6f1668359d7")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3c5b5471-70d2-4ac2-92b4-a8df084d271e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "141dae34-dfac-4a2d-afbc-beff82151195")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property ki_fp_filters "C_*")
-		(path "/55249e83-0803-4cc9-8c16-f9f57e2a5e0d")
-		(sheetname "Root")
-		(sheetfile "Victor-Brushless-Controller.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -1.96 0.75)
-			(end -1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "19243bc2-8142-4c1c-a851-1f28dbd09a80")
-		)
-		(fp_line
-			(start -1.81 -0.9)
-			(end -0.4 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "45d8a88c-3404-4099-ad1e-16d909f7e0a2")
-		)
-		(fp_line
-			(start -0.4 0.9)
-			(end -1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "2d8db205-f983-4464-a8f6-056d12d3dbc5")
-		)
-		(fp_line
-			(start 0.4 0.9)
-			(end 1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "a7eb3e6b-6594-41f6-b729-de520ec37865")
-		)
-		(fp_line
-			(start 1.81 -0.9)
-			(end 0.4 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "79e57f8e-1fdf-475f-a204-5536b21eb56d")
-		)
-		(fp_line
-			(start 1.96 0.75)
-			(end 1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "0c45e90e-3727-4b9f-a6d3-d5c18271f372")
-		)
-		(fp_arc
-			(start -1.96 -0.75)
-			(mid -1.916066 -0.856066)
-			(end -1.81 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "089607e7-2ff3-4ca6-a375-219405256c2c")
-		)
-		(fp_arc
-			(start -1.81 0.9)
-			(mid -1.916066 0.856066)
-			(end -1.96 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "683d9491-28d2-462c-9455-43b8f6df98cf")
-		)
-		(fp_arc
-			(start 1.81 -0.9)
-			(mid 1.916066 -0.856066)
-			(end 1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "4b1b98ea-deb1-4c80-998c-4f11dd79f8ff")
-		)
-		(fp_arc
-			(start 1.96 0.75)
-			(mid 1.916066 0.856066)
-			(end 1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "2a2c005c-ba83-4a2e-86de-d85bfdbd195f")
-		)
-		(fp_circle
-			(center -1 0.63)
-			(end -0.97 0.63)
-			(stroke
-				(width 0.06)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Fab")
-			(uuid "760dfdad-1a36-4df4-8580-c9afcdf2816b")
-		)
-		(pad "1" smd rect
-			(at -1 0)
-			(size 1.41 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 6 "VCC")
-			(pintype "passive")
-			(uuid "3cf655bb-cdaa-45a5-bfb8-69842a20f0f1")
-		)
-		(pad "2" smd rect
-			(at 1 0)
-			(size 1.41 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 2 "GND")
-			(pintype "passive")
-			(uuid "8c36a2e0-a3c3-4e7f-bf93-3782eaaaafbd")
-		)
-		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/GRM21BR61H106KE43L/GRM21BR61H106KE43L.3dshapes/GRM21BR61H106KE43L.wrl"
-			(offset
-				(xyz -0 -0 0.6)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -5417,15 +4799,16 @@
 	(footprint "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
 		(layer "F.Cu")
 		(uuid "37837cb4-0a11-4418-aaab-b613e8886dde")
-		(at 125.93 92.65)
+		(at 172.25 81.75)
 		(property "Reference" "C20"
-			(at 0 -4 0)
+			(at 1 -1.5 0)
 			(layer "F.SilkS")
 			(uuid "a060024b-e02f-43a0-895c-47c28a18c27b")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
@@ -5796,7 +5179,7 @@
 	(footprint "DRV8305NQPHPRQ1:DRV8305NQPHPRQ1"
 		(layer "F.Cu")
 		(uuid "50ba37c8-fb91-4323-97a2-8f30ae2663d4")
-		(at 164.5 95 -135)
+		(at 164.5 94.70144 -135)
 		(property "Reference" "U1"
 			(at 0.707107 6.363961 0)
 			(layer "F.SilkS")
@@ -6767,229 +6150,19 @@
 			)
 		)
 	)
-	(footprint "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
-		(layer "F.Cu")
-		(uuid "531e8129-6849-49b2-8ef7-6a5be801de24")
-		(at 136.07 98.55)
-		(property "Reference" "C36"
-			(at 0 -4 0)
-			(layer "F.SilkS")
-			(uuid "9c575702-6d83-414c-885b-f19be9434479")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "10uF"
-			(at 0 4 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f86bd75f-11cc-4661-a1df-da111b3d3e39")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ed70996b-395f-4415-ab86-29a90642476e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b5c7af09-93de-4c6e-a7a9-ab71784c0915")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "da8b4a74-a5a8-4b97-b0f9-a124181ee04a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property ki_fp_filters "C_*")
-		(path "/a6f2b98a-b6ad-4eb8-ae9b-7f4782b05d79")
-		(sheetname "Root")
-		(sheetfile "Victor-Brushless-Controller.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -1.96 0.75)
-			(end -1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "de11deee-a939-4b21-b3e0-3e6a02a79be6")
-		)
-		(fp_line
-			(start -1.81 -0.9)
-			(end -0.4 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "cbf49c89-abe5-42d0-b773-8adcc3e83479")
-		)
-		(fp_line
-			(start -0.4 0.9)
-			(end -1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "82b68447-f31e-4a5a-8824-512bb7463db2")
-		)
-		(fp_line
-			(start 0.4 0.9)
-			(end 1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "53065a51-36f2-459b-8657-d98a2e85f73d")
-		)
-		(fp_line
-			(start 1.81 -0.9)
-			(end 0.4 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "b5b7aa19-5478-4822-9fe5-0844cbff8be9")
-		)
-		(fp_line
-			(start 1.96 0.75)
-			(end 1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d7b0985f-2bb1-44cf-b141-d81a82574a47")
-		)
-		(fp_arc
-			(start -1.96 -0.75)
-			(mid -1.916066 -0.856066)
-			(end -1.81 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f78cfb1f-49e3-40e6-8b60-887bc23cb806")
-		)
-		(fp_arc
-			(start -1.81 0.9)
-			(mid -1.916066 0.856066)
-			(end -1.96 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "126aa91d-f2fd-47ca-a425-69a39c26368b")
-		)
-		(fp_arc
-			(start 1.81 -0.9)
-			(mid 1.916066 -0.856066)
-			(end 1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d2bcb9d4-eb4b-4050-909c-f5b09c83e8f3")
-		)
-		(fp_arc
-			(start 1.96 0.75)
-			(mid 1.916066 0.856066)
-			(end 1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "61091306-3863-4476-8ec4-8a762142da5e")
-		)
-		(fp_circle
-			(center -1 0.63)
-			(end -0.97 0.63)
-			(stroke
-				(width 0.06)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Fab")
-			(uuid "e9610dc8-ddce-4a3c-89db-06bb36a95fca")
-		)
-		(pad "1" smd rect
-			(at -1 0)
-			(size 1.41 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 6 "VCC")
-			(pintype "passive")
-			(uuid "91a5bdc7-1505-4406-955c-08f5052b081c")
-		)
-		(pad "2" smd rect
-			(at 1 0)
-			(size 1.41 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 2 "GND")
-			(pintype "passive")
-			(uuid "9863fbc5-ea35-4609-bdcb-0b8dae515ecc")
-		)
-		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/GRM21BR61H106KE43L/GRM21BR61H106KE43L.3dshapes/GRM21BR61H106KE43L.wrl"
-			(offset
-				(xyz -0 -0 0.6)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
 	(footprint "0402WGF1002TCE:0402WGF1002TCE"
 		(layer "F.Cu")
 		(uuid "55565947-0e52-437b-9959-0ff989fc147d")
-		(at 140.26 80)
+		(at 173.406187 79)
 		(property "Reference" "R6"
-			(at 0 -4 0)
+			(at -0.07 -1 0)
 			(layer "F.SilkS")
 			(uuid "e48c7f23-1b95-44f3-81d0-bf69e3c817af")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
@@ -7306,217 +6479,6 @@
 		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/SMA6J24A/SMA6J24A.3dshapes/SMA6J24A.wrl"
 			(offset
 				(xyz 0 -0 -0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "1206X106M500NT:1206X106M500NT"
-		(layer "F.Cu")
-		(uuid "5cd8987d-e2eb-4f90-bb0a-63d37bb4b473")
-		(at 135.61 75.3)
-		(property "Reference" "C37"
-			(at 0 -4 0)
-			(layer "F.SilkS")
-			(uuid "62b033a8-1074-4a3e-b132-5ddbdd647e01")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "10uF"
-			(at 0 4 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2fc8a683-fd6c-417a-987d-c4f5be853fd1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "1206X106M500NT:1206X106M500NT"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6a9c63c8-b47e-4098-8b09-ff10b70ccc8d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c69d4e55-b1ae-4e90-9e9d-5345492821a3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "164c0e02-76eb-4986-a556-9ccb8625ce2b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property ki_fp_filters "C_*")
-		(path "/01b4db82-7d47-4b0c-b4a5-84d2b55afaab")
-		(sheetname "Root")
-		(sheetfile "Victor-Brushless-Controller.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -2.56 0.94)
-			(end -2.56 -0.94)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d1c404bb-cc6f-4368-8236-04b7dbfb41e1")
-		)
-		(fp_line
-			(start -2.41 -1.09)
-			(end -0.93 -1.09)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "c524846e-67f3-479b-9489-d1212425ae29")
-		)
-		(fp_line
-			(start -0.93 1.09)
-			(end -2.41 1.09)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "ed411d37-ed6e-4e31-ac75-d971dd025c93")
-		)
-		(fp_line
-			(start 0.93 1.09)
-			(end 2.41 1.09)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "6a9deca3-b39c-430c-8c50-6c7edd7d3711")
-		)
-		(fp_line
-			(start 2.41 -1.09)
-			(end 0.93 -1.09)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "b3bbd233-7511-465a-b360-3e447c4eb3ad")
-		)
-		(fp_line
-			(start 2.56 0.94)
-			(end 2.56 -0.94)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "ff1d41db-0ad5-4446-b630-1ce4eb63a896")
-		)
-		(fp_arc
-			(start -2.56 -0.94)
-			(mid -2.516066 -1.046066)
-			(end -2.41 -1.09)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "bc398b1e-98dc-4641-ada8-2b1afdfd36a3")
-		)
-		(fp_arc
-			(start -2.41 1.09)
-			(mid -2.516066 1.046066)
-			(end -2.56 0.94)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "5696b346-bfb6-48e5-8a96-f4cc70840bff")
-		)
-		(fp_arc
-			(start 2.41 -1.09)
-			(mid 2.516066 -1.046066)
-			(end 2.56 -0.94)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "28242c7e-3baa-4190-a05a-811d5ad8fdd9")
-		)
-		(fp_arc
-			(start 2.56 0.94)
-			(mid 2.516066 1.046066)
-			(end 2.41 1.09)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "a0abbdd4-0d2e-442c-9248-0721f2bdc599")
-		)
-		(fp_circle
-			(center -1.6 0.8)
-			(end -1.57 0.8)
-			(stroke
-				(width 0.06)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Fab")
-			(uuid "2125dc30-ae6a-4fc5-ae43-a778e610834d")
-		)
-		(pad "1" smd rect
-			(at -1.59 0)
-			(size 1.49 1.73)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 6 "VCC")
-			(pintype "passive")
-			(uuid "96984f79-70f6-4fcd-a0a4-dec66e01480a")
-		)
-		(pad "2" smd rect
-			(at 1.59 0)
-			(size 1.49 1.73)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 2 "GND")
-			(pintype "passive")
-			(uuid "f5a82616-c9ed-447c-a325-0842f166136a")
-		)
-		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/1206X106M500NT/1206X106M500NT.3dshapes/1206X106M500NT.wrl"
-			(offset
-				(xyz 0 -0 0.61)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -7923,234 +6885,24 @@
 			)
 		)
 	)
-	(footprint "1206X106M500NT:1206X106M500NT"
-		(layer "F.Cu")
-		(uuid "685bb4a0-29af-493f-9ce3-a17497e7d78a")
-		(at 135.61 78.63)
-		(property "Reference" "C38"
-			(at 0 -4 0)
-			(layer "F.SilkS")
-			(uuid "e60d4326-9bb7-48ec-9aa8-98a4e244d6a1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "10uF"
-			(at 0 4 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "27392ad1-a545-4a8b-87bc-a69bc63d5776")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "1206X106M500NT:1206X106M500NT"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "23459598-be7d-47bf-a205-5b3d46eca684")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "48573a36-4f9e-446a-b0a9-3e7fa6309e0f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ccc0dbdd-ffbf-4ae6-b7fc-03ed03b29402")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property ki_fp_filters "C_*")
-		(path "/fd4c2dec-5827-428c-b32f-42154b2a4318")
-		(sheetname "Root")
-		(sheetfile "Victor-Brushless-Controller.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -2.56 0.94)
-			(end -2.56 -0.94)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "48b17af9-5939-4067-a543-d7310c856657")
-		)
-		(fp_line
-			(start -2.41 -1.09)
-			(end -0.93 -1.09)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "7a16789e-9e49-45fe-9578-a2d0b14ebd85")
-		)
-		(fp_line
-			(start -0.93 1.09)
-			(end -2.41 1.09)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "9bb78b65-5ec3-493a-9a06-73b5a269f105")
-		)
-		(fp_line
-			(start 0.93 1.09)
-			(end 2.41 1.09)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "10b62491-96b8-470f-ab43-1012da84eb46")
-		)
-		(fp_line
-			(start 2.41 -1.09)
-			(end 0.93 -1.09)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "a7d5eccc-2fed-495e-9779-d6acfd2e034f")
-		)
-		(fp_line
-			(start 2.56 0.94)
-			(end 2.56 -0.94)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "ca82831e-37db-46b6-8783-62c85d7b67ca")
-		)
-		(fp_arc
-			(start -2.56 -0.94)
-			(mid -2.516066 -1.046066)
-			(end -2.41 -1.09)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "5f3e2fab-b047-4114-a203-162592313693")
-		)
-		(fp_arc
-			(start -2.41 1.09)
-			(mid -2.516066 1.046066)
-			(end -2.56 0.94)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "ea0b76c5-5494-400c-b0bb-1520219a59da")
-		)
-		(fp_arc
-			(start 2.41 -1.09)
-			(mid 2.516066 -1.046066)
-			(end 2.56 -0.94)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "c5ce282b-715f-4076-ab04-0e3e56e910f1")
-		)
-		(fp_arc
-			(start 2.56 0.94)
-			(mid 2.516066 1.046066)
-			(end 2.41 1.09)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "cb95811d-8833-4710-9cb5-f8ff6abd84c7")
-		)
-		(fp_circle
-			(center -1.6 0.8)
-			(end -1.57 0.8)
-			(stroke
-				(width 0.06)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Fab")
-			(uuid "944039e5-024d-4ab7-9cda-c5f07e097160")
-		)
-		(pad "1" smd rect
-			(at -1.59 0)
-			(size 1.49 1.73)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 6 "VCC")
-			(pintype "passive")
-			(uuid "3e6b5a6b-751f-440f-85fa-7c28eabbd7a1")
-		)
-		(pad "2" smd rect
-			(at 1.59 0)
-			(size 1.49 1.73)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 2 "GND")
-			(pintype "passive")
-			(uuid "3aa0a8ea-0189-4e97-8472-e8d6a53f512e")
-		)
-		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/1206X106M500NT/1206X106M500NT.3dshapes/1206X106M500NT.wrl"
-			(offset
-				(xyz 0 -0 0.61)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
 	(footprint "CL05B104KO5NNNC:CL05B104KO5NNNC"
 		(layer "F.Cu")
 		(uuid "6c625901-eb30-47bd-a9ca-0032f763fe10")
-		(at 144.44 108.5)
+		(at 164.25 80.75 -90)
 		(property "Reference" "C21"
-			(at 0 -4 0)
+			(at 1.75 0 180)
 			(layer "F.SilkS")
 			(uuid "2700f078-7a3e-46df-a4bf-135091061aaf")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
 		(property "Value" "100nF"
-			(at 0 4 0)
+			(at 0 4 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1afdb896-c091-457e-99cc-18aff02fb93e")
@@ -8162,7 +6914,7 @@
 			)
 		)
 		(property "Footprint" "CL05B104KO5NNNC:CL05B104KO5NNNC"
-			(at 0 0 0)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8174,7 +6926,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8186,7 +6938,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8202,26 +6954,6 @@
 		(sheetname "Root")
 		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
-		(fp_line
-			(start -1.17 0.35)
-			(end -1.17 -0.35)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "0e5f823c-74a7-4e07-80f1-410d5f73cb2c")
-		)
-		(fp_line
-			(start -1.02 -0.5)
-			(end -0.23 -0.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "bc7a95af-d5db-4951-998b-4ba9072eaa6e")
-		)
 		(fp_line
 			(start -0.23 0.5)
 			(end -1.02 0.5)
@@ -8243,14 +6975,14 @@
 			(uuid "fdeb1ba8-373b-4972-a90b-55795fe8e448")
 		)
 		(fp_line
-			(start 1.02 -0.5)
-			(end 0.23 -0.5)
+			(start -1.17 0.35)
+			(end -1.17 -0.35)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "56f85587-834f-488a-a9f7-78f45a8c5eee")
+			(uuid "0e5f823c-74a7-4e07-80f1-410d5f73cb2c")
 		)
 		(fp_line
 			(start 1.17 0.35)
@@ -8262,16 +6994,25 @@
 			(layer "F.SilkS")
 			(uuid "6f97a039-603a-4b83-bbc3-e7c22e860f05")
 		)
-		(fp_arc
-			(start -1.17 -0.35)
-			(mid -1.126066 -0.456066)
-			(end -1.02 -0.5)
+		(fp_line
+			(start -1.02 -0.5)
+			(end -0.23 -0.5)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "289573f6-3994-4ce2-82d1-177339327611")
+			(uuid "bc7a95af-d5db-4951-998b-4ba9072eaa6e")
+		)
+		(fp_line
+			(start 1.02 -0.5)
+			(end 0.23 -0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "56f85587-834f-488a-a9f7-78f45a8c5eee")
 		)
 		(fp_arc
 			(start -1.02 0.5)
@@ -8285,17 +7026,6 @@
 			(uuid "772b372b-54c5-48f9-a519-fd732865a948")
 		)
 		(fp_arc
-			(start 1.02 -0.5)
-			(mid 1.126066 -0.456066)
-			(end 1.17 -0.35)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "47b1d719-ead6-418b-949f-d85abd360e32")
-		)
-		(fp_arc
 			(start 1.17 0.35)
 			(mid 1.126066 0.456066)
 			(end 1.02 0.5)
@@ -8305,6 +7035,28 @@
 			)
 			(layer "F.SilkS")
 			(uuid "bb6926ff-1f5e-4c0b-80c2-9b79ad18f0c3")
+		)
+		(fp_arc
+			(start -1.17 -0.35)
+			(mid -1.126066 -0.456066)
+			(end -1.02 -0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "289573f6-3994-4ce2-82d1-177339327611")
+		)
+		(fp_arc
+			(start 1.02 -0.5)
+			(mid 1.126066 -0.456066)
+			(end 1.17 -0.35)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "47b1d719-ead6-418b-949f-d85abd360e32")
 		)
 		(fp_circle
 			(center -0.5 0.25)
@@ -8318,7 +7070,7 @@
 			(uuid "7d40b401-70b0-433f-adb8-3db7619ade8f")
 		)
 		(pad "1" smd rect
-			(at -0.55 0)
+			(at -0.55 0 270)
 			(size 0.79 0.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 19 "Net-(D1-K)")
@@ -8326,7 +7078,7 @@
 			(uuid "fa1c2471-a73b-49a1-b5a3-9be5f07c502a")
 		)
 		(pad "2" smd rect
-			(at 0.55 0)
+			(at 0.55 0 270)
 			(size 0.79 0.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 18 "Net-(U3-CB)")
@@ -8348,7 +7100,7 @@
 	(footprint "BLDC_Connector:BLDC_Connector"
 		(layer "F.Cu")
 		(uuid "7132a5a7-7402-4704-a148-fb0ba1be4d91")
-		(at 170.75 114.25)
+		(at 170.75 114.5)
 		(property "Reference" "PA1"
 			(at 0 2.5 0)
 			(unlocked yes)
@@ -9030,15 +7782,16 @@
 	(footprint "0402WGF3300TCE:0402WGF3300TCE"
 		(layer "F.Cu")
 		(uuid "7aa23fc9-ec26-48c2-b6f2-7ed089165f65")
-		(at 140.26 75.7)
+		(at 183.5 93.25)
 		(property "Reference" "R4"
-			(at 0 -4 0)
+			(at 0 1 0)
 			(layer "F.SilkS")
 			(uuid "2511e913-748f-4a20-9caa-8135a70a199b")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
@@ -9197,15 +7950,16 @@
 	(footprint "0402WGF3302TCE:0402WGF3302TCE"
 		(layer "F.Cu")
 		(uuid "7b37a005-08fa-421b-adf9-39b334b4c134")
-		(at 146.32 77.85)
+		(at 166.25 85)
 		(property "Reference" "R13"
-			(at 0 -4 0)
+			(at 0 1 0)
 			(layer "F.SilkS")
 			(uuid "290b4b3a-2723-4cea-b611-de0c0e00c953")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
@@ -9641,7 +8395,7 @@
 	(footprint "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
 		(layer "F.Cu")
 		(uuid "7dc2b9e7-d50e-4eda-84d1-5108c03c2eb0")
-		(at 169.65 74.5)
+		(at 170.582236 74.032037)
 		(descr "SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP1"
@@ -9657,7 +8411,7 @@
 			)
 		)
 		(property "Value" "3V3"
-			(at 0 -1.5 0)
+			(at 0.917764 -1.5 0)
 			(layer "F.SilkS")
 			(uuid "3dafec78-e9a9-443a-9e42-4037879e6740")
 			(effects
@@ -9812,15 +8566,16 @@
 	(footprint "CL05A105KA5NQNC:CL05A105KA5NQNC"
 		(layer "F.Cu")
 		(uuid "883bedb8-4fac-4723-996a-5dae72880f0a")
-		(at 140.95 106.35)
+		(at 165 87)
 		(property "Reference" "C11"
-			(at 0 -4 0)
+			(at -0.5 -1 0)
 			(layer "F.SilkS")
 			(uuid "460bfafb-8007-46bf-9eb5-c7b508806514")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
@@ -10207,7 +8962,7 @@
 	(footprint "B230A-13-F:B230A-13-F"
 		(layer "F.Cu")
 		(uuid "8ece54e1-60af-4401-b984-54ab216075ad")
-		(at 164.5 76.5 -90)
+		(at 164.3308 76.000574 -90)
 		(property "Reference" "D1"
 			(at -3 2 0)
 			(layer "F.SilkS")
@@ -10740,20 +9495,21 @@
 	(footprint "CL21B473KCFNNNE:CL21B473KCFNNNE"
 		(layer "F.Cu")
 		(uuid "9017e193-62e8-4d23-885a-9a2e960ae276")
-		(at 125.93 89.7)
+		(at 170.75 89.5 90)
 		(property "Reference" "C8"
-			(at 0 -4 0)
+			(at 1.25 -1.5 180)
 			(layer "F.SilkS")
 			(uuid "483635f2-0d42-41e3-be59-a62f0fc971bb")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
 		(property "Value" "47nF"
-			(at 0 4 0)
+			(at 0 4 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "611c174b-9c36-4015-abf7-45714c32ded1")
@@ -10765,7 +9521,7 @@
 			)
 		)
 		(property "Footprint" "CL21B473KCFNNNE:CL21B473KCFNNNE"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10777,7 +9533,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10789,7 +9545,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10806,14 +9562,14 @@
 		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -1.96 0.75)
-			(end -1.96 -0.75)
+			(start 1.81 -0.9)
+			(end 0.4 -0.9)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "6b7bfa4b-60e4-43c2-84ac-6830c3e9db49")
+			(uuid "296a4954-31f6-4bc7-8695-32b027ba51a8")
 		)
 		(fp_line
 			(start -1.81 -0.9)
@@ -10826,14 +9582,24 @@
 			(uuid "9f509f98-6c0d-4ea6-a595-a2b7c91856c0")
 		)
 		(fp_line
-			(start -0.4 0.9)
-			(end -1.81 0.9)
+			(start 1.96 0.75)
+			(end 1.96 -0.75)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "26667a2d-ed23-4cf5-8237-13cef2c8cda6")
+			(uuid "511c5f8d-661e-4817-ab65-3a687262390e")
+		)
+		(fp_line
+			(start -1.96 0.75)
+			(end -1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6b7bfa4b-60e4-43c2-84ac-6830c3e9db49")
 		)
 		(fp_line
 			(start 0.4 0.9)
@@ -10846,46 +9612,14 @@
 			(uuid "b36fa9c4-76ce-4a51-87ff-db93a3e24e42")
 		)
 		(fp_line
-			(start 1.81 -0.9)
-			(end 0.4 -0.9)
+			(start -0.4 0.9)
+			(end -1.81 0.9)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "296a4954-31f6-4bc7-8695-32b027ba51a8")
-		)
-		(fp_line
-			(start 1.96 0.75)
-			(end 1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "511c5f8d-661e-4817-ab65-3a687262390e")
-		)
-		(fp_arc
-			(start -1.96 -0.75)
-			(mid -1.916066 -0.856066)
-			(end -1.81 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "eb73dec2-730b-429f-ad49-cb8b28ba9bac")
-		)
-		(fp_arc
-			(start -1.81 0.9)
-			(mid -1.916066 0.856066)
-			(end -1.96 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "6d7e1532-7ba7-4ef9-9428-1e746750dfe4")
+			(uuid "26667a2d-ed23-4cf5-8237-13cef2c8cda6")
 		)
 		(fp_arc
 			(start 1.81 -0.9)
@@ -10899,6 +9633,17 @@
 			(uuid "c9497858-0aea-4752-a8b5-b8448abe64e6")
 		)
 		(fp_arc
+			(start -1.96 -0.75)
+			(mid -1.916066 -0.856066)
+			(end -1.81 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "eb73dec2-730b-429f-ad49-cb8b28ba9bac")
+		)
+		(fp_arc
 			(start 1.96 0.75)
 			(mid 1.916066 0.856066)
 			(end 1.81 0.9)
@@ -10908,6 +9653,17 @@
 			)
 			(layer "F.SilkS")
 			(uuid "924bd1fe-ff18-4fb0-bfc4-3b4e20dfbf1e")
+		)
+		(fp_arc
+			(start -1.81 0.9)
+			(mid -1.916066 0.856066)
+			(end -1.96 0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6d7e1532-7ba7-4ef9-9428-1e746750dfe4")
 		)
 		(fp_circle
 			(center -1 0.63)
@@ -10921,7 +9677,7 @@
 			(uuid "6778bf93-2f78-4006-a810-187972f3b5b7")
 		)
 		(pad "1" smd rect
-			(at -1 0)
+			(at -1 0 90)
 			(size 1.41 1.35)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 9 "Net-(U1-CP2H)")
@@ -10929,7 +9685,7 @@
 			(uuid "3d1538f8-e13f-4d28-9bea-ccf2cfc567d7")
 		)
 		(pad "2" smd rect
-			(at 1 0)
+			(at 1 0 90)
 			(size 1.41 1.35)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 10 "Net-(U1-CP2L)")
@@ -10951,7 +9707,7 @@
 	(footprint "BLDC_Connector:BLDC_Connector"
 		(layer "F.Cu")
 		(uuid "9121a459-48bc-4416-86b7-c4424af8d7cd")
-		(at 192.75 114.25)
+		(at 193 114.5)
 		(property "Reference" "PC1"
 			(at 0 2.5 0)
 			(unlocked yes)
@@ -11133,20 +9889,21 @@
 	(footprint "CL10A106MA8NRNC:CL10A106MA8NRNC"
 		(layer "F.Cu")
 		(uuid "a1f438e6-b548-458b-aba1-fb4c487375d2")
-		(at 149.64 102.3)
+		(at 167.5 74.65718 180)
 		(property "Reference" "C18"
-			(at 0 -4 0)
+			(at -1.913617 -0.726403 180)
 			(layer "F.SilkS")
 			(uuid "f07dba76-1925-4683-bb84-f618456c1242")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.3 0.3)
+					(thickness 0.075)
+					(bold yes)
 				)
 			)
 		)
 		(property "Value" "10uF"
-			(at 0 4 0)
+			(at 0 4 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "06fcf94d-aa3f-4753-87ce-9f9223a339a8")
@@ -11158,7 +9915,7 @@
 			)
 		)
 		(property "Footprint" "CL10A106MA8NRNC:CL10A106MA8NRNC"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11170,7 +9927,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11182,7 +9939,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11199,44 +9956,14 @@
 		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -1.39 0.4)
-			(end -1.39 -0.4)
+			(start 1.39 -0.4)
+			(end 1.39 0.4)
 			(stroke
 				(width 0.25)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "c902b520-dd48-4778-a47a-cab141e48d31")
-		)
-		(fp_line
-			(start -0.28 -0.71)
-			(end -1.08 -0.71)
-			(stroke
-				(width 0.25)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "51251456-4dea-4c1f-9676-169c06db3ebe")
-		)
-		(fp_line
-			(start -0.28 0.71)
-			(end -1.08 0.71)
-			(stroke
-				(width 0.25)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "e1de5c76-4c2b-4a24-a5c9-30a35da60629")
-		)
-		(fp_line
-			(start 0.28 -0.71)
-			(end 1.08 -0.71)
-			(stroke
-				(width 0.25)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "9029d17e-0e1c-4c14-bf99-eb154c67add0")
+			(uuid "f0433412-20af-41ba-9c67-4668cded81dd")
 		)
 		(fp_line
 			(start 0.28 0.71)
@@ -11249,36 +9976,55 @@
 			(uuid "b02b423e-3034-496d-9fb7-e4a33022effc")
 		)
 		(fp_line
-			(start 1.39 -0.4)
-			(end 1.39 0.4)
+			(start 0.28 -0.71)
+			(end 1.08 -0.71)
 			(stroke
 				(width 0.25)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "f0433412-20af-41ba-9c67-4668cded81dd")
+			(uuid "9029d17e-0e1c-4c14-bf99-eb154c67add0")
 		)
-		(fp_arc
-			(start -1.39 -0.4)
-			(mid -1.299203 -0.619203)
+		(fp_line
+			(start -0.28 0.71)
+			(end -1.08 0.71)
+			(stroke
+				(width 0.25)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e1de5c76-4c2b-4a24-a5c9-30a35da60629")
+		)
+		(fp_line
+			(start -0.28 -0.71)
 			(end -1.08 -0.71)
 			(stroke
 				(width 0.25)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "395e67aa-f92b-4c8f-b4c7-352f26e8d14c")
+			(uuid "51251456-4dea-4c1f-9676-169c06db3ebe")
 		)
-		(fp_arc
-			(start -1.08 0.71)
-			(mid -1.299203 0.619203)
-			(end -1.39 0.4)
+		(fp_line
+			(start -1.39 0.4)
+			(end -1.39 -0.4)
 			(stroke
 				(width 0.25)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "e541bb76-4809-4609-abbc-b4301cf4ca54")
+			(uuid "c902b520-dd48-4778-a47a-cab141e48d31")
+		)
+		(fp_arc
+			(start 1.39 0.4)
+			(mid 1.299203 0.619203)
+			(end 1.08 0.71)
+			(stroke
+				(width 0.25)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "62c20e1c-d2e1-4962-be49-c5fc21cc1726")
 		)
 		(fp_arc
 			(start 1.08 -0.71)
@@ -11292,15 +10038,26 @@
 			(uuid "33751c57-032a-4986-9e7c-ef70a7846229")
 		)
 		(fp_arc
-			(start 1.39 0.4)
-			(mid 1.299203 0.619203)
-			(end 1.08 0.71)
+			(start -1.08 0.71)
+			(mid -1.299203 0.619203)
+			(end -1.39 0.4)
 			(stroke
 				(width 0.25)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "62c20e1c-d2e1-4962-be49-c5fc21cc1726")
+			(uuid "e541bb76-4809-4609-abbc-b4301cf4ca54")
+		)
+		(fp_arc
+			(start -1.39 -0.4)
+			(mid -1.299203 -0.619203)
+			(end -1.08 -0.71)
+			(stroke
+				(width 0.25)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "395e67aa-f92b-4c8f-b4c7-352f26e8d14c")
 		)
 		(fp_circle
 			(center -0.8 0.4)
@@ -11314,7 +10071,7 @@
 			(uuid "265915b6-ea39-4929-bc76-d1af00a69a4c")
 		)
 		(pad "1" smd rect
-			(at -0.7 0)
+			(at -0.7 0 180)
 			(size 0.8 0.9)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 17 "3V3")
@@ -11322,7 +10079,7 @@
 			(uuid "abb32337-e1ac-4e66-89e6-246945fb03ed")
 		)
 		(pad "2" smd rect
-			(at 0.7 0)
+			(at 0.7 0 180)
 			(size 0.8 0.9)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 2 "GND")
@@ -11732,20 +10489,21 @@
 	(footprint "0402WGF1000TCE:0402WGF1000TCE"
 		(layer "F.Cu")
 		(uuid "af0aba79-5618-46c2-b766-1154c01a81f0")
-		(at 140.26 82.15)
+		(at 170.75 83.5 180)
 		(property "Reference" "R7"
-			(at 0 -4 0)
+			(at 0 -1 180)
 			(layer "F.SilkS")
 			(uuid "185366a6-3ae7-4eae-9faa-998b8d223058")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
 		(property "Value" "100"
-			(at 0 4 0)
+			(at 0 4 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "dcfbd12f-772c-4eca-9120-15cc75b9b4cc")
@@ -11757,7 +10515,7 @@
 			)
 		)
 		(property "Footprint" "0402WGF1000TCE:0402WGF1000TCE"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11769,7 +10527,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11781,7 +10539,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11798,44 +10556,14 @@
 		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -0.94 -0.5)
-			(end -0.23 -0.5)
+			(start 0.94 0.5)
+			(end 0.94 -0.5)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "42623578-fd59-45c4-a41c-05368aa9cb7b")
-		)
-		(fp_line
-			(start -0.94 0.5)
-			(end -0.94 -0.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "cea34ed6-7895-41ed-8f48-a34ce54a5eb6")
-		)
-		(fp_line
-			(start -0.23 0.5)
-			(end -0.94 0.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "b7b7d31d-8858-4e83-b94f-ebce9aaca8bd")
-		)
-		(fp_line
-			(start 0.23 0.5)
-			(end 0.94 0.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "c4946c7d-81f7-4fdf-be94-9102b1b50fed")
+			(uuid "4cc0c699-08ed-42f8-ba02-aacfe4837ea5")
 		)
 		(fp_line
 			(start 0.94 -0.5)
@@ -11848,14 +10576,44 @@
 			(uuid "701c6eb3-f402-4ede-9762-52b26460ed9d")
 		)
 		(fp_line
-			(start 0.94 0.5)
-			(end 0.94 -0.5)
+			(start 0.23 0.5)
+			(end 0.94 0.5)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "4cc0c699-08ed-42f8-ba02-aacfe4837ea5")
+			(uuid "c4946c7d-81f7-4fdf-be94-9102b1b50fed")
+		)
+		(fp_line
+			(start -0.23 0.5)
+			(end -0.94 0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b7b7d31d-8858-4e83-b94f-ebce9aaca8bd")
+		)
+		(fp_line
+			(start -0.94 0.5)
+			(end -0.94 -0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "cea34ed6-7895-41ed-8f48-a34ce54a5eb6")
+		)
+		(fp_line
+			(start -0.94 -0.5)
+			(end -0.23 -0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "42623578-fd59-45c4-a41c-05368aa9cb7b")
 		)
 		(fp_circle
 			(center -0.5 0.25)
@@ -11869,7 +10627,7 @@
 			(uuid "d6becef9-da10-41d5-a494-0c27f23aff77")
 		)
 		(pad "1" smd rect
-			(at -0.43 0)
+			(at -0.43 0 180)
 			(size 0.57 0.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 6 "VCC")
@@ -11877,7 +10635,7 @@
 			(uuid "da3a6c60-f089-40c1-a2a3-69f4a350372b")
 		)
 		(pad "2" smd rect
-			(at 0.43 0)
+			(at 0.43 0 180)
 			(size 0.57 0.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 40 "Net-(U1-VDRAIN)")
@@ -11899,20 +10657,21 @@
 	(footprint "CL05B104KO5NNNC:CL05B104KO5NNNC"
 		(layer "F.Cu")
 		(uuid "b11a5582-fd5d-4434-80f6-06de8d8dc120")
-		(at 144.44 106.35)
+		(at 173.39971 77 180)
 		(property "Reference" "C16"
-			(at 0 -4 0)
+			(at 0 1 180)
 			(layer "F.SilkS")
 			(uuid "ede86e54-4dd5-47eb-ba17-aee025edaf5b")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
 		(property "Value" "100nF"
-			(at 0 4 0)
+			(at 0 4 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c379d981-a169-45aa-8b5f-205598dc3da4")
@@ -11924,7 +10683,7 @@
 			)
 		)
 		(property "Footprint" "CL05B104KO5NNNC:CL05B104KO5NNNC"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11936,7 +10695,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11948,7 +10707,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11965,44 +10724,14 @@
 		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -1.17 0.35)
-			(end -1.17 -0.35)
+			(start 1.17 0.35)
+			(end 1.17 -0.35)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "94a9f132-94a0-4b0f-bdff-4b4af4f2b2fe")
-		)
-		(fp_line
-			(start -1.02 -0.5)
-			(end -0.23 -0.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "b8dcfd5e-2519-4bf3-adeb-661e08006810")
-		)
-		(fp_line
-			(start -0.23 0.5)
-			(end -1.02 0.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "6af30edd-cba2-421b-8190-813dbdd19cad")
-		)
-		(fp_line
-			(start 0.23 0.5)
-			(end 1.02 0.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "544330ef-b2e4-4808-b844-98ca470077a7")
+			(uuid "932bf75e-2a92-49a3-b78f-f3815a027299")
 		)
 		(fp_line
 			(start 1.02 -0.5)
@@ -12015,36 +10744,55 @@
 			(uuid "8ed78ed0-1b53-4fe4-aedb-f5da694dad73")
 		)
 		(fp_line
+			(start 0.23 0.5)
+			(end 1.02 0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "544330ef-b2e4-4808-b844-98ca470077a7")
+		)
+		(fp_line
+			(start -0.23 0.5)
+			(end -1.02 0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6af30edd-cba2-421b-8190-813dbdd19cad")
+		)
+		(fp_line
+			(start -1.02 -0.5)
+			(end -0.23 -0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b8dcfd5e-2519-4bf3-adeb-661e08006810")
+		)
+		(fp_line
+			(start -1.17 0.35)
+			(end -1.17 -0.35)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "94a9f132-94a0-4b0f-bdff-4b4af4f2b2fe")
+		)
+		(fp_arc
 			(start 1.17 0.35)
-			(end 1.17 -0.35)
+			(mid 1.126066 0.456066)
+			(end 1.02 0.5)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "932bf75e-2a92-49a3-b78f-f3815a027299")
-		)
-		(fp_arc
-			(start -1.17 -0.35)
-			(mid -1.126066 -0.456066)
-			(end -1.02 -0.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "189ee8f1-a43f-464c-b1bb-46ffacf3dfab")
-		)
-		(fp_arc
-			(start -1.02 0.5)
-			(mid -1.126066 0.456066)
-			(end -1.17 0.35)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "9c6794a8-0b4a-4b2f-bcfe-076417120d0f")
+			(uuid "895755f2-ad67-49fa-af43-4cfd24c15b57")
 		)
 		(fp_arc
 			(start 1.02 -0.5)
@@ -12058,15 +10806,26 @@
 			(uuid "6ffd4bcc-169d-4db9-84cb-c2f4c63ee88b")
 		)
 		(fp_arc
-			(start 1.17 0.35)
-			(mid 1.126066 0.456066)
-			(end 1.02 0.5)
+			(start -1.02 0.5)
+			(mid -1.126066 0.456066)
+			(end -1.17 0.35)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "895755f2-ad67-49fa-af43-4cfd24c15b57")
+			(uuid "9c6794a8-0b4a-4b2f-bcfe-076417120d0f")
+		)
+		(fp_arc
+			(start -1.17 -0.35)
+			(mid -1.126066 -0.456066)
+			(end -1.02 -0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "189ee8f1-a43f-464c-b1bb-46ffacf3dfab")
 		)
 		(fp_circle
 			(center -0.5 0.25)
@@ -12080,7 +10839,7 @@
 			(uuid "d387fd44-a63e-4df9-96e8-f6cbdf7951cf")
 		)
 		(pad "1" smd rect
-			(at -0.55 0)
+			(at -0.55 0 180)
 			(size 0.79 0.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 16 "RESET EN")
@@ -12088,7 +10847,7 @@
 			(uuid "d15ec3c5-16c0-4ec7-9089-8a17eca0d8a8")
 		)
 		(pad "2" smd rect
-			(at 0.55 0)
+			(at 0.55 0 180)
 			(size 0.79 0.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 2 "GND")
@@ -12110,9 +10869,9 @@
 	(footprint "CL05A106MQ5NUNC:CL05A106MQ5NUNC"
 		(layer "F.Cu")
 		(uuid "b1bba03e-818b-49f4-ba3d-2f2602082798")
-		(at 172.5 73.5)
+		(at 173.5 73.25)
 		(property "Reference" "C14"
-			(at 1.800106 -0.049232 90)
+			(at 0 -0.75 180)
 			(layer "F.SilkS")
 			(uuid "79a8d505-8068-4c65-947f-d279bc6f5bab")
 			(effects
@@ -12795,7 +11554,7 @@
 			(at -0.65 1.2 90)
 			(size 0.4 0.8)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 65 "unconnected-(U5-NC-Pad1)")
+			(net 64 "unconnected-(U5-NC-Pad1)")
 			(pinfunction "NC")
 			(pintype "unspecified+no_connect")
 			(uuid "5f162210-8916-43c1-9196-748ebdbae4c1")
@@ -13131,234 +11890,24 @@
 			(uuid "4802c7e3-a7bf-4f3e-b47e-73841638e885")
 		)
 	)
-	(footprint "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
-		(layer "F.Cu")
-		(uuid "b7fe5f88-ea37-440d-9e7e-7ac223995326")
-		(at 136.07 101.5)
-		(property "Reference" "C39"
-			(at 0 -4 0)
-			(layer "F.SilkS")
-			(uuid "59c1277b-ee2b-412f-96f7-784403bcb65d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "10uF"
-			(at 0 4 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "315cb764-9244-453b-bfd7-fa35f918cc4e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "db957611-676f-43a0-a43a-8e0e315b58f9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "39b0b205-ada5-4d12-bda7-76cafee441c3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "271bd29c-2823-4fc1-939f-ec70f76af104")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property ki_fp_filters "C_*")
-		(path "/ae0bd537-8653-444e-867d-eb01f8e0fcf7")
-		(sheetname "Root")
-		(sheetfile "Victor-Brushless-Controller.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -1.96 0.75)
-			(end -1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "970c6e28-74d1-4c1a-9b8e-e8113835c50b")
-		)
-		(fp_line
-			(start -1.81 -0.9)
-			(end -0.4 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "45b290e0-6c9b-4271-b5d5-f4fe8adab5c3")
-		)
-		(fp_line
-			(start -0.4 0.9)
-			(end -1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "e14e6512-3cec-4ac0-937a-2d61369a7153")
-		)
-		(fp_line
-			(start 0.4 0.9)
-			(end 1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "be46f564-e5ae-44d1-a0ac-a7fc86a6871f")
-		)
-		(fp_line
-			(start 1.81 -0.9)
-			(end 0.4 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "46c2dcf2-b3ec-42d7-aab8-1dde9de39108")
-		)
-		(fp_line
-			(start 1.96 0.75)
-			(end 1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "9a48475c-4711-47f1-ab8a-271e5a155931")
-		)
-		(fp_arc
-			(start -1.96 -0.75)
-			(mid -1.916066 -0.856066)
-			(end -1.81 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "88de5190-95d8-4892-a7bb-73be7050ec98")
-		)
-		(fp_arc
-			(start -1.81 0.9)
-			(mid -1.916066 0.856066)
-			(end -1.96 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "889e2d81-614b-4315-9312-c860e9649493")
-		)
-		(fp_arc
-			(start 1.81 -0.9)
-			(mid 1.916066 -0.856066)
-			(end 1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "b0d88e99-4f65-4cf8-a501-b7bd9841c5ef")
-		)
-		(fp_arc
-			(start 1.96 0.75)
-			(mid 1.916066 0.856066)
-			(end 1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f3977e66-2faf-4623-93cc-bffe07d5fab9")
-		)
-		(fp_circle
-			(center -1 0.63)
-			(end -0.97 0.63)
-			(stroke
-				(width 0.06)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Fab")
-			(uuid "55d6c428-f0a4-4e53-9ff4-4c5b771da54f")
-		)
-		(pad "1" smd rect
-			(at -1 0)
-			(size 1.41 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 6 "VCC")
-			(pintype "passive")
-			(uuid "37d54293-babb-4566-8e99-61b4e0191490")
-		)
-		(pad "2" smd rect
-			(at 1 0)
-			(size 1.41 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 2 "GND")
-			(pintype "passive")
-			(uuid "89778125-8358-4889-8f1d-051010292b8c")
-		)
-		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/GRM21BR61H106KE43L/GRM21BR61H106KE43L.3dshapes/GRM21BR61H106KE43L.wrl"
-			(offset
-				(xyz -0 -0 0.6)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
 	(footprint "CL05A105KA5NQNC:CL05A105KA5NQNC"
 		(layer "F.Cu")
 		(uuid "c0748355-d2df-45d2-8bf6-d5007c1aa1ba")
-		(at 131.5 108.5)
+		(at 168 86.25 90)
 		(property "Reference" "C10"
-			(at 0 -4 0)
+			(at -0.75 -1 -90)
 			(layer "F.SilkS")
 			(uuid "5ba46f07-8f95-49b1-b493-051e4bcf1916")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
 		(property "Value" "1uF"
-			(at 0 4 0)
+			(at 0 4 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cdcafd11-130b-4535-966d-abc86ea2fdc6")
@@ -13370,7 +11919,7 @@
 			)
 		)
 		(property "Footprint" "CL05A105KA5NQNC:CL05A105KA5NQNC"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -13382,7 +11931,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -13394,7 +11943,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -13411,14 +11960,14 @@
 		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -1.17 0.35)
-			(end -1.17 -0.35)
+			(start 1.02 -0.5)
+			(end 0.23 -0.5)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "72194244-e854-47ea-be71-da06ba803d36")
+			(uuid "0e92bebf-8109-4790-b3f4-941b8acc4ac4")
 		)
 		(fp_line
 			(start -1.02 -0.5)
@@ -13431,14 +11980,24 @@
 			(uuid "4b3815e5-733f-4b52-8518-09e00301da13")
 		)
 		(fp_line
-			(start -0.23 0.5)
-			(end -1.02 0.5)
+			(start 1.17 0.35)
+			(end 1.17 -0.35)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "5bcc136a-5f26-42a4-b676-66dd84fe0c36")
+			(uuid "93ecc07e-267c-43c9-9852-fcc993fda315")
+		)
+		(fp_line
+			(start -1.17 0.35)
+			(end -1.17 -0.35)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "72194244-e854-47ea-be71-da06ba803d36")
 		)
 		(fp_line
 			(start 0.23 0.5)
@@ -13451,46 +12010,14 @@
 			(uuid "6f73c836-9249-4bbe-9810-4f36a463af1a")
 		)
 		(fp_line
-			(start 1.02 -0.5)
-			(end 0.23 -0.5)
+			(start -0.23 0.5)
+			(end -1.02 0.5)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "0e92bebf-8109-4790-b3f4-941b8acc4ac4")
-		)
-		(fp_line
-			(start 1.17 0.35)
-			(end 1.17 -0.35)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "93ecc07e-267c-43c9-9852-fcc993fda315")
-		)
-		(fp_arc
-			(start -1.17 -0.35)
-			(mid -1.126066 -0.456066)
-			(end -1.02 -0.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "ae086c6f-a7c9-4b57-b6ca-ef975d614b20")
-		)
-		(fp_arc
-			(start -1.02 0.5)
-			(mid -1.126066 0.456066)
-			(end -1.17 0.35)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "3a5affff-f38b-46da-8ec5-b06a3ecc385c")
+			(uuid "5bcc136a-5f26-42a4-b676-66dd84fe0c36")
 		)
 		(fp_arc
 			(start 1.02 -0.5)
@@ -13504,6 +12031,17 @@
 			(uuid "df212738-3326-4554-b048-bf3e35be618b")
 		)
 		(fp_arc
+			(start -1.17 -0.35)
+			(mid -1.126066 -0.456066)
+			(end -1.02 -0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ae086c6f-a7c9-4b57-b6ca-ef975d614b20")
+		)
+		(fp_arc
 			(start 1.17 0.35)
 			(mid 1.126066 0.456066)
 			(end 1.02 0.5)
@@ -13513,6 +12051,17 @@
 			)
 			(layer "F.SilkS")
 			(uuid "7c801a91-e205-48fd-a82e-ee0a33f99167")
+		)
+		(fp_arc
+			(start -1.02 0.5)
+			(mid -1.126066 0.456066)
+			(end -1.17 0.35)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3a5affff-f38b-46da-8ec5-b06a3ecc385c")
 		)
 		(fp_circle
 			(center -0.5 0.25)
@@ -13526,7 +12075,7 @@
 			(uuid "eae74b5a-69fe-4c1e-be03-f0c817f9cbec")
 		)
 		(pad "1" smd rect
-			(at -0.55 0)
+			(at -0.55 0 90)
 			(size 0.79 0.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 13 "Net-(U1-DVDD)")
@@ -13534,7 +12083,7 @@
 			(uuid "41d64bf2-304c-4863-a969-db0f4e3442d0")
 		)
 		(pad "2" smd rect
-			(at 0.55 0)
+			(at 0.55 0 90)
 			(size 0.79 0.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 2 "GND")
@@ -13556,20 +12105,21 @@
 	(footprint "CL10B473KB8NNNC:CL10B473KB8NNNC"
 		(layer "F.Cu")
 		(uuid "c23392d4-d229-4fbe-b48a-669648238642")
-		(at 149.64 96.96)
+		(at 170.5 85.75 180)
 		(property "Reference" "C9"
-			(at 0 -4 0)
+			(at 0 -1.25 180)
 			(layer "F.SilkS")
 			(uuid "3e51f192-dd15-4a50-a763-8050329f1911")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
 		(property "Value" "47nF"
-			(at 0 4 0)
+			(at 0 4 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "56ea8026-bc18-4cdb-b46f-47decba604aa")
@@ -13581,7 +12131,7 @@
 			)
 		)
 		(property "Footprint" "CL10B473KB8NNNC:CL10B473KB8NNNC"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -13593,7 +12143,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -13605,7 +12155,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -13622,44 +12172,14 @@
 		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -1.39 0.4)
-			(end -1.39 -0.4)
+			(start 1.39 -0.4)
+			(end 1.39 0.4)
 			(stroke
 				(width 0.25)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "7aa3b254-3ab9-4d2c-8eca-099153d7c246")
-		)
-		(fp_line
-			(start -0.28 -0.71)
-			(end -1.08 -0.71)
-			(stroke
-				(width 0.25)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "225a4462-6fda-42eb-aa3a-9f90df645866")
-		)
-		(fp_line
-			(start -0.28 0.71)
-			(end -1.08 0.71)
-			(stroke
-				(width 0.25)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "3327bdcf-e875-43da-b3ca-c7fa3e40c226")
-		)
-		(fp_line
-			(start 0.28 -0.71)
-			(end 1.08 -0.71)
-			(stroke
-				(width 0.25)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "c01ad98a-320c-427e-9520-c96c9b96b0be")
+			(uuid "3f8c5244-d352-4013-8324-e0c4c92c6d0e")
 		)
 		(fp_line
 			(start 0.28 0.71)
@@ -13672,36 +12192,55 @@
 			(uuid "bd41bfbf-4315-4625-8cd6-d77c6939f351")
 		)
 		(fp_line
-			(start 1.39 -0.4)
-			(end 1.39 0.4)
+			(start 0.28 -0.71)
+			(end 1.08 -0.71)
 			(stroke
 				(width 0.25)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "3f8c5244-d352-4013-8324-e0c4c92c6d0e")
+			(uuid "c01ad98a-320c-427e-9520-c96c9b96b0be")
 		)
-		(fp_arc
-			(start -1.39 -0.4)
-			(mid -1.299203 -0.619203)
+		(fp_line
+			(start -0.28 0.71)
+			(end -1.08 0.71)
+			(stroke
+				(width 0.25)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3327bdcf-e875-43da-b3ca-c7fa3e40c226")
+		)
+		(fp_line
+			(start -0.28 -0.71)
 			(end -1.08 -0.71)
 			(stroke
 				(width 0.25)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "350adb54-7e4a-43f6-829d-9396e8d89caa")
+			(uuid "225a4462-6fda-42eb-aa3a-9f90df645866")
 		)
-		(fp_arc
-			(start -1.08 0.71)
-			(mid -1.299203 0.619203)
-			(end -1.39 0.4)
+		(fp_line
+			(start -1.39 0.4)
+			(end -1.39 -0.4)
 			(stroke
 				(width 0.25)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "044bdf8b-e815-4906-9fc0-7a25c6865ad5")
+			(uuid "7aa3b254-3ab9-4d2c-8eca-099153d7c246")
+		)
+		(fp_arc
+			(start 1.39 0.4)
+			(mid 1.299203 0.619203)
+			(end 1.08 0.71)
+			(stroke
+				(width 0.25)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f0ee23e0-afd0-4b06-9887-2a5f28ea36d6")
 		)
 		(fp_arc
 			(start 1.08 -0.71)
@@ -13715,15 +12254,26 @@
 			(uuid "c99f86b8-3782-47a3-bc79-72a7af939b9a")
 		)
 		(fp_arc
-			(start 1.39 0.4)
-			(mid 1.299203 0.619203)
-			(end 1.08 0.71)
+			(start -1.08 0.71)
+			(mid -1.299203 0.619203)
+			(end -1.39 0.4)
 			(stroke
 				(width 0.25)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "f0ee23e0-afd0-4b06-9887-2a5f28ea36d6")
+			(uuid "044bdf8b-e815-4906-9fc0-7a25c6865ad5")
+		)
+		(fp_arc
+			(start -1.39 -0.4)
+			(mid -1.299203 -0.619203)
+			(end -1.08 -0.71)
+			(stroke
+				(width 0.25)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "350adb54-7e4a-43f6-829d-9396e8d89caa")
 		)
 		(fp_circle
 			(center -0.8 0.4)
@@ -13737,7 +12287,7 @@
 			(uuid "cef53d78-d984-468e-bd4c-25c42f4f4fca")
 		)
 		(pad "1" smd rect
-			(at -0.7 0)
+			(at -0.7 0 180)
 			(size 0.8 0.9)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 11 "Net-(U1-CP1L)")
@@ -13745,7 +12295,7 @@
 			(uuid "909ad3e0-ca3c-4413-994f-f9e29380e34b")
 		)
 		(pad "2" smd rect
-			(at 0.7 0)
+			(at 0.7 0 180)
 			(size 0.8 0.9)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 12 "Net-(U1-CP1H)")
@@ -13767,15 +12317,16 @@
 	(footprint "0402WGF3300TCE:0402WGF3300TCE"
 		(layer "F.Cu")
 		(uuid "c49d32b5-ad96-4186-ab17-8b6de6c51de4")
-		(at 143.29 75.7)
+		(at 189.5 93.25)
 		(property "Reference" "R8"
-			(at 0 -4 0)
+			(at 0 1 0)
 			(layer "F.SilkS")
 			(uuid "0c833918-d54f-48db-bd1a-6d738ebba19f")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
@@ -13934,20 +12485,21 @@
 	(footprint "CL31B225KBHNNNE:CL31B225KBHNNNE"
 		(layer "F.Cu")
 		(uuid "c87b6a72-b744-4214-b427-5d3473a4af0e")
-		(at 135.61 71.97)
+		(at 173.25 91.75 90)
 		(property "Reference" "C7"
-			(at 0 -4 0)
+			(at 1.25 1.75 0)
 			(layer "F.SilkS")
 			(uuid "4512a611-0a36-4ba9-8fa7-2e5f470e2129")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
 		(property "Value" "2.2uF"
-			(at 0 4 0)
+			(at 0 4 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fd2cdfb0-f113-4320-914d-b02f0e216b41")
@@ -13959,7 +12511,7 @@
 			)
 		)
 		(property "Footprint" "CL31B225KBHNNNE:CL31B225KBHNNNE"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -13971,7 +12523,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -13983,7 +12535,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -14000,14 +12552,14 @@
 		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -2.56 0.94)
-			(end -2.56 -0.94)
+			(start 2.41 -1.09)
+			(end 0.93 -1.09)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "3c1ebbe5-7be2-4bbc-b610-5d254c3f42dd")
+			(uuid "822da947-0c07-4800-b0e3-79e3898ab630")
 		)
 		(fp_line
 			(start -2.41 -1.09)
@@ -14020,14 +12572,24 @@
 			(uuid "19bb4c83-772a-478e-961c-66211d641236")
 		)
 		(fp_line
-			(start -0.93 1.09)
-			(end -2.41 1.09)
+			(start 2.56 0.94)
+			(end 2.56 -0.94)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "74f59afd-09f2-4a87-8514-c83687bcf9d1")
+			(uuid "04d458cd-dff4-49ea-acf3-70c20e9adcf0")
+		)
+		(fp_line
+			(start -2.56 0.94)
+			(end -2.56 -0.94)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3c1ebbe5-7be2-4bbc-b610-5d254c3f42dd")
 		)
 		(fp_line
 			(start 0.93 1.09)
@@ -14040,46 +12602,14 @@
 			(uuid "1a9379d7-19ed-45bf-a4b4-632bc8fa67d0")
 		)
 		(fp_line
-			(start 2.41 -1.09)
-			(end 0.93 -1.09)
+			(start -0.93 1.09)
+			(end -2.41 1.09)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "822da947-0c07-4800-b0e3-79e3898ab630")
-		)
-		(fp_line
-			(start 2.56 0.94)
-			(end 2.56 -0.94)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "04d458cd-dff4-49ea-acf3-70c20e9adcf0")
-		)
-		(fp_arc
-			(start -2.56 -0.94)
-			(mid -2.516066 -1.046066)
-			(end -2.41 -1.09)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "18701348-6416-4ac8-af5d-1a635e4ee8c1")
-		)
-		(fp_arc
-			(start -2.41 1.09)
-			(mid -2.516066 1.046066)
-			(end -2.56 0.94)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f5313299-1979-45e3-86d2-0aabf79d3201")
+			(uuid "74f59afd-09f2-4a87-8514-c83687bcf9d1")
 		)
 		(fp_arc
 			(start 2.41 -1.09)
@@ -14093,6 +12623,17 @@
 			(uuid "14009d19-bd21-47ba-bb9d-30a6596838e3")
 		)
 		(fp_arc
+			(start -2.56 -0.94)
+			(mid -2.516066 -1.046066)
+			(end -2.41 -1.09)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "18701348-6416-4ac8-af5d-1a635e4ee8c1")
+		)
+		(fp_arc
 			(start 2.56 0.94)
 			(mid 2.516066 1.046066)
 			(end 2.41 1.09)
@@ -14102,6 +12643,17 @@
 			)
 			(layer "F.SilkS")
 			(uuid "8ef17bb3-12fd-4c5b-bada-46ba646248c8")
+		)
+		(fp_arc
+			(start -2.41 1.09)
+			(mid -2.516066 1.046066)
+			(end -2.56 0.94)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f5313299-1979-45e3-86d2-0aabf79d3201")
 		)
 		(fp_circle
 			(center -1.6 0.8)
@@ -14115,7 +12667,7 @@
 			(uuid "4a8d6598-99e5-4c11-8887-dcf7a1245d7d")
 		)
 		(pad "1" smd rect
-			(at -1.59 0)
+			(at -1.59 0 90)
 			(size 1.49 1.73)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 8 "Net-(U1-VCPH)")
@@ -14123,7 +12675,7 @@
 			(uuid "aeb6e05c-a07d-4835-97ae-43f661398b81")
 		)
 		(pad "2" smd rect
-			(at 1.59 0)
+			(at 1.59 0 90)
 			(size 1.49 1.73)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 6 "VCC")
@@ -14144,232 +12696,22 @@
 	)
 	(footprint "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
 		(layer "F.Cu")
-		(uuid "d42d7c01-34fc-4447-b1aa-176cbaa12791")
-		(at 136.07 89.7)
-		(property "Reference" "C33"
-			(at 0 -4 0)
-			(layer "F.SilkS")
-			(uuid "ed2a8e29-4c63-429d-9665-9658c15abf5f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "10uF"
-			(at 0 4 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6d287c9e-6f2c-46f6-b44b-ff1d9191323a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "44cc79bc-88c6-4061-8a6e-15b754ca5bd5")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "026c8b05-44c7-4eb6-bf29-8c87563ca18e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9110854f-3719-4c8f-ae69-ba7fdc7e9344")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property ki_fp_filters "C_*")
-		(path "/bedeec30-183d-4da6-95b4-d3d73c71ca78")
-		(sheetname "Root")
-		(sheetfile "Victor-Brushless-Controller.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -1.96 0.75)
-			(end -1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f4bb1bc0-c285-4a00-ae05-777bd8bb1bdc")
-		)
-		(fp_line
-			(start -1.81 -0.9)
-			(end -0.4 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "6bf972b7-9777-4500-b635-63b16ec55e10")
-		)
-		(fp_line
-			(start -0.4 0.9)
-			(end -1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "daa8e883-4a42-461c-beae-b409231447e1")
-		)
-		(fp_line
-			(start 0.4 0.9)
-			(end 1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "cf802573-298e-4cbe-9a26-42bc85b1b420")
-		)
-		(fp_line
-			(start 1.81 -0.9)
-			(end 0.4 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "a3f06017-c40f-411c-a797-25366aab726b")
-		)
-		(fp_line
-			(start 1.96 0.75)
-			(end 1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "a932a462-6a8f-4959-9a55-5761be01a5c2")
-		)
-		(fp_arc
-			(start -1.96 -0.75)
-			(mid -1.916066 -0.856066)
-			(end -1.81 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "3ddbb119-262d-4825-81c6-c996f8bfb561")
-		)
-		(fp_arc
-			(start -1.81 0.9)
-			(mid -1.916066 0.856066)
-			(end -1.96 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "1f230310-252e-49f8-a74c-b65dcf1a1090")
-		)
-		(fp_arc
-			(start 1.81 -0.9)
-			(mid 1.916066 -0.856066)
-			(end 1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "c90ebf96-e552-4a44-89c8-0aacb1304427")
-		)
-		(fp_arc
-			(start 1.96 0.75)
-			(mid 1.916066 0.856066)
-			(end 1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d17338f9-d4ab-44d2-8258-cb9b3fb92a5f")
-		)
-		(fp_circle
-			(center -1 0.63)
-			(end -0.97 0.63)
-			(stroke
-				(width 0.06)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Fab")
-			(uuid "cf6f4a7f-17e7-4efe-a9d3-726209d08c5f")
-		)
-		(pad "1" smd rect
-			(at -1 0)
-			(size 1.41 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 6 "VCC")
-			(pintype "passive")
-			(uuid "5533ca81-c330-49e3-8de5-1829444ade9a")
-		)
-		(pad "2" smd rect
-			(at 1 0)
-			(size 1.41 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 2 "GND")
-			(pintype "passive")
-			(uuid "94ac65c7-a173-47d0-94e7-6d2868ced500")
-		)
-		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/GRM21BR61H106KE43L/GRM21BR61H106KE43L.3dshapes/GRM21BR61H106KE43L.wrl"
-			(offset
-				(xyz -0 -0 0.6)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
-		(layer "F.Cu")
 		(uuid "d4a053c5-f1e4-4768-b2ae-f5e6057382c6")
-		(at 125.93 95.6)
+		(at 170.25 102.5 90)
 		(property "Reference" "C22"
-			(at 0 -4 0)
+			(at 0 -1.3 270)
 			(layer "F.SilkS")
 			(uuid "15a8b5ae-e656-49e2-b210-751e0c9e1341")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
 		(property "Value" "10uF"
-			(at 0 4 0)
+			(at 0 4 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7010988c-798b-45fd-be63-ba35af8104d0")
@@ -14381,7 +12723,7 @@
 			)
 		)
 		(property "Footprint" "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -14393,7 +12735,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -14405,7 +12747,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -14422,14 +12764,14 @@
 		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -1.96 0.75)
-			(end -1.96 -0.75)
+			(start 1.81 -0.9)
+			(end 0.4 -0.9)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "cd7f8df8-658f-441f-9776-e25cce9d7416")
+			(uuid "aacd5576-09d9-4289-8f51-89e1220f9e16")
 		)
 		(fp_line
 			(start -1.81 -0.9)
@@ -14442,14 +12784,24 @@
 			(uuid "8226056b-9a80-422b-b270-70146275c46c")
 		)
 		(fp_line
-			(start -0.4 0.9)
-			(end -1.81 0.9)
+			(start 1.96 0.75)
+			(end 1.96 -0.75)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "8e810828-0b2a-4bad-9152-bd25a4f29540")
+			(uuid "fadb0b2f-9f7d-460a-b1c8-f0dd732644ba")
+		)
+		(fp_line
+			(start -1.96 0.75)
+			(end -1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "cd7f8df8-658f-441f-9776-e25cce9d7416")
 		)
 		(fp_line
 			(start 0.4 0.9)
@@ -14462,46 +12814,14 @@
 			(uuid "618a735f-907e-4295-8d7b-a0c8d21dd11a")
 		)
 		(fp_line
-			(start 1.81 -0.9)
-			(end 0.4 -0.9)
+			(start -0.4 0.9)
+			(end -1.81 0.9)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "aacd5576-09d9-4289-8f51-89e1220f9e16")
-		)
-		(fp_line
-			(start 1.96 0.75)
-			(end 1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "fadb0b2f-9f7d-460a-b1c8-f0dd732644ba")
-		)
-		(fp_arc
-			(start -1.96 -0.75)
-			(mid -1.916066 -0.856066)
-			(end -1.81 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "7561d2b5-4de3-423d-b1e3-e7f276f5eb20")
-		)
-		(fp_arc
-			(start -1.81 0.9)
-			(mid -1.916066 0.856066)
-			(end -1.96 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "939618db-4dec-47fe-9926-e348eff50e39")
+			(uuid "8e810828-0b2a-4bad-9152-bd25a4f29540")
 		)
 		(fp_arc
 			(start 1.81 -0.9)
@@ -14515,6 +12835,17 @@
 			(uuid "8b4381bb-6fe1-4fe5-8d27-0be99d2e6a38")
 		)
 		(fp_arc
+			(start -1.96 -0.75)
+			(mid -1.916066 -0.856066)
+			(end -1.81 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7561d2b5-4de3-423d-b1e3-e7f276f5eb20")
+		)
+		(fp_arc
 			(start 1.96 0.75)
 			(mid 1.916066 0.856066)
 			(end 1.81 0.9)
@@ -14524,6 +12855,17 @@
 			)
 			(layer "F.SilkS")
 			(uuid "4bd5a1e1-555b-48e2-af4b-cea63ccd2440")
+		)
+		(fp_arc
+			(start -1.81 0.9)
+			(mid -1.916066 0.856066)
+			(end -1.96 0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "939618db-4dec-47fe-9926-e348eff50e39")
 		)
 		(fp_circle
 			(center -1 0.63)
@@ -14537,7 +12879,7 @@
 			(uuid "993669bc-b947-4763-8e48-b349de8dedd3")
 		)
 		(pad "1" smd rect
-			(at -1 0)
+			(at -1 0 90)
 			(size 1.41 1.35)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 6 "VCC")
@@ -14545,7 +12887,7 @@
 			(uuid "2d53fc00-5e84-49e7-a509-178d9082409c")
 		)
 		(pad "2" smd rect
-			(at 1 0)
+			(at 1 0 90)
 			(size 1.41 1.35)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 2 "GND")
@@ -15134,223 +13476,12 @@
 			)
 		)
 	)
-	(footprint "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
-		(layer "F.Cu")
-		(uuid "ddeba8db-99c2-4861-9811-be6077018bef")
-		(at 125.93 101.5)
-		(property "Reference" "C24"
-			(at 0 -4 0)
-			(layer "F.SilkS")
-			(uuid "254abf88-267f-4753-b907-b9d0630e2b7e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "10uF"
-			(at 0 4 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "16dae4dd-22cf-4601-a6ec-d500fe1594e6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f38a39ab-835b-4841-92d6-a8f225c36429")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "284727ca-bdaa-4212-b5c3-2cc697222b45")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "80a97eb0-15c4-483b-a5a9-8e7247604a22")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property ki_fp_filters "C_*")
-		(path "/5b69988a-cbc8-47c6-a491-19eb5394b7dc")
-		(sheetname "Root")
-		(sheetfile "Victor-Brushless-Controller.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -1.96 0.75)
-			(end -1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d9db6472-d7b2-4eae-b346-ef68d1faa632")
-		)
-		(fp_line
-			(start -1.81 -0.9)
-			(end -0.4 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "3827d133-d44d-4e7b-9102-53ff2d5d9a2c")
-		)
-		(fp_line
-			(start -0.4 0.9)
-			(end -1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "9b8686f9-d752-47a7-890f-b4dfd4e97953")
-		)
-		(fp_line
-			(start 0.4 0.9)
-			(end 1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "b828bb35-aae0-4575-b773-aea5b75d8cec")
-		)
-		(fp_line
-			(start 1.81 -0.9)
-			(end 0.4 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "383cb215-5ef7-4f74-b524-721288f6e9bf")
-		)
-		(fp_line
-			(start 1.96 0.75)
-			(end 1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "b4afbccc-8071-45ca-8042-e0e8e5dc6208")
-		)
-		(fp_arc
-			(start -1.96 -0.75)
-			(mid -1.916066 -0.856066)
-			(end -1.81 -0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "ca59934a-faaa-4609-a769-c4dc17228bbc")
-		)
-		(fp_arc
-			(start -1.81 0.9)
-			(mid -1.916066 0.856066)
-			(end -1.96 0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "21eb8a0c-d54e-4ac8-9c01-5a159899ae8a")
-		)
-		(fp_arc
-			(start 1.81 -0.9)
-			(mid 1.916066 -0.856066)
-			(end 1.96 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "70571d10-e6ed-485f-b8aa-b411225c7caa")
-		)
-		(fp_arc
-			(start 1.96 0.75)
-			(mid 1.916066 0.856066)
-			(end 1.81 0.9)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "113e21a0-6c68-4dc8-b07e-6480f6757286")
-		)
-		(fp_circle
-			(center -1 0.63)
-			(end -0.97 0.63)
-			(stroke
-				(width 0.06)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Fab")
-			(uuid "632fc3e2-d470-44e3-b491-e9fce400bf01")
-		)
-		(pad "1" smd rect
-			(at -1 0)
-			(size 1.41 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 6 "VCC")
-			(pintype "passive")
-			(uuid "b331ad68-3d8f-4a02-8096-f8f4dc86a746")
-		)
-		(pad "2" smd rect
-			(at 1 0)
-			(size 1.41 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 2 "GND")
-			(pintype "passive")
-			(uuid "5ad8a013-b791-4516-bee6-85db0bf920df")
-		)
-		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/GRM21BR61H106KE43L/GRM21BR61H106KE43L.3dshapes/GRM21BR61H106KE43L.wrl"
-			(offset
-				(xyz -0 -0 0.6)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
 	(footprint "PIS3D18P-150M-T:PIS3D18P-150M-T"
 		(layer "F.Cu")
 		(uuid "deca9241-93e9-4625-956a-16bf99558696")
-		(at 169.5 79)
+		(at 169.067341 78)
 		(property "Reference" "L1"
-			(at -3.5 1.5 0)
+			(at -3.5 2 0)
 			(layer "F.SilkS")
 			(uuid "74714f3f-6092-4300-b5be-3cd8d8574064")
 			(effects
@@ -15732,7 +13863,7 @@
 		(uuid "e3a07786-2e04-4c7a-a552-68068fb3a4e7")
 		(at 197 94 90)
 		(property "Reference" "R9"
-			(at -1.5 0 360)
+			(at -1.5 0 0)
 			(layer "F.SilkS")
 			(uuid "fd578a27-1e6a-4316-8ca7-fd92c893cc74")
 			(effects
@@ -15744,7 +13875,7 @@
 			)
 		)
 		(property "Value" "33k"
-			(at 0 4 270)
+			(at 0 4 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3d8958ea-a252-4a4b-b8ff-63276a1ea514")
@@ -16682,7 +14813,7 @@
 			(at -9.15 -0.22)
 			(size 2 1)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 64 "A IO32")
+			(net 63 "A IO32")
 			(pinfunction "IO32")
 			(pintype "unspecified")
 			(uuid "dfdcb1ba-b76b-49cc-b03c-d476115f0ede")
@@ -16763,7 +14894,7 @@
 			(at 4.47 9.11 90)
 			(size 2 1)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 63 "IO15")
+			(net 28 "IO 15")
 			(pinfunction "IO15")
 			(pintype "unspecified")
 			(uuid "dc864b4e-112d-4fbc-b7c7-136c6af084a7")
@@ -16927,20 +15058,21 @@
 	(footprint "1206B475K500NT:1206B475K500NT"
 		(layer "F.Cu")
 		(uuid "eabda946-6b38-41a4-949f-757f2327fd8f")
-		(at 135.61 68.64)
+		(at 173.25 85.5 -90)
 		(property "Reference" "C5"
-			(at 0 -4 0)
+			(at 3 0 0)
 			(layer "F.SilkS")
 			(uuid "546ba8f7-4693-4641-8992-b258003fd8a8")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 0 4 0)
+			(at 0 4 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1d42f0eb-d872-4bca-94ff-59061b1acf6f")
@@ -16952,7 +15084,7 @@
 			)
 		)
 		(property "Footprint" "1206B475K500NT:1206B475K500NT"
-			(at 0 0 0)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -16964,7 +15096,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -16976,7 +15108,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -16992,26 +15124,6 @@
 		(sheetname "Root")
 		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
-		(fp_line
-			(start -2.56 0.94)
-			(end -2.56 -0.94)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f7c0166b-1bce-4ebc-bd32-606226e35e93")
-		)
-		(fp_line
-			(start -2.41 -1.09)
-			(end -0.93 -1.09)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "8379579f-2eed-4249-aa3c-3978decaae3b")
-		)
 		(fp_line
 			(start -0.93 1.09)
 			(end -2.41 1.09)
@@ -17033,14 +15145,14 @@
 			(uuid "d8758e41-491b-462b-94cb-cd6e2b9baac1")
 		)
 		(fp_line
-			(start 2.41 -1.09)
-			(end 0.93 -1.09)
+			(start -2.56 0.94)
+			(end -2.56 -0.94)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "50b024e8-60eb-402d-b406-bcd4ce0e6b17")
+			(uuid "f7c0166b-1bce-4ebc-bd32-606226e35e93")
 		)
 		(fp_line
 			(start 2.56 0.94)
@@ -17052,16 +15164,25 @@
 			(layer "F.SilkS")
 			(uuid "b106aefd-4ba2-4015-918e-7bf4791e669e")
 		)
-		(fp_arc
-			(start -2.56 -0.94)
-			(mid -2.516066 -1.046066)
-			(end -2.41 -1.09)
+		(fp_line
+			(start -2.41 -1.09)
+			(end -0.93 -1.09)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "7a5c6d44-96d9-4278-80f8-3b7bd5c9fc1d")
+			(uuid "8379579f-2eed-4249-aa3c-3978decaae3b")
+		)
+		(fp_line
+			(start 2.41 -1.09)
+			(end 0.93 -1.09)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "50b024e8-60eb-402d-b406-bcd4ce0e6b17")
 		)
 		(fp_arc
 			(start -2.41 1.09)
@@ -17075,17 +15196,6 @@
 			(uuid "6cab64a7-f672-4229-bcd2-a5addc3e970b")
 		)
 		(fp_arc
-			(start 2.41 -1.09)
-			(mid 2.516066 -1.046066)
-			(end 2.56 -0.94)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "c3cf44ac-2995-40fa-865b-8b980a6bfa5b")
-		)
-		(fp_arc
 			(start 2.56 0.94)
 			(mid 2.516066 1.046066)
 			(end 2.41 1.09)
@@ -17095,6 +15205,28 @@
 			)
 			(layer "F.SilkS")
 			(uuid "764635ff-8c49-4792-a0d2-24a49cef9077")
+		)
+		(fp_arc
+			(start -2.56 -0.94)
+			(mid -2.516066 -1.046066)
+			(end -2.41 -1.09)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7a5c6d44-96d9-4278-80f8-3b7bd5c9fc1d")
+		)
+		(fp_arc
+			(start 2.41 -1.09)
+			(mid 2.516066 -1.046066)
+			(end 2.56 -0.94)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c3cf44ac-2995-40fa-865b-8b980a6bfa5b")
 		)
 		(fp_circle
 			(center -1.6 0.8)
@@ -17108,7 +15240,7 @@
 			(uuid "35183e68-d938-4ed8-ae85-d41a116a761f")
 		)
 		(pad "1" smd rect
-			(at -1.59 0)
+			(at -1.59 0 270)
 			(size 1.49 1.73)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 2 "GND")
@@ -17116,7 +15248,7 @@
 			(uuid "7ca3988a-932a-45e1-bc76-e9169dc3c995")
 		)
 		(pad "2" smd rect
-			(at 1.59 0)
+			(at 1.59 0 270)
 			(size 1.49 1.73)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 6 "VCC")
@@ -17138,9 +15270,9 @@
 	(footprint "CL05B104KO5NNNC:CL05B104KO5NNNC"
 		(layer "F.Cu")
 		(uuid "f4259f87-1a98-4bd3-a069-c52e38fa275f")
-		(at 172.5 75)
+		(at 173.5 74.5)
 		(property "Reference" "C15"
-			(at 1.825102 -0.024464 90)
+			(at 0 0.75 180)
 			(layer "F.SilkS")
 			(uuid "22b0a3d7-5e20-4573-87ba-1c34fc0536c6")
 			(effects
@@ -17526,10 +15658,661 @@
 			)
 		)
 	)
+	(footprint "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
+		(layer "B.Cu")
+		(uuid "020c5f45-735f-4546-96e2-554f780d9fb4")
+		(at 170.25 103 90)
+		(property "Reference" "C35"
+			(at 2.5 0 0)
+			(layer "B.SilkS")
+			(uuid "3808a7bb-701c-49f4-b4f8-7f56591d1f65")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "10uF"
+			(at 0 -4 270)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "4e25cf68-7d63-4867-9ab7-67492ed8cb8b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ef989b8a-9ae8-4416-8d97-4a643e438b7b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1b76b86b-8433-452e-99be-6b5b9a5a2f68")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8b5d8326-9d41-4cb9-9859-7c2f429ae08f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/d0ccad39-0081-4cde-a727-ae05965e2306")
+		(sheetname "Root")
+		(sheetfile "Victor-Brushless-Controller.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start 1.81 -0.9)
+			(end 0.4 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "d547e940-54f1-4d0d-969b-c7ce8ebdce63")
+		)
+		(fp_line
+			(start -1.81 -0.9)
+			(end -0.4 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "7727bf7b-4f3d-4b1d-86d0-43fbe2bd1aaa")
+		)
+		(fp_line
+			(start 1.96 0.75)
+			(end 1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "ecf78880-6ded-462f-953e-c571449885aa")
+		)
+		(fp_line
+			(start -1.96 0.75)
+			(end -1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "309881cc-067d-45e7-a473-834334ce827f")
+		)
+		(fp_line
+			(start 0.4 0.9)
+			(end 1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "cb0209b1-3653-416c-bf7c-d10760f719b7")
+		)
+		(fp_line
+			(start -0.4 0.9)
+			(end -1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "448abf7d-6c11-4f3b-a9c9-bfa0cdebd4c5")
+		)
+		(fp_arc
+			(start 1.81 -0.9)
+			(mid 1.916066 -0.856066)
+			(end 1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "67b6578d-dac5-4b49-8e29-4f7667c653b5")
+		)
+		(fp_arc
+			(start -1.96 -0.75)
+			(mid -1.916066 -0.856066)
+			(end -1.81 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "6805ae98-a958-4b97-9b41-265283d4ae95")
+		)
+		(fp_arc
+			(start 1.96 0.75)
+			(mid 1.916066 0.856066)
+			(end 1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "cd8a72d0-3f23-4218-8fac-9dde491d59ca")
+		)
+		(fp_arc
+			(start -1.81 0.9)
+			(mid -1.916066 0.856066)
+			(end -1.96 0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "04c275d8-dfdb-4f71-ab27-5d9d6c29a8c7")
+		)
+		(fp_circle
+			(center -1 -0.63)
+			(end -0.97 -0.63)
+			(stroke
+				(width 0.06)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.Fab")
+			(uuid "de5fc52f-3ef6-470f-b8a4-51d7c4c84006")
+		)
+		(pad "1" smd rect
+			(at -1 0 90)
+			(size 1.41 1.35)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(net 6 "VCC")
+			(pintype "passive")
+			(uuid "fc561578-1789-4612-b341-3aa66100f86e")
+		)
+		(pad "2" smd rect
+			(at 1 0 90)
+			(size 1.41 1.35)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(net 2 "GND")
+			(pintype "passive")
+			(uuid "0fbc95d1-aaec-4bb9-91ea-e381dd16d3ae")
+		)
+		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/GRM21BR61H106KE43L/GRM21BR61H106KE43L.3dshapes/GRM21BR61H106KE43L.wrl"
+			(offset
+				(xyz -0 -0 0.6)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
+		(layer "B.Cu")
+		(uuid "06407755-3608-4d1b-a3a4-1a338eded492")
+		(at 177 103 90)
+		(property "Reference" "C32"
+			(at 2.5 0 0)
+			(layer "B.SilkS")
+			(uuid "6bc4f0e7-f295-4754-9500-bfe00ab9b756")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "10uF"
+			(at 0 -4 270)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "dac26069-8232-4027-bd5f-b8dbe96db6e4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "28ab1f74-a519-4866-b887-0a4e8112708b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ee303785-ad01-4e6b-ba13-9ca9ff667c8e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "163a2b08-4b1f-4955-a8ad-d71de32b88d8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/a5c63303-3b90-446a-9e49-510ee1530f62")
+		(sheetname "Root")
+		(sheetfile "Victor-Brushless-Controller.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start 1.81 -0.9)
+			(end 0.4 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "bea8bf6b-7030-4bef-918e-3cab278b6d17")
+		)
+		(fp_line
+			(start -1.81 -0.9)
+			(end -0.4 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "f2b6d89f-d46a-49b8-a83c-b92ea9c710cb")
+		)
+		(fp_line
+			(start 1.96 0.75)
+			(end 1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "a48875dd-7a8c-4395-92e2-5b5593402d07")
+		)
+		(fp_line
+			(start -1.96 0.75)
+			(end -1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "e49d4b00-989f-4183-9956-a3c21746a136")
+		)
+		(fp_line
+			(start 0.4 0.9)
+			(end 1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "f8183cd6-ee18-4d32-a335-de214af3c066")
+		)
+		(fp_line
+			(start -0.4 0.9)
+			(end -1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "f8dd397f-402d-4867-9b67-d2df8b621ed2")
+		)
+		(fp_arc
+			(start 1.81 -0.9)
+			(mid 1.916066 -0.856066)
+			(end 1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "d8b96395-4cfc-4b56-8af3-4cab502b395a")
+		)
+		(fp_arc
+			(start -1.96 -0.75)
+			(mid -1.916066 -0.856066)
+			(end -1.81 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "8bbdc335-45e8-40bd-8799-bfb0d0176ad8")
+		)
+		(fp_arc
+			(start 1.96 0.75)
+			(mid 1.916066 0.856066)
+			(end 1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "ab06659a-fb6c-4b5b-81b9-19ca990c9882")
+		)
+		(fp_arc
+			(start -1.81 0.9)
+			(mid -1.916066 0.856066)
+			(end -1.96 0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "92983837-8d3e-4398-87a3-5b8fecd61a0b")
+		)
+		(fp_circle
+			(center -1 -0.63)
+			(end -0.97 -0.63)
+			(stroke
+				(width 0.06)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.Fab")
+			(uuid "6d970774-bcd3-4d25-af1b-0be643b1966b")
+		)
+		(pad "1" smd rect
+			(at -1 0 90)
+			(size 1.41 1.35)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(net 6 "VCC")
+			(pintype "passive")
+			(uuid "4ea647a1-e7f5-4cd4-ae14-3d81225b490c")
+		)
+		(pad "2" smd rect
+			(at 1 0 90)
+			(size 1.41 1.35)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(net 2 "GND")
+			(pintype "passive")
+			(uuid "d59b68e2-037b-47b7-bdd6-80d654df3de6")
+		)
+		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/GRM21BR61H106KE43L/GRM21BR61H106KE43L.3dshapes/GRM21BR61H106KE43L.wrl"
+			(offset
+				(xyz -0 -0 0.6)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
+		(layer "B.Cu")
+		(uuid "3491a0b8-cd6f-4e76-b537-0daa75dd19ad")
+		(at 172.5 103 90)
+		(property "Reference" "C34"
+			(at 2.5 0 0)
+			(layer "B.SilkS")
+			(uuid "36529721-f43a-4cb0-b6f6-f7b7deb68d8a")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "10uF"
+			(at 0 -4 270)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "989482c2-0a62-4c39-b45e-073f104344bd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "83bb19a0-0987-44bb-b8d2-e6f1668359d7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3c5b5471-70d2-4ac2-92b4-a8df084d271e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "141dae34-dfac-4a2d-afbc-beff82151195")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/55249e83-0803-4cc9-8c16-f9f57e2a5e0d")
+		(sheetname "Root")
+		(sheetfile "Victor-Brushless-Controller.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start 1.81 -0.9)
+			(end 0.4 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "a7eb3e6b-6594-41f6-b729-de520ec37865")
+		)
+		(fp_line
+			(start -1.81 -0.9)
+			(end -0.4 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "2d8db205-f983-4464-a8f6-056d12d3dbc5")
+		)
+		(fp_line
+			(start 1.96 0.75)
+			(end 1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "0c45e90e-3727-4b9f-a6d3-d5c18271f372")
+		)
+		(fp_line
+			(start -1.96 0.75)
+			(end -1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "19243bc2-8142-4c1c-a851-1f28dbd09a80")
+		)
+		(fp_line
+			(start 0.4 0.9)
+			(end 1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "79e57f8e-1fdf-475f-a204-5536b21eb56d")
+		)
+		(fp_line
+			(start -0.4 0.9)
+			(end -1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "45d8a88c-3404-4099-ad1e-16d909f7e0a2")
+		)
+		(fp_arc
+			(start 1.81 -0.9)
+			(mid 1.916066 -0.856066)
+			(end 1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "2a2c005c-ba83-4a2e-86de-d85bfdbd195f")
+		)
+		(fp_arc
+			(start -1.96 -0.75)
+			(mid -1.916066 -0.856066)
+			(end -1.81 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "683d9491-28d2-462c-9455-43b8f6df98cf")
+		)
+		(fp_arc
+			(start 1.96 0.75)
+			(mid 1.916066 0.856066)
+			(end 1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "4b1b98ea-deb1-4c80-998c-4f11dd79f8ff")
+		)
+		(fp_arc
+			(start -1.81 0.9)
+			(mid -1.916066 0.856066)
+			(end -1.96 0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "089607e7-2ff3-4ca6-a375-219405256c2c")
+		)
+		(fp_circle
+			(center -1 -0.63)
+			(end -0.97 -0.63)
+			(stroke
+				(width 0.06)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.Fab")
+			(uuid "760dfdad-1a36-4df4-8580-c9afcdf2816b")
+		)
+		(pad "1" smd rect
+			(at -1 0 90)
+			(size 1.41 1.35)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(net 6 "VCC")
+			(pintype "passive")
+			(uuid "3cf655bb-cdaa-45a5-bfb8-69842a20f0f1")
+		)
+		(pad "2" smd rect
+			(at 1 0 90)
+			(size 1.41 1.35)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(net 2 "GND")
+			(pintype "passive")
+			(uuid "8c36a2e0-a3c3-4e7f-bf93-3782eaaaafbd")
+		)
+		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/GRM21BR61H106KE43L/GRM21BR61H106KE43L.3dshapes/GRM21BR61H106KE43L.wrl"
+			(offset
+				(xyz -0 -0 0.6)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "BLDC_Connector:BLDC_Connector"
 		(layer "B.Cu")
 		(uuid "3f798ad3-b5cc-4676-91b3-97df0f65de04")
-		(at 177 114.2 180)
+		(at 177 114.5 180)
 		(property "Reference" "PB1"
 			(at 0 -2.5 0)
 			(unlocked yes)
@@ -17709,6 +16492,223 @@
 				"36b03b54-48b4-4c4f-a8fc-a3ba12a9eb1f" "72a95692-51ea-4b08-850b-1e07bc841c75"
 				"7e38d3f8-e615-4ff5-a0b7-d93800a3d8d2" "c79edcb7-a11d-44a5-9b28-90e11265051e"
 				"d1a310e2-1833-4b20-b3b4-49394edd2c94" "eb054938-54f8-40bd-871b-bc707823628c"
+			)
+		)
+	)
+	(footprint "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
+		(layer "B.Cu")
+		(uuid "531e8129-6849-49b2-8ef7-6a5be801de24")
+		(at 194 103 -90)
+		(property "Reference" "C36"
+			(at -0.25 -1.5 -90)
+			(layer "B.SilkS")
+			(uuid "9c575702-6d83-414c-885b-f19be9434479")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "10uF"
+			(at 0 -4 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f86bd75f-11cc-4661-a1df-da111b3d3e39")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ed70996b-395f-4415-ab86-29a90642476e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b5c7af09-93de-4c6e-a7a9-ab71784c0915")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "da8b4a74-a5a8-4b97-b0f9-a124181ee04a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/a6f2b98a-b6ad-4eb8-ae9b-7f4782b05d79")
+		(sheetname "Root")
+		(sheetfile "Victor-Brushless-Controller.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.4 0.9)
+			(end -1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "cbf49c89-abe5-42d0-b773-8adcc3e83479")
+		)
+		(fp_line
+			(start 0.4 0.9)
+			(end 1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "b5b7aa19-5478-4822-9fe5-0844cbff8be9")
+		)
+		(fp_line
+			(start -1.96 0.75)
+			(end -1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "de11deee-a939-4b21-b3e0-3e6a02a79be6")
+		)
+		(fp_line
+			(start 1.96 0.75)
+			(end 1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "d7b0985f-2bb1-44cf-b141-d81a82574a47")
+		)
+		(fp_line
+			(start -1.81 -0.9)
+			(end -0.4 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "82b68447-f31e-4a5a-8824-512bb7463db2")
+		)
+		(fp_line
+			(start 1.81 -0.9)
+			(end 0.4 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "53065a51-36f2-459b-8657-d98a2e85f73d")
+		)
+		(fp_arc
+			(start -1.81 0.9)
+			(mid -1.916066 0.856066)
+			(end -1.96 0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "f78cfb1f-49e3-40e6-8b60-887bc23cb806")
+		)
+		(fp_arc
+			(start 1.96 0.75)
+			(mid 1.916066 0.856066)
+			(end 1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "d2bcb9d4-eb4b-4050-909c-f5b09c83e8f3")
+		)
+		(fp_arc
+			(start -1.96 -0.75)
+			(mid -1.916066 -0.856066)
+			(end -1.81 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "126aa91d-f2fd-47ca-a425-69a39c26368b")
+		)
+		(fp_arc
+			(start 1.81 -0.9)
+			(mid 1.916066 -0.856066)
+			(end 1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "61091306-3863-4476-8ec4-8a762142da5e")
+		)
+		(fp_circle
+			(center -1 -0.63)
+			(end -0.97 -0.63)
+			(stroke
+				(width 0.06)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.Fab")
+			(uuid "e9610dc8-ddce-4a3c-89db-06bb36a95fca")
+		)
+		(pad "1" smd rect
+			(at -1 0 270)
+			(size 1.41 1.35)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(net 6 "VCC")
+			(pintype "passive")
+			(uuid "91a5bdc7-1505-4406-955c-08f5052b081c")
+		)
+		(pad "2" smd rect
+			(at 1 0 270)
+			(size 1.41 1.35)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(net 2 "GND")
+			(pintype "passive")
+			(uuid "9863fbc5-ea35-4609-bdcb-0b8dae515ecc")
+		)
+		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/GRM21BR61H106KE43L/GRM21BR61H106KE43L.3dshapes/GRM21BR61H106KE43L.wrl"
+			(offset
+				(xyz -0 -0 0.6)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -18269,8 +17269,443 @@
 			(uuid "873d8666-bf37-4e7f-80a4-ff4dde0561c4")
 		)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_JST.3dshapes/JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "1206X106M500NT:1206X106M500NT"
+		(layer "B.Cu")
+		(uuid "5cd8987d-e2eb-4f90-bb0a-63d37bb4b473")
+		(at 191.25 98 -90)
+		(property "Reference" "C37"
+			(at -3 0 180)
+			(layer "B.SilkS")
+			(uuid "62b033a8-1074-4a3e-b132-5ddbdd647e01")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "10uF"
+			(at 0 -4 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2fc8a683-fd6c-417a-987d-c4f5be853fd1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "1206X106M500NT:1206X106M500NT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6a9c63c8-b47e-4098-8b09-ff10b70ccc8d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c69d4e55-b1ae-4e90-9e9d-5345492821a3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "164c0e02-76eb-4986-a556-9ccb8625ce2b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/01b4db82-7d47-4b0c-b4a5-84d2b55afaab")
+		(sheetname "Root")
+		(sheetfile "Victor-Brushless-Controller.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 1.09)
+			(end -2.41 1.09)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "c524846e-67f3-479b-9489-d1212425ae29")
+		)
+		(fp_line
+			(start 0.93 1.09)
+			(end 2.41 1.09)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "b3bbd233-7511-465a-b360-3e447c4eb3ad")
+		)
+		(fp_line
+			(start -2.56 0.94)
+			(end -2.56 -0.94)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "d1c404bb-cc6f-4368-8236-04b7dbfb41e1")
+		)
+		(fp_line
+			(start 2.56 0.94)
+			(end 2.56 -0.94)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "ff1d41db-0ad5-4446-b630-1ce4eb63a896")
+		)
+		(fp_line
+			(start -2.41 -1.09)
+			(end -0.93 -1.09)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "ed411d37-ed6e-4e31-ac75-d971dd025c93")
+		)
+		(fp_line
+			(start 2.41 -1.09)
+			(end 0.93 -1.09)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "6a9deca3-b39c-430c-8c50-6c7edd7d3711")
+		)
+		(fp_arc
+			(start -2.41 1.09)
+			(mid -2.516066 1.046066)
+			(end -2.56 0.94)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "bc398b1e-98dc-4641-ada8-2b1afdfd36a3")
+		)
+		(fp_arc
+			(start 2.56 0.94)
+			(mid 2.516066 1.046066)
+			(end 2.41 1.09)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "28242c7e-3baa-4190-a05a-811d5ad8fdd9")
+		)
+		(fp_arc
+			(start -2.56 -0.94)
+			(mid -2.516066 -1.046066)
+			(end -2.41 -1.09)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "5696b346-bfb6-48e5-8a96-f4cc70840bff")
+		)
+		(fp_arc
+			(start 2.41 -1.09)
+			(mid 2.516066 -1.046066)
+			(end 2.56 -0.94)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "a0abbdd4-0d2e-442c-9248-0721f2bdc599")
+		)
+		(fp_circle
+			(center -1.6 -0.8)
+			(end -1.57 -0.8)
+			(stroke
+				(width 0.06)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.Fab")
+			(uuid "2125dc30-ae6a-4fc5-ae43-a778e610834d")
+		)
+		(pad "1" smd rect
+			(at -1.59 0 270)
+			(size 1.49 1.73)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(net 6 "VCC")
+			(pintype "passive")
+			(uuid "96984f79-70f6-4fcd-a0a4-dec66e01480a")
+		)
+		(pad "2" smd rect
+			(at 1.59 0 270)
+			(size 1.49 1.73)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(net 2 "GND")
+			(pintype "passive")
+			(uuid "f5a82616-c9ed-447c-a325-0842f166136a")
+		)
+		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/1206X106M500NT/1206X106M500NT.3dshapes/1206X106M500NT.wrl"
+			(offset
+				(xyz 0 -0 0.61)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "1206X106M500NT:1206X106M500NT"
+		(layer "B.Cu")
+		(uuid "685bb4a0-29af-493f-9ce3-a17497e7d78a")
+		(at 194.25 98 -90)
+		(property "Reference" "C38"
+			(at -3 0 180)
+			(layer "B.SilkS")
+			(uuid "e60d4326-9bb7-48ec-9aa8-98a4e244d6a1")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "10uF"
+			(at 0 -4 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "27392ad1-a545-4a8b-87bc-a69bc63d5776")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "1206X106M500NT:1206X106M500NT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "23459598-be7d-47bf-a205-5b3d46eca684")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "48573a36-4f9e-446a-b0a9-3e7fa6309e0f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ccc0dbdd-ffbf-4ae6-b7fc-03ed03b29402")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/fd4c2dec-5827-428c-b32f-42154b2a4318")
+		(sheetname "Root")
+		(sheetfile "Victor-Brushless-Controller.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 1.09)
+			(end -2.41 1.09)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "7a16789e-9e49-45fe-9578-a2d0b14ebd85")
+		)
+		(fp_line
+			(start 0.93 1.09)
+			(end 2.41 1.09)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "a7d5eccc-2fed-495e-9779-d6acfd2e034f")
+		)
+		(fp_line
+			(start -2.56 0.94)
+			(end -2.56 -0.94)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "48b17af9-5939-4067-a543-d7310c856657")
+		)
+		(fp_line
+			(start 2.56 0.94)
+			(end 2.56 -0.94)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "ca82831e-37db-46b6-8783-62c85d7b67ca")
+		)
+		(fp_line
+			(start -2.41 -1.09)
+			(end -0.93 -1.09)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "9bb78b65-5ec3-493a-9a06-73b5a269f105")
+		)
+		(fp_line
+			(start 2.41 -1.09)
+			(end 0.93 -1.09)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "10b62491-96b8-470f-ab43-1012da84eb46")
+		)
+		(fp_arc
+			(start -2.41 1.09)
+			(mid -2.516066 1.046066)
+			(end -2.56 0.94)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "5f3e2fab-b047-4114-a203-162592313693")
+		)
+		(fp_arc
+			(start 2.56 0.94)
+			(mid 2.516066 1.046066)
+			(end 2.41 1.09)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "c5ce282b-715f-4076-ab04-0e3e56e910f1")
+		)
+		(fp_arc
+			(start -2.56 -0.94)
+			(mid -2.516066 -1.046066)
+			(end -2.41 -1.09)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "ea0b76c5-5494-400c-b0bb-1520219a59da")
+		)
+		(fp_arc
+			(start 2.41 -1.09)
+			(mid 2.516066 -1.046066)
+			(end 2.56 -0.94)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "cb95811d-8833-4710-9cb5-f8ff6abd84c7")
+		)
+		(fp_circle
+			(center -1.6 -0.8)
+			(end -1.57 -0.8)
+			(stroke
+				(width 0.06)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.Fab")
+			(uuid "944039e5-024d-4ab7-9cda-c5f07e097160")
+		)
+		(pad "1" smd rect
+			(at -1.59 0 270)
+			(size 1.49 1.73)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(net 6 "VCC")
+			(pintype "passive")
+			(uuid "3e6b5a6b-751f-440f-85fa-7c28eabbd7a1")
+		)
+		(pad "2" smd rect
+			(at 1.59 0 270)
+			(size 1.49 1.73)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(net 2 "GND")
+			(pintype "passive")
+			(uuid "3aa0a8ea-0189-4e97-8472-e8d6a53f512e")
+		)
+		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/1206X106M500NT/1206X106M500NT.3dshapes/1206X106M500NT.wrl"
+			(offset
+				(xyz 0 -0 0.61)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -18283,7 +17718,7 @@
 	(footprint "AS5047P-ATSM:AS5047P-ATSM"
 		(layer "B.Cu")
 		(uuid "7f048d82-49dd-40ab-a56f-2c6590d2baf9")
-		(at 179.7 94.45 90)
+		(at 179.5 94 90)
 		(property "Reference" "U7"
 			(at -3.507673 -0.012469 180)
 			(layer "B.SilkS")
@@ -18530,7 +17965,7 @@
 			(at 1.95 -2.8 90)
 			(size 0.4 1.7)
 			(layers "B.Cu" "B.Paste" "B.Mask")
-			(net 64 "A IO32")
+			(net 63 "A IO32")
 			(pinfunction "A")
 			(pintype "unspecified")
 			(uuid "4b0b3f1f-5a2a-4c4e-adf3-b7d64be160bb")
@@ -18539,7 +17974,7 @@
 			(at 1.95 2.8 90)
 			(size 0.4 1.7)
 			(layers "B.Cu" "B.Paste" "B.Mask")
-			(net 67 "unconnected-(U7-W{slash}PWM-Pad8)")
+			(net 66 "unconnected-(U7-W{slash}PWM-Pad8)")
 			(pinfunction "W/PWM")
 			(pintype "unspecified+no_connect")
 			(uuid "5bf9c885-f40a-44c6-809b-632643f88404")
@@ -18548,7 +17983,7 @@
 			(at 1.3 2.8 90)
 			(size 0.4 1.7)
 			(layers "B.Cu" "B.Paste" "B.Mask")
-			(net 66 "unconnected-(U7-V-Pad9)")
+			(net 65 "unconnected-(U7-V-Pad9)")
 			(pinfunction "V")
 			(pintype "unspecified+no_connect")
 			(uuid "09eff096-7573-400b-ae26-aa3ac7dc78c1")
@@ -18557,7 +17992,7 @@
 			(at 0.65 2.8 90)
 			(size 0.4 1.7)
 			(layers "B.Cu" "B.Paste" "B.Mask")
-			(net 68 "unconnected-(U7-U-Pad10)")
+			(net 67 "unconnected-(U7-U-Pad10)")
 			(pinfunction "U")
 			(pintype "unspecified+no_connect")
 			(uuid "e7ed6a6b-6a37-426d-bd12-3223378abb01")
@@ -19067,8 +18502,660 @@
 			(uuid "75c1f2ba-3fcc-4c3b-8e72-1163aceb32d8")
 		)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_JST.3dshapes/JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
+		(layer "B.Cu")
+		(uuid "b7fe5f88-ea37-440d-9e7e-7ac223995326")
+		(at 191.5 103 -90)
+		(property "Reference" "C39"
+			(at -0.25 1.5 -90)
+			(layer "B.SilkS")
+			(uuid "59c1277b-ee2b-412f-96f7-784403bcb65d")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "10uF"
+			(at 0 -4 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "315cb764-9244-453b-bfd7-fa35f918cc4e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "db957611-676f-43a0-a43a-8e0e315b58f9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "39b0b205-ada5-4d12-bda7-76cafee441c3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "271bd29c-2823-4fc1-939f-ec70f76af104")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/ae0bd537-8653-444e-867d-eb01f8e0fcf7")
+		(sheetname "Root")
+		(sheetfile "Victor-Brushless-Controller.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.4 0.9)
+			(end -1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "45b290e0-6c9b-4271-b5d5-f4fe8adab5c3")
+		)
+		(fp_line
+			(start 0.4 0.9)
+			(end 1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "46c2dcf2-b3ec-42d7-aab8-1dde9de39108")
+		)
+		(fp_line
+			(start -1.96 0.75)
+			(end -1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "970c6e28-74d1-4c1a-9b8e-e8113835c50b")
+		)
+		(fp_line
+			(start 1.96 0.75)
+			(end 1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "9a48475c-4711-47f1-ab8a-271e5a155931")
+		)
+		(fp_line
+			(start -1.81 -0.9)
+			(end -0.4 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "e14e6512-3cec-4ac0-937a-2d61369a7153")
+		)
+		(fp_line
+			(start 1.81 -0.9)
+			(end 0.4 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "be46f564-e5ae-44d1-a0ac-a7fc86a6871f")
+		)
+		(fp_arc
+			(start -1.81 0.9)
+			(mid -1.916066 0.856066)
+			(end -1.96 0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "88de5190-95d8-4892-a7bb-73be7050ec98")
+		)
+		(fp_arc
+			(start 1.96 0.75)
+			(mid 1.916066 0.856066)
+			(end 1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "b0d88e99-4f65-4cf8-a501-b7bd9841c5ef")
+		)
+		(fp_arc
+			(start -1.96 -0.75)
+			(mid -1.916066 -0.856066)
+			(end -1.81 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "889e2d81-614b-4315-9312-c860e9649493")
+		)
+		(fp_arc
+			(start 1.81 -0.9)
+			(mid 1.916066 -0.856066)
+			(end 1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "f3977e66-2faf-4623-93cc-bffe07d5fab9")
+		)
+		(fp_circle
+			(center -1 -0.63)
+			(end -0.97 -0.63)
+			(stroke
+				(width 0.06)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.Fab")
+			(uuid "55d6c428-f0a4-4e53-9ff4-4c5b771da54f")
+		)
+		(pad "1" smd rect
+			(at -1 0 270)
+			(size 1.41 1.35)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(net 6 "VCC")
+			(pintype "passive")
+			(uuid "37d54293-babb-4566-8e99-61b4e0191490")
+		)
+		(pad "2" smd rect
+			(at 1 0 270)
+			(size 1.41 1.35)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(net 2 "GND")
+			(pintype "passive")
+			(uuid "89778125-8358-4889-8f1d-051010292b8c")
+		)
+		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/GRM21BR61H106KE43L/GRM21BR61H106KE43L.3dshapes/GRM21BR61H106KE43L.wrl"
+			(offset
+				(xyz -0 -0 0.6)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
+		(layer "B.Cu")
+		(uuid "d42d7c01-34fc-4447-b1aa-176cbaa12791")
+		(at 174.75 103 90)
+		(property "Reference" "C33"
+			(at 2.5 0 0)
+			(layer "B.SilkS")
+			(uuid "ed2a8e29-4c63-429d-9665-9658c15abf5f")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "10uF"
+			(at 0 -4 270)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6d287c9e-6f2c-46f6-b44b-ff1d9191323a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "44cc79bc-88c6-4061-8a6e-15b754ca5bd5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "026c8b05-44c7-4eb6-bf29-8c87563ca18e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9110854f-3719-4c8f-ae69-ba7fdc7e9344")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/bedeec30-183d-4da6-95b4-d3d73c71ca78")
+		(sheetname "Root")
+		(sheetfile "Victor-Brushless-Controller.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start 1.81 -0.9)
+			(end 0.4 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "cf802573-298e-4cbe-9a26-42bc85b1b420")
+		)
+		(fp_line
+			(start -1.81 -0.9)
+			(end -0.4 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "daa8e883-4a42-461c-beae-b409231447e1")
+		)
+		(fp_line
+			(start 1.96 0.75)
+			(end 1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "a932a462-6a8f-4959-9a55-5761be01a5c2")
+		)
+		(fp_line
+			(start -1.96 0.75)
+			(end -1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "f4bb1bc0-c285-4a00-ae05-777bd8bb1bdc")
+		)
+		(fp_line
+			(start 0.4 0.9)
+			(end 1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "a3f06017-c40f-411c-a797-25366aab726b")
+		)
+		(fp_line
+			(start -0.4 0.9)
+			(end -1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "6bf972b7-9777-4500-b635-63b16ec55e10")
+		)
+		(fp_arc
+			(start 1.81 -0.9)
+			(mid 1.916066 -0.856066)
+			(end 1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "d17338f9-d4ab-44d2-8258-cb9b3fb92a5f")
+		)
+		(fp_arc
+			(start -1.96 -0.75)
+			(mid -1.916066 -0.856066)
+			(end -1.81 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "1f230310-252e-49f8-a74c-b65dcf1a1090")
+		)
+		(fp_arc
+			(start 1.96 0.75)
+			(mid 1.916066 0.856066)
+			(end 1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "c90ebf96-e552-4a44-89c8-0aacb1304427")
+		)
+		(fp_arc
+			(start -1.81 0.9)
+			(mid -1.916066 0.856066)
+			(end -1.96 0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "3ddbb119-262d-4825-81c6-c996f8bfb561")
+		)
+		(fp_circle
+			(center -1 -0.63)
+			(end -0.97 -0.63)
+			(stroke
+				(width 0.06)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.Fab")
+			(uuid "cf6f4a7f-17e7-4efe-a9d3-726209d08c5f")
+		)
+		(pad "1" smd rect
+			(at -1 0 90)
+			(size 1.41 1.35)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(net 6 "VCC")
+			(pintype "passive")
+			(uuid "5533ca81-c330-49e3-8de5-1829444ade9a")
+		)
+		(pad "2" smd rect
+			(at 1 0 90)
+			(size 1.41 1.35)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(net 2 "GND")
+			(pintype "passive")
+			(uuid "94ac65c7-a173-47d0-94e7-6d2868ced500")
+		)
+		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/GRM21BR61H106KE43L/GRM21BR61H106KE43L.3dshapes/GRM21BR61H106KE43L.wrl"
+			(offset
+				(xyz -0 -0 0.6)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
+		(layer "B.Cu")
+		(uuid "ddeba8db-99c2-4861-9811-be6077018bef")
+		(at 179.25 103 90)
+		(property "Reference" "C24"
+			(at 2.5 0 0)
+			(layer "B.SilkS")
+			(uuid "254abf88-267f-4753-b907-b9d0630e2b7e")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "10uF"
+			(at 0 -4 270)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "16dae4dd-22cf-4601-a6ec-d500fe1594e6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "GRM21BR61H106KE43L:GRM21BR61H106KE43L"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f38a39ab-835b-4841-92d6-a8f225c36429")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "284727ca-bdaa-4212-b5c3-2cc697222b45")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "80a97eb0-15c4-483b-a5a9-8e7247604a22")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/5b69988a-cbc8-47c6-a491-19eb5394b7dc")
+		(sheetname "Root")
+		(sheetfile "Victor-Brushless-Controller.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start 1.81 -0.9)
+			(end 0.4 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "b828bb35-aae0-4575-b773-aea5b75d8cec")
+		)
+		(fp_line
+			(start -1.81 -0.9)
+			(end -0.4 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "9b8686f9-d752-47a7-890f-b4dfd4e97953")
+		)
+		(fp_line
+			(start 1.96 0.75)
+			(end 1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "b4afbccc-8071-45ca-8042-e0e8e5dc6208")
+		)
+		(fp_line
+			(start -1.96 0.75)
+			(end -1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "d9db6472-d7b2-4eae-b346-ef68d1faa632")
+		)
+		(fp_line
+			(start 0.4 0.9)
+			(end 1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "383cb215-5ef7-4f74-b524-721288f6e9bf")
+		)
+		(fp_line
+			(start -0.4 0.9)
+			(end -1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "3827d133-d44d-4e7b-9102-53ff2d5d9a2c")
+		)
+		(fp_arc
+			(start 1.81 -0.9)
+			(mid 1.916066 -0.856066)
+			(end 1.96 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "113e21a0-6c68-4dc8-b07e-6480f6757286")
+		)
+		(fp_arc
+			(start -1.96 -0.75)
+			(mid -1.916066 -0.856066)
+			(end -1.81 -0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "21eb8a0c-d54e-4ac8-9c01-5a159899ae8a")
+		)
+		(fp_arc
+			(start 1.96 0.75)
+			(mid 1.916066 0.856066)
+			(end 1.81 0.9)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "70571d10-e6ed-485f-b8aa-b411225c7caa")
+		)
+		(fp_arc
+			(start -1.81 0.9)
+			(mid -1.916066 0.856066)
+			(end -1.96 0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "ca59934a-faaa-4609-a769-c4dc17228bbc")
+		)
+		(fp_circle
+			(center -1 -0.63)
+			(end -0.97 -0.63)
+			(stroke
+				(width 0.06)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.Fab")
+			(uuid "632fc3e2-d470-44e3-b491-e9fce400bf01")
+		)
+		(pad "1" smd rect
+			(at -1 0 90)
+			(size 1.41 1.35)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(net 6 "VCC")
+			(pintype "passive")
+			(uuid "b331ad68-3d8f-4a02-8096-f8f4dc86a746")
+		)
+		(pad "2" smd rect
+			(at 1 0 90)
+			(size 1.41 1.35)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(net 2 "GND")
+			(pintype "passive")
+			(uuid "5ad8a013-b791-4516-bee6-85db0bf920df")
+		)
+		(model "C:/Users/notan/Documents/GitHub/Victor-Brushless-Controller/KiCad_libraries/GRM21BR61H106KE43L/GRM21BR61H106KE43L.3dshapes/GRM21BR61H106KE43L.wrl"
+			(offset
+				(xyz -0 -0 0.6)
 			)
 			(scale
 				(xyz 1 1 1)
