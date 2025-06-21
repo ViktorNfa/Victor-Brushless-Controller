@@ -4,7 +4,7 @@
 //####################################################################################
 
 #include <SimpleFOC.h>
-#define FW_VERSION "1.3.0"
+#define FW_VERSION "1.4.0"
 
 // The firmware is separated into 7 tabs (a - g), make sure all files are stored in the folder with the same name as tab a_DAXXXFXXX.
 // This tab cointains the parameters to customize the controller. Learn more at https://docs.dagor.dev/
@@ -80,7 +80,7 @@ const float voltageOverride = 22.0;       // Voltage of your power source [Volts
 
 #define MONITOR_ROTOR                     // Monitor rotor position and velocity, parameters below ignored if undef
 const bool print_rotor_data = false;      // Monitor roto's position and velocity (respectively) through the serial terminal
-const float max_rotor_position = 10000;      // Max position [rad] the rotor is allowed to spin to; above this value, motor will freewheel 
+const float max_rotor_position = 10000;   // Max position [rad] the rotor is allowed to spin to; above this value, motor will freewheel 
 const float min_rotor_position = -10000;    // Min position [rad] the rotor is allowed to spin to; below this value, motor will freewheel 
 
 #undef SKIP_SENSOR_CALIB                  // Skip the position sensor calibration on start-up
