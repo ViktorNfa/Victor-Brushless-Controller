@@ -4,7 +4,6 @@
 //  config  - SPI config
 //  cs      - SPI chip select pin 
 // magnetic sensor instance - SPI
-// MagneticSensorSPI sensor = MagneticSensorSPI(AS5048_SPI, 12);
 MagneticSensorSPI sensor = MagneticSensorSPI(AS5147_SPI, 16);
 // alternative constructor (chipselsect, bit_resolution, angle_read_register, )
 // MagneticSensorSPI sensor = MagneticSensorSPI(10, 14, 0x3FFF);
@@ -17,6 +16,7 @@ void setup() {
   sensor.init();
 
   Serial.println("Sensor ready");
+  //SimpleFOC specific delay function
   _delay(1000);
 }
 
@@ -27,8 +27,8 @@ void loop() {
   // has to be called before getAngle nad getVelocity
   sensor.update();
   // display the angle and the angular velocity to the terminal
-  Serial.println(sensor.getAngle());
-  // Serial.print("\t");
-  // Serial.println(sensor.getVelocity());
-  delay(10);
+  Serial.print(sensor.getAngle());
+  Serial.print("\t");
+  Serial.println(sensor.getVelocity());
+  _delay(10);
 }

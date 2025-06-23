@@ -23,7 +23,7 @@
 #define ACT_ID 100                                              // Actuator ID, used for ESP-NOW or RS-485 comms
 const int pp = 20;                                              // BLDC motor number of pole pairs
 const float phaseRes = 0.186;                                   // Phase winding resistance [ohms]
-const float amp_limit = 5.0;                                    // IQ current limit [amps] - requires trueTorque mode                           
+const float amp_limit = 3.0;                                    // IQ current limit [amps] - requires trueTorque mode                           
 const float alignStrength = 0.15;                               // Percentage of available bus voltage used to calibrate the sensor on start-up
 MotionControlType controlType = MotionControlType::torque;      // control types: angle, velocity, torque
 
@@ -54,7 +54,7 @@ const float vp = 0.1;                     // Velocity control loop PROPORTIONAL 
 const float vi = 1.0;                     // Velocity control loop INTEGRAL gain value         - VI
 const float vd = 0.0;                     // Velocity control loop DERIVATIVE gain value       - VD
 const float lpVelFilter = 0.005;          // Velocity measurement low-pass filter              - VF
-const float velocity_limit = 0.5;         // Velocity limit [rad/s]                            - LV
+const float velocity_limit = 25;         // Velocity limit [rad/s]                            - LV
 
 const float ap = 0.1;                     // Position control loop PROPORTIONAL gain value     - AP
 const float ai = 0.0;                     // Position control loop INTEGRAL gain value         - AI
@@ -65,7 +65,7 @@ const float voltageRamp = 2000;           // Change in voltage allowed [Volts pe
 
 //########_ADVANCED PARAMETERS_##########
 #define CURRENT_SENSE                     // Define if using current sense, difference between current control or voltage control mode.  
-const bool trueTorque = false;             // Even if using current sense, torque mode can be voltage torque mode if set to false
+const bool trueTorque = true;             // Even if using current sense, torque mode can be voltage torque mode if set to false
 const bool print_currents = false;        // Monitor currents through the serial terminal 
 const bool print_dq_currents = false;     // true-> print DQ currents, false -> print phase currents
 
@@ -98,7 +98,7 @@ const bool print_foc_freq = false;        // Monitor FOC current loop bandwidth 
 
 //#######_WIRED/WIRELESS COMMUNICATION_###########
 #undef ESP_NOW                            // define -> enable ESP_NOW
-#define RS485                             // define -> enable RS-485
+#undef RS485                             // define -> enable RS-485
 const bool ext_command_debug = false;     // Enable/ disable monitoring of inputs from external comms through the USB adapter (serial terminal)
                                           // Recommended to disable when adapter will not be connected to computer
 

@@ -88,7 +88,7 @@ int SimpleFOCinit(float bus_v){
     }
   #else
     motor.torque_controller = TorqueControlType::voltage; 
-    motor.voltage_limit = amp_limit*phaseRes;
+    motor.voltage_limit = 22;
     //motor.phase_resistance = phaseRes;          // Measured phase resistance [ohms]
     //motor.current_limit = maxPowersourceCurrent;
   #endif

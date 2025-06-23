@@ -1,1 +1,1 @@
-As of right now, only the dev branch of simpleFOC (included in this folder) works with the latest ESP32 v3 for Arduino IDE.
+As of right now, only the dev branch of simpleFOC (included in this folder) works with the latest ESP32 v3 for Arduino IDE. Install the library by using the Include Library/Add .ZIP Library.
