@@ -1,8 +1,8 @@
 #include <SimpleFOC.h>
 
 // BLDCMotor(pole pair number, phase resistance (optional) );
-const int pp = 20;
-const float phaseRes = 0.186;
+const int pp = 11;
+const float phaseRes = 5.6/2.0;
 BLDCMotor motor = BLDCMotor(pp, phaseRes);
 // BLDCDriver3PWM(pwmA, pwmB, pwmC, Enable(optional));
 #define INHA 27 // PWM input signal for bridge A high side
@@ -49,11 +49,11 @@ void setup() {
 
   // driver config
   // power supply voltage [V]
-  driver.voltage_power_supply = 22.0;
+  driver.voltage_power_supply = 12.0;
   // limit the maximal dc voltage the driver can set
   // as a protection measure for the low-resistance motors
   // this value is fixed on startup
-  driver.voltage_limit = 6;
+  driver.voltage_limit = 12;
   if(!driver.init()){
     Serial.println("Driver init failed!");
     return;
@@ -65,7 +65,7 @@ void setup() {
   // limit the voltage to be set to the motor
   // start very low for high resistance motors
   // current = voltage / resistance, so try to be well under 1Amp
-  motor.voltage_limit = 0.7;   // [V]
+  motor.voltage_limit = 12;   // [V]
  
   // open loop control config
   motor.controller = MotionControlType::velocity_openloop;
@@ -77,7 +77,7 @@ void setup() {
   }
 
   // set the target velocity [rad/s]
-  motor.target = 0.3; // one rotation per second
+  motor.target = 3; // one rotation per second
 
   // add target command T
   command.add('T', doTarget, "target velocity");

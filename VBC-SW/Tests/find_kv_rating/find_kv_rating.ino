@@ -13,7 +13,7 @@
 MagneticSensorSPI sensor = MagneticSensorSPI(AS5147_SPI, 16);
 
 // BLDC motor & driver instance
-const int pp = 20;
+const int pp = 11;
 BLDCMotor motor = BLDCMotor(pp);
 #define INHA 27 // PWM input signal for bridge A high side
 #define INHB 26 // PWM input signal for bridge B high side
@@ -21,7 +21,7 @@ BLDCMotor motor = BLDCMotor(pp);
 BLDCDriver3PWM driver = BLDCDriver3PWM(INHC, INHB, INHA);
 
 // voltage set point variable
-float target_voltage = 0.3;
+float target_voltage = 3;
 
 // instantiate the commander
 Commander command = Commander(Serial);
@@ -72,14 +72,14 @@ void setup() {
   // driver config
   // IMPORTANT!
   // make sure to set the correct power supply voltage [V]
-  driver.voltage_power_supply = 22.0;
+  driver.voltage_power_supply = 12.0;
   driver.init();
   // link driver
   motor.linkDriver(&driver);
 
-  motor.voltage_limit = 0.7;
+  motor.voltage_limit = 6;
   // aligning voltage
-  motor.voltage_sensor_align = 1.0;
+  motor.voltage_sensor_align = 2;
 
   // set motion control loop to be used
   motor.controller = MotionControlType::torque;
