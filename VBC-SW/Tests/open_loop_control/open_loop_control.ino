@@ -1,48 +1,44 @@
 #include <SimpleFOC.h>
 
 
-/*********  Dagor board bring-up for DRV8305  *********/
-#include <SPI.h>
+/* ------------ Specific setup for Dagor board ------------ */
+// Dagor-specific pin map (same names h_DRV8305.ino uses)
+#define enGate   2    // DRV8305 EN_GATE
+#define nFault   4    // DRV8305 nFAULT  (not really used here)
+#define cs       5    // DRV8305 SPI-CS
+#define SO1      36   // phase-A current (unused)
+#define SO2      35   // phase-B current (unused)
+#define SO3      34   // phase-C current (unused)
 
-constexpr int PIN_CS_DRV   = 5;   // DRV8305 SPI-CS
-constexpr int PIN_EN_GATE  = 2;   // DRV8305 nSLEEP / EN_GATE
-constexpr int PIN_NFAULT   = 4;   // optional, just for diagnostics
+// Two dummy symbols the Dagor file references – keep it happy
+enum { LIFE_IS_GOOD = 0, DRV_ERROR = 1 };
+int  state_machine = LIFE_IS_GOOD;
 
-static inline void drv_write(uint8_t addr, uint16_t data)
-{
-  // 11-bit payload + 3-bit address, see DRV8305 DS p.30
-  uint16_t frame = ((addr & 0x07u) << 11) | (data & 0x7FFu);
+// Prototypes from h_DRV8305.ino
+int drv_init(bool resp);
+void drv_enable(bool on);
 
-  digitalWrite(PIN_CS_DRV, LOW);
-  SPI.transfer16(frame);
-  digitalWrite(PIN_CS_DRV, HIGH);
-}
-
-void dagor_begin()
-{
-  /* --- GPIO and SPI basics ------------------------------------------ */
-  pinMode(PIN_CS_DRV,   OUTPUT);   digitalWrite(PIN_CS_DRV, HIGH);
-  pinMode(PIN_EN_GATE,  OUTPUT);   digitalWrite(PIN_EN_GATE, LOW);
-  pinMode(PIN_NFAULT,   INPUT);            // optional
-
-  SPI.begin();                       // default SCK=18, MISO=19, MOSI=23
+void spi_init(){
+  //SPI start up
+  pinMode(cs, OUTPUT);
+  digitalWrite(cs, HIGH);
+  SPI.begin();
   SPI.setBitOrder(MSBFIRST);
-  SPI.setDataMode(SPI_MODE1);        // DRV8305 uses CPOL=0, CPHA=1
-
-  /* --- Program the driver ------------------------------------------- */
-  // CTRL2 (addr 0x02) : 3-PWM mode, no over-current shut-down, etc.
-  drv_write(0x02, 0b011_101_00110);    // 0x3A96 in the Dagor FW
-  // CSA (addr 0x03)  : clamp amp outputs to 3.3 V, 80× gain
-  drv_write(0x03, 0b100_1010_00000);   // 0x4A80
-  // CSA2 (addr 0x04) : 80× gain selected
-  drv_write(0x04, 0b101_0000_00000);   // 0x5000
-
-  /* --- Let the power stage start switching -------------------------- */
-  delay(2);
-  digitalWrite(PIN_EN_GATE, HIGH);     // enable half-bridges
-  delay(2);
+  SPI.setDataMode(SPI_MODE1);
 }
-/******************************************************/
+
+void gpio_init(){
+  //Pinmodes assignment
+  pinMode(15,OUTPUT);
+  digitalWrite(15,HIGH);
+  pinMode(SO1, INPUT);
+  pinMode(SO2, INPUT);
+  pinMode(SO3, INPUT);
+  pinMode(nFault, INPUT);
+  pinMode(enGate, OUTPUT);
+  digitalWrite(enGate, LOW);
+}
+/* -------------------------------------------------------- */
 
 
 // BLDCMotor(pole pair number, phase resistance (optional) );
@@ -68,7 +64,9 @@ void setup() {
   // comment out if not needed
   SimpleFOCDebug::enable(&Serial);
 
-  dagor_begin();
+  gpio_init();  // sets pin modes and pulls EN_GATE low
+  spi_init();   // SPI MODE1, MSB first
+  drv_init(false);
 
   // driver config
   // power supply voltage [V]
@@ -76,7 +74,7 @@ void setup() {
   // limit the maximal dc voltage the driver can set
   // as a protection measure for the low-resistance motors
   // this value is fixed on startup
-  driver.voltage_limit = 12;
+  driver.voltage_limit = 12.0;
   if(!driver.init()){
     Serial.println("Driver init failed!");
     return;
@@ -88,7 +86,7 @@ void setup() {
   // limit the voltage to be set to the motor
   // start very low for high resistance motors
   // current = voltage / resistance, so try to be well under 1Amp
-  motor.voltage_limit = 3;   // [V]
+  motor.voltage_limit = 3.0;   // [V]
  
   // open loop control config
   motor.controller = MotionControlType::velocity_openloop;
@@ -100,7 +98,7 @@ void setup() {
   }
 
   // set the target velocity [rad/s]
-  motor.target = 3; // one rotation per second
+  motor.target = 3.0; // one rotation per second
 
   // add target command T
   command.add('T', doTarget, "target velocity");
