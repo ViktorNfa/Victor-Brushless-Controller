@@ -107,7 +107,7 @@
 	(net 25 "EXTCS IO12")
 	(net 26 "Net-(LED1-K)")
 	(net 27 "Net-(LED2-A)")
-	(net 28 "IO 15")
+	(net 28 "IO15")
 	(net 29 "Net-(LED3-K)")
 	(net 30 "/PA")
 	(net 31 "/PB")
@@ -1043,7 +1043,7 @@
 				)
 			)
 		)
-		(property "Value" "IO15"
+		(property "Value" "Yellow"
 			(at 0 1.25 0)
 			(layer "F.SilkS")
 			(uuid "8aebf79c-4d05-4277-b287-075b530df86d")
@@ -1280,7 +1280,7 @@
 			(at 0.8 0 90)
 			(size 0.8 0.8)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 28 "IO 15")
+			(net 28 "IO15")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "02c707e5-1363-4e7d-97e4-a20853129459")
@@ -1302,7 +1302,7 @@
 		(uuid "13e9f173-b374-4dec-86a7-d839bfa23b3d")
 		(at 178.5 102.5 90)
 		(property "Reference" "C27"
-			(at 0 -1.3 270)
+			(at 0 -1.3 -90)
 			(layer "F.SilkS")
 			(uuid "df7703ce-91e7-4985-b6e8-ab9620d487be")
 			(effects
@@ -1314,7 +1314,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 0 4 270)
+			(at 0 4 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a3c91d26-6a79-43b4-8d2f-34af0778af0e")
@@ -1573,7 +1573,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/5b59085b-3f95-4d6a-9e68-beb23bfdbe4d")
+		(sheetname "Root")
+		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 1.81 -0.9)
@@ -1723,7 +1726,7 @@
 		(uuid "1619bf57-221d-4796-8a97-64e8660b7a59")
 		(at 173 102.5 90)
 		(property "Reference" "C23"
-			(at 0 -1.25 270)
+			(at 0 -1.25 -90)
 			(layer "F.SilkS")
 			(uuid "f73346fb-c423-4cac-bd3c-19349aaf021c")
 			(effects
@@ -1735,7 +1738,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 0 4 270)
+			(at 0 4 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7d923d8f-c260-40c8-ad0c-300a9ee9ae31")
@@ -2305,7 +2308,7 @@
 				)
 			)
 		)
-		(property "Value" "nFault"
+		(property "Value" "Red"
 			(at 0 -1.25 180)
 			(layer "F.SilkS")
 			(uuid "b5a93eae-71b2-4167-aa1f-58ecf50f52d5")
@@ -2764,7 +2767,7 @@
 		(uuid "1c1f79f9-e651-42d5-8bbe-25ae124462a1")
 		(at 175.75 102.5 90)
 		(property "Reference" "C25"
-			(at 0 -1.25 270)
+			(at 0 -1.25 -90)
 			(layer "F.SilkS")
 			(uuid "b62c1f42-f8e5-4853-a330-67447ca97a75")
 			(effects
@@ -2776,7 +2779,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 0 4 270)
+			(at 0 4 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d62f6437-c7a4-485d-93aa-6cb75245d431")
@@ -4015,7 +4018,7 @@
 				)
 			)
 		)
-		(property "Value" "VD"
+		(property "Value" "Blue"
 			(at 0 1.21 0)
 			(layer "F.SilkS")
 			(uuid "354b8094-8caf-4866-ab5e-840637b5017c")
@@ -6396,6 +6399,8 @@
 			)
 		)
 		(path "/6112524b-9016-4708-908f-6df0ae364f22")
+		(sheetname "Root")
+		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 2.6 -1.43)
@@ -8410,7 +8415,7 @@
 				)
 			)
 		)
-		(property "Value" "3V3"
+		(property "Value" "SolderJumper"
 			(at 0.917764 -1.5 0)
 			(layer "F.SilkS")
 			(uuid "3dafec78-e9a9-443a-9e42-4037879e6740")
@@ -8975,7 +8980,7 @@
 				)
 			)
 		)
-		(property "Value" "SMA_L4.4-W2.6-LS5.0-RD"
+		(property "Value" "B230A-13-F"
 			(at 0 4 -90)
 			(layer "F.Fab")
 			(hide yes)
@@ -9037,6 +9042,8 @@
 			)
 		)
 		(path "/7cee1ff7-e2af-4534-b9f0-9393c0c164fd")
+		(sheetname "Root")
+		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.73 1.4)
@@ -9146,7 +9153,7 @@
 				)
 			)
 		)
-		(property "Value" "V+"
+		(property "Value" "PVDD"
 			(at -3.5 1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -9390,6 +9397,8 @@
 			)
 		)
 		(path "/cff45d20-b4dc-43f3-b790-cda6758f1e06")
+		(sheetname "Root")
+		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -4.23 -2.01)
@@ -10341,7 +10350,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/4e304b17-dd5d-4107-b65b-592dabc1605f")
+		(sheetname "Root")
+		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 1.02 -0.5)
@@ -12699,7 +12711,7 @@
 		(uuid "d4a053c5-f1e4-4768-b2ae-f5e6057382c6")
 		(at 170.25 102.5 90)
 		(property "Reference" "C22"
-			(at 0 -1.3 270)
+			(at 0 -1.3 -90)
 			(layer "F.SilkS")
 			(uuid "15a8b5ae-e656-49e2-b210-751e0c9e1341")
 			(effects
@@ -12711,7 +12723,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 0 4 270)
+			(at 0 4 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7010988c-798b-45fd-be63-ba35af8104d0")
@@ -13195,6 +13207,8 @@
 			)
 		)
 		(path "/9682ec55-52fb-45cb-abd7-4627986bc1e1")
+		(sheetname "Root")
+		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -4.23 1.9)
@@ -13540,7 +13554,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/fddac87f-e769-4e8b-9ae4-c04e13704974")
+		(sheetname "Root")
+		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.5 2.1)
@@ -14258,7 +14275,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/34afdf31-9627-49d6-b29e-33a21f9fac3a")
+		(sheetname "Root")
+		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 1.81 -0.9)
@@ -14481,6 +14501,8 @@
 			)
 		)
 		(path "/e5a445b8-fd6f-479b-8e36-9684eaa78b06")
+		(sheetname "Root")
+		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -8.99 -16.61)
@@ -14894,7 +14916,7 @@
 			(at 4.47 9.11 90)
 			(size 2 1)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 28 "IO 15")
+			(net 28 "IO15")
 			(pinfunction "IO15")
 			(pintype "unspecified")
 			(uuid "dc864b4e-112d-4fbc-b7c7-136c6af084a7")
@@ -15556,6 +15578,8 @@
 			)
 		)
 		(path "/6b507a77-a996-4cf0-9e77-879854727fe4")
+		(sheetname "Root")
+		(sheetfile "Victor-Brushless-Controller.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 4.23 -2.01)
@@ -15676,7 +15700,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 0 -4 270)
+			(at 0 -4 -90)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "4e25cf68-7d63-4867-9ab7-67492ed8cb8b")
@@ -15893,7 +15917,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 0 -4 270)
+			(at 0 -4 -90)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "dac26069-8232-4027-bd5f-b8dbe96db6e4")
@@ -16110,7 +16134,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 0 -4 270)
+			(at 0 -4 -90)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "989482c2-0a62-4c39-b45e-073f104344bd")
@@ -16731,7 +16755,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "SPI"
+		(property "Value" "External SPI"
 			(at -6.975 0.5 180)
 			(layer "B.SilkS")
 			(uuid "136b62fd-617f-4a49-8428-87d85364dbc6")
@@ -18064,7 +18088,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "i2c/UART"
+		(property "Value" "i2c QWIIC"
 			(at 6.5 0.5 180)
 			(layer "B.SilkS")
 			(uuid "ec8ef699-b6e7-46a3-a5de-f36dc67fe5de")
@@ -18749,7 +18773,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 0 -4 270)
+			(at 0 -4 -90)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "6d287c9e-6f2c-46f6-b44b-ff1d9191323a")
@@ -18966,7 +18990,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 0 -4 270)
+			(at 0 -4 -90)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "16dae4dd-22cf-4601-a6ec-d500fe1594e6")

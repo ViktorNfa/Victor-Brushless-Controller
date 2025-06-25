@@ -11666,7 +11666,7 @@
 			)
 		)
 	)
-	(global_label "IO 15"
+	(global_label "IO15"
 		(shape input)
 		(at 69.85 158.75 270)
 		(fields_autoplaced yes)
@@ -11678,7 +11678,7 @@
 		)
 		(uuid "2efec4ca-c136-429b-82c6-448baf2a6d94")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.85 167.0571 90)
+			(at 69.85 166.0895 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12832,7 +12832,7 @@
 			)
 		)
 	)
-	(global_label "IO 15"
+	(global_label "IO15"
 		(shape input)
 		(at 66.04 69.85 90)
 		(fields_autoplaced yes)
@@ -12844,7 +12844,7 @@
 		)
 		(uuid "cc03edf3-25d9-4403-8499-92b1f53a51aa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 66.04 61.5429 90)
+			(at 66.04 62.5105 90)
 			(effects
 				(font
 					(size 1.27 1.27)

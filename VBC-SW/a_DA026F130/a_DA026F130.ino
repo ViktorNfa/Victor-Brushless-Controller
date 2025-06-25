@@ -22,7 +22,7 @@
 //#######_USER SET-UP PARAMETERS_#######
 #define ACT_ID 100                                              // Actuator ID, used for ESP-NOW or RS-485 comms
 const int pp = 11;                                              // BLDC motor number of pole pairs
-const float phaseRes = 5.6/2;                                   // Phase winding resistance [ohms]
+const float phaseRes = 5.5/2;                                   // Phase winding resistance [ohms]
 const float amp_limit = 1.0;                                    // IQ current limit [amps] - requires trueTorque mode                           
 const float alignStrength = 0.15;                               // Percentage of available bus voltage used to calibrate the sensor on start-up
 MotionControlType controlType = MotionControlType::torque;      // control types: angle, velocity, torque
@@ -79,9 +79,9 @@ const bool print_bus_voltage = false;     // Monitor the bus voltage through the
 const float voltageOverride = 12.0;       // Voltage of your power source [Volts], overrides source voltage if MONITOR_BUS_VOLTAGE is undefined
 
 #define MONITOR_ROTOR                     // Monitor rotor position and velocity, parameters below ignored if undef
-const bool print_rotor_data = true;      // Monitor roto's position and velocity (respectively) through the serial terminal
+const bool print_rotor_data = false;      // Monitor roto's position and velocity (respectively) through the serial terminal
 const float max_rotor_position = 10000;   // Max position [rad] the rotor is allowed to spin to; above this value, motor will freewheel 
-const float min_rotor_position = -10000;    // Min position [rad] the rotor is allowed to spin to; below this value, motor will freewheel 
+const float min_rotor_position = -10000;  // Min position [rad] the rotor is allowed to spin to; below this value, motor will freewheel 
 
 #undef SKIP_SENSOR_CALIB                  // Skip the position sensor calibration on start-up
                                           // electric angle offset and natural direction printed on start-up
@@ -98,7 +98,7 @@ const bool print_foc_freq = false;        // Monitor FOC current loop bandwidth 
 
 //#######_WIRED/WIRELESS COMMUNICATION_###########
 #undef ESP_NOW                            // define -> enable ESP_NOW
-#undef RS485                             // define -> enable RS-485
+#undef RS485                              // define -> enable RS-485
 const bool ext_command_debug = false;     // Enable/ disable monitoring of inputs from external comms through the USB adapter (serial terminal)
                                           // Recommended to disable when adapter will not be connected to computer
 
