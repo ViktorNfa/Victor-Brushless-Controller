@@ -41,10 +41,24 @@ void gpio_init(){
 /* -------------------------------------------------------- */
 
 
+/* ------------ PID Tuning ------------ */
+const float vp = 0.1;                     // Velocity control loop PROPORTIONAL gain value     - VP
+const float vi = 1.0;                     // Velocity control loop INTEGRAL gain value         - VI
+const float vd = 0.0;                     // Velocity control loop DERIVATIVE gain value       - VD
+const float lpVelFilter = 0.01;           // Velocity measurement low-pass filter              - VF
+const float velocity_limit = 150;         // Velocity limit [rad/s]                            - LV
+
+const float ap = 5.0;                     // Position control loop PROPORTIONAL gain value     - AP
+const float ai = 0.0;                     // Position control loop INTEGRAL gain value         - AI
+const float ad = 0.3;                     // Position control loop DERIVATIVE gain value       - AD
+const float lpPosFilter = 0.000;          // Position measurement low-pass filter              - AF
+const float voltageRamp = 2000;           // Change in voltage allowed [Volts per sec]         - VR
+/* ------------------------------------ */
+
 // BLDCMotor(pole pair number, phase resistance (optional) );
 const int pp = 11;
 const float phaseRes = 5.5/2.0;
-BLDCMotor motor = BLDCMotor(pp, phaseRes);
+BLDCMotor motor = BLDCMotor(pp);
 // BLDCDriver3PWM(pwmA, pwmB, pwmC, Enable(optional));
 #define INHA 27 // PWM input signal for bridge A high side
 #define INHB 26 // PWM input signal for bridge B high side
@@ -91,6 +105,22 @@ void setup() {
   // set motion control loop to be used
   motor.torque_controller = TorqueControlType::voltage;
   motor.controller = MotionControlType::torque;
+
+  /* ------------ PID Tuning ------------ */
+  // velocity PI controller parameterstorque
+  motor.PID_velocity.P = vp;
+  motor.PID_velocity.I = vi;
+  motor.PID_velocity.D = vd;
+  motor.PID_velocity.output_ramp = voltageRamp;
+  motor.LPF_velocity.Tf = lpVelFilter;
+  motor.velocity_limit = velocity_limit;       // maximal velocity of the position control
+  
+  // angle P controller
+  motor.P_angle.P = ap;
+  motor.P_angle.I = ai;
+  motor.P_angle.D = ad;
+  motor.LPF_angle.Tf = lpPosFilter;
+  /* ------------------------------------ */
 
   // comment out if not needed
   motor.useMonitoring(Serial);

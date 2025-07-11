@@ -120,13 +120,13 @@ int SimpleFOCinit(float bus_v){
   motor.PID_velocity.D = vd;
   motor.PID_velocity.output_ramp = voltageRamp;
   motor.LPF_velocity.Tf = lpVelFilter;
-  motor.velocity_limit = velocity_limit;
+  motor.velocity_limit = velocity_limit;       // maximal velocity of the position control
   
   // angle P controller
   motor.P_angle.P = ap;
   motor.P_angle.I = ai;
   motor.P_angle.D = ad;
-  motor.LPF_angle.Tf = lpPosFilter;       // maximal velocity of the poisition control
+  motor.LPF_angle.Tf = lpPosFilter;
   
   // Position offset, used to define a MECHANICAL absolute 0 position [rads]
   motor.sensor_offset = sensorOffset;
