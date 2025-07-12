@@ -6,9 +6,9 @@
 #define enGate   2    // DRV8305 EN_GATE
 #define nFault   4    // DRV8305 nFAULT  (not really used here)
 #define cs       5    // DRV8305 SPI-CS
-#define SO1      36   // phase-A current (unused)
-#define SO2      35   // phase-B current (unused)
-#define SO3      34   // phase-C current (unused)
+#define SO1      36   // phase-A current
+#define SO2      35   // phase-B current
+#define SO3      34   // phase-C current
 
 // Two dummy symbols the Dagor file references – keep it happy
 enum { LIFE_IS_GOOD = 0, DRV_ERROR = 1 };
@@ -68,6 +68,9 @@ BLDCDriver3PWM driver = BLDCDriver3PWM(INHC, INHB, INHA);
 // Magnetic rotor sensor
 MagneticSensorSPI sensor = MagneticSensorSPI(AS5147_SPI, 16);
 
+// current sensor
+LowsideCurrentSense current_sense = LowsideCurrentSense(0.002f, 80.0f, SO1, SO2, SO3);
+
 // instantiate the commander
 Commander command = Commander(Serial);
 void doMotor(char* cmd) { command.motor(&motor, cmd); }
@@ -99,6 +102,16 @@ void setup() {
   }
   // link driver
   motor.linkDriver(&driver);
+  // link driver to cs
+  current_sense.linkDriver(&driver);
+
+  // current sense init hardware
+  if(!current_sense.init()){
+    Serial.println("Current sense init failed!");
+    return;
+  }
+  // link the current sense to the motor
+  motor.linkCurrentSense(&current_sense);
 
   // aligning voltage
   motor.voltage_sensor_align = 2.5;
@@ -123,8 +136,11 @@ void setup() {
   motor.LPF_angle.Tf = lpPosFilter;
   /* ------------------------------------ */
 
+  // use monitoring with serial
   // comment out if not needed
   motor.useMonitoring(Serial);
+  motor.monitor_downsample = 100; // set downsampling can be even more > 100
+  motor.monitor_variables = _MON_CURR_Q | _MON_CURR_D; // set monitoring of d and q currents
 
   // initialize motor
   if(!motor.init()){
@@ -154,6 +170,9 @@ void loop() {
 
   // Motion control function
   motor.move();
+
+  // display the currents
+  motor.monitor();
 
   // user communication
   command.run();
