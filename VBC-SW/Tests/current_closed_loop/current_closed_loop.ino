@@ -117,7 +117,7 @@ void setup() {
   motor.voltage_sensor_align = 2.5;
 
   // set motion control loop to be used
-  motor.torque_controller = TorqueControlType::voltage;
+  motor.torque_controller = TorqueControlType::foc_current;
   motor.controller = MotionControlType::torque;
 
   /* ------------ PID Tuning ------------ */
@@ -139,8 +139,6 @@ void setup() {
   // use monitoring with serial
   // comment out if not needed
   motor.useMonitoring(Serial);
-  motor.monitor_downsample = 50; // set downsampling can be even more > 100
-  motor.monitor_variables = _MON_CURR_Q | _MON_CURR_D; // set monitoring of d and q currents
 
   // initialize motor
   if(!motor.init()){
@@ -170,9 +168,6 @@ void loop() {
 
   // Motion control function
   motor.move();
-
-  // display the currents
-  motor.monitor();
 
   // user communication
   command.run();
