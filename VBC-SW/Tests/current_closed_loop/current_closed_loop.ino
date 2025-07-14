@@ -41,7 +41,15 @@ void gpio_init(){
 /* -------------------------------------------------------- */
 
 
-/* ------------ PID Tuning ------------ */
+/* ------------ PID Tuning & others ------------ */
+const float amp_limit = 1.0;              // IQ current limit [amps] - requires trueTorque mode
+const int motionDownSample = 4;           // Downsample the motion control loops with respect to the torque control loop [amount of loops]
+
+const float cp = 0.015;                   // QD current loops PROPORTONAL gain value           - MQP & MDP
+const float ci = 40.0;                    // QD current loops INTEGRAL gain value              - MQI & MDI
+const float cd = 0.0;                     // QD current loops DERIVATIVE gain value            - MQD & MDD
+const float lpQDFilter = 0.001;           // QD current loops measurement low-pass filter      - QF & DF
+
 const float vp = 0.1;                     // Velocity control loop PROPORTIONAL gain value     - VP
 const float vi = 1.0;                     // Velocity control loop INTEGRAL gain value         - VI
 const float vd = 0.0;                     // Velocity control loop DERIVATIVE gain value       - VD
@@ -53,7 +61,7 @@ const float ai = 0.0;                     // Position control loop INTEGRAL gain
 const float ad = 0.3;                     // Position control loop DERIVATIVE gain value       - AD
 const float lpPosFilter = 0.000;          // Position measurement low-pass filter              - AF
 const float voltageRamp = 2000;           // Change in voltage allowed [Volts per sec]         - VR
-/* ------------------------------------ */
+/* --------------------------------------------- */
 
 // BLDCMotor(pole pair number, phase resistance (optional) );
 const int pp = 11;
@@ -87,6 +95,8 @@ void setup() {
   spi_init();   // SPI MODE1, MSB first
   drv_init(false);
   
+  // Set SPI clock freq. to 10MHz, default is 1MHz
+  sensor.clock_speed = 10000000;
   // initialize encoder sensor hardware
   sensor.init();
   // link the motor to the sensor
@@ -121,6 +131,22 @@ void setup() {
   motor.controller = MotionControlType::torque;
 
   /* ------------ PID Tuning ------------ */
+  // // Current PI controller parameters - q_axis
+  // motor.PID_current_q.P = cp;
+  // motor.PID_current_q.I = ci;
+  // motor.PID_current_q.D = cd;
+  // motor.PID_current_q.limit = amp_limit;
+  // motor.PID_current_q.output_ramp = voltageRamp;
+  // motor.LPF_current_q.Tf = lpQDFilter;
+
+  // // Current PI controller parameters - d_axis
+  // motor.PID_current_d.P = cp;
+  // motor.PID_current_d.I = ci;
+  // motor.PID_current_d.D = cd;
+  // motor.PID_current_d.limit = amp_limit;
+  // motor.PID_current_d.output_ramp = voltageRamp;
+  // motor.LPF_current_d.Tf = lpQDFilter;
+
   // velocity PI controller parameterstorque
   motor.PID_velocity.P = vp;
   motor.PID_velocity.I = vi;
@@ -135,6 +161,9 @@ void setup() {
   motor.P_angle.D = ad;
   motor.LPF_angle.Tf = lpPosFilter;
   /* ------------------------------------ */
+
+  // // Downsampling value of the motion control loops with respect to torque loops
+  // motor.motion_downsample = motionDownSample; // - times (default 0 - disabled)
 
   // use monitoring with serial
   // comment out if not needed
@@ -152,7 +181,7 @@ void setup() {
   }
 
   // set the initial motor target
-  motor.target = 0.5; // Volts 
+  motor.target = 0.3; // Amps
 
   // add target command M
   command.add('M', doMotor, "Motor");
