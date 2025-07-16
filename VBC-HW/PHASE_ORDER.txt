@@ -1,0 +1,5 @@
+Dagor's connected Motor Phase Terminal C to DRV phase and amplifiers pins A and 1, respectively. 
+Similarly, for Motor Phase Terminal A to DRV phase and amplifiers pins C and 3, respectively.
+
+Not sure why he did this, maybe from his current motor setup or an error. 
+It doesn't really affect anything as long as the BLDCDriver construct in the code is properly called reverted.
