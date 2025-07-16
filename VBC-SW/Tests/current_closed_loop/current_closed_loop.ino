@@ -122,6 +122,8 @@ void setup() {
   }
   // link the current sense to the motor
   motor.linkCurrentSense(&current_sense);
+  // skip alignment procedure
+  current_sense.skip_align = true;
 
   // aligning voltage
   motor.voltage_sensor_align = 2.5;

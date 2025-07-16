@@ -81,7 +81,7 @@ void setup() {
   Serial.begin(115200);
   // enable more verbose output for debugging
   // comment out if not needed
-  SimpleFOCDebug::enable(&Serial);
+  // SimpleFOCDebug::enable(&Serial);
 
   gpio_init();  // sets pin modes and pulls EN_GATE low
   spi_init();   // SPI MODE1, MSB first
@@ -112,6 +112,8 @@ void setup() {
   }
   // link the current sense to the motor
   motor.linkCurrentSense(&current_sense);
+  // skip alignment procedure
+  current_sense.skip_align = true;
 
   // aligning voltage
   motor.voltage_sensor_align = 2.5;
@@ -140,7 +142,7 @@ void setup() {
   // comment out if not needed
   motor.useMonitoring(Serial);
   motor.monitor_downsample = 50; // set downsampling can be even more > 100
-  motor.monitor_variables = _MON_CURR_Q | _MON_CURR_D; // set monitoring of d and q currents
+  motor.monitor_variables = _MON_CURR_Q | _MON_CURR_D; // set monitoring of Q and D currents
 
   // initialize motor
   if(!motor.init()){
@@ -171,8 +173,23 @@ void loop() {
   // Motion control function
   motor.move();
 
-  // display the currents
-  motor.monitor();
+  // // display the currents [in mAmps]
+  // motor.monitor();
+
+  // Display Q & D currents in a Serial Plotter friendly way
+  static uint16_t cnt = 0;
+  if (++cnt >= 50) {        // same down-sampling used before
+    cnt = 0;
+
+    // get D-Q currents *now*, with the latest electrical angle
+    DQCurrent_s iq = current_sense.getFOCCurrents(motor.electrical_angle);
+
+    Serial.print("Iq:"); 
+    Serial.print(iq.q, 3);  // [Amps] 3 decimals
+    Serial.print('\t');
+    Serial.print("Id:");
+    Serial.println(iq.d, 3); // [Amps] 3 decimals
+  }
 
   // user communication
   command.run();

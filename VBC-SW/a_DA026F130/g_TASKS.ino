@@ -214,8 +214,10 @@ void printCurrents(void * print_type){
     if(DQspace){
       //DQCurrent_s current = current_sense.getFOCCurrents( _electricalAngle(sensor.getMechanicalAngle() + 0.1*sensor.getVelocity(), motor.pole_pairs) );
       //DQCurrent_s current = current_sense.getFOCCurrents(motor.electrical_angle);
+      Serial.print("Id:"); 
       Serial.print(motor.current.d);
       Serial.print("\t");
+      Serial.print("Iq:");
       Serial.println(motor.current.q);
     }
     else{
