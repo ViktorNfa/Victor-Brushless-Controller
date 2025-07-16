@@ -133,21 +133,21 @@ void setup() {
   motor.controller = MotionControlType::torque;
 
   /* ------------ PID Tuning ------------ */
-  // // Current PI controller parameters - q_axis
-  // motor.PID_current_q.P = cp;
-  // motor.PID_current_q.I = ci;
-  // motor.PID_current_q.D = cd;
-  // motor.PID_current_q.limit = amp_limit;
-  // motor.PID_current_q.output_ramp = voltageRamp;
-  // motor.LPF_current_q.Tf = lpQDFilter;
+  // Current PI controller parameters - q_axis
+  motor.PID_current_q.P = cp;
+  motor.PID_current_q.I = ci;
+  motor.PID_current_q.D = cd;
+  motor.PID_current_q.limit = amp_limit;
+  motor.PID_current_q.output_ramp = voltageRamp;
+  motor.LPF_current_q.Tf = lpQDFilter;
 
-  // // Current PI controller parameters - d_axis
-  // motor.PID_current_d.P = cp;
-  // motor.PID_current_d.I = ci;
-  // motor.PID_current_d.D = cd;
-  // motor.PID_current_d.limit = amp_limit;
-  // motor.PID_current_d.output_ramp = voltageRamp;
-  // motor.LPF_current_d.Tf = lpQDFilter;
+  // Current PI controller parameters - d_axis
+  motor.PID_current_d.P = cp;
+  motor.PID_current_d.I = ci;
+  motor.PID_current_d.D = cd;
+  motor.PID_current_d.limit = amp_limit;
+  motor.PID_current_d.output_ramp = voltageRamp;
+  motor.LPF_current_d.Tf = lpQDFilter;
 
   // velocity PI controller parameterstorque
   motor.PID_velocity.P = vp;
@@ -169,7 +169,7 @@ void setup() {
 
   // use monitoring with serial
   // comment out if not needed
-  motor.useMonitoring(Serial);
+  // motor.useMonitoring(Serial);
 
   // initialize motor
   if(!motor.init()){
