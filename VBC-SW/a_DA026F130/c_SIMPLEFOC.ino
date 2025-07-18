@@ -102,7 +102,7 @@ int SimpleFOCinit(float bus_v){
   motor.PID_current_q.P = cp;
   motor.PID_current_q.I = ci;
   motor.PID_current_q.D = cd;
-  motor.PID_current_q.limit = amp_limit;
+  // motor.PID_current_q.limit = amp_limit;
   motor.PID_current_q.output_ramp = voltageRamp;
   motor.LPF_current_q.Tf = lpQDFilter;
 
@@ -110,7 +110,7 @@ int SimpleFOCinit(float bus_v){
   motor.PID_current_d.P = cp;
   motor.PID_current_d.I = ci;
   motor.PID_current_d.D = cd;
-  motor.PID_current_d.limit = amp_limit;
+  // motor.PID_current_d.limit = amp_limit;
   motor.PID_current_d.output_ramp = voltageRamp;
   motor.LPF_current_d.Tf = lpQDFilter;
 

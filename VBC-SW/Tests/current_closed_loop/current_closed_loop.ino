@@ -45,8 +45,8 @@ void gpio_init(){
 const float amp_limit = 1.0;              // IQ current limit [amps] - requires trueTorque mode
 const int motionDownSample = 4;           // Downsample the motion control loops with respect to the torque control loop [amount of loops]
 
-const float cp = 0.015;                   // QD current loops PROPORTONAL gain value           - MQP & MDP
-const float ci = 40.0;                    // QD current loops INTEGRAL gain value              - MQI & MDI
+const float cp = 1.5;                   // QD current loops PROPORTONAL gain value           - MQP & MDP
+const float ci = 0.0;                    // QD current loops INTEGRAL gain value              - MQI & MDI
 const float cd = 0.0;                     // QD current loops DERIVATIVE gain value            - MQD & MDD
 const float lpQDFilter = 0.001;           // QD current loops measurement low-pass filter      - QF & DF
 
@@ -123,7 +123,7 @@ void setup() {
   // link the current sense to the motor
   motor.linkCurrentSense(&current_sense);
   // skip alignment procedure
-  current_sense.skip_align = true;
+  current_sense.skip_align = false;
 
   // aligning voltage
   motor.voltage_sensor_align = 2.5;
@@ -131,37 +131,39 @@ void setup() {
   // set motion control loop to be used
   motor.torque_controller = TorqueControlType::foc_current;
   motor.controller = MotionControlType::torque;
+  motor.voltage_limit = 12.0;
+  motor.current_limit = amp_limit;
 
   /* ------------ PID Tuning ------------ */
-  // Current PI controller parameters - q_axis
-  motor.PID_current_q.P = cp;
-  motor.PID_current_q.I = ci;
-  motor.PID_current_q.D = cd;
-  motor.PID_current_q.limit = amp_limit;
-  motor.PID_current_q.output_ramp = voltageRamp;
-  motor.LPF_current_q.Tf = lpQDFilter;
+  // // Current PI controller parameters - q_axis
+  // motor.PID_current_q.P = cp;
+  // motor.PID_current_q.I = ci;
+  // motor.PID_current_q.D = cd;
+  // motor.PID_current_q.limit = amp_limit;
+  // motor.PID_current_q.output_ramp = voltageRamp;
+  // motor.LPF_current_q.Tf = lpQDFilter;
 
-  // Current PI controller parameters - d_axis
-  motor.PID_current_d.P = cp;
-  motor.PID_current_d.I = ci;
-  motor.PID_current_d.D = cd;
-  motor.PID_current_d.limit = amp_limit;
-  motor.PID_current_d.output_ramp = voltageRamp;
-  motor.LPF_current_d.Tf = lpQDFilter;
+  // // Current PI controller parameters - d_axis
+  // motor.PID_current_d.P = cp;
+  // motor.PID_current_d.I = ci;
+  // motor.PID_current_d.D = cd;
+  // motor.PID_current_d.limit = amp_limit;
+  // motor.PID_current_d.output_ramp = voltageRamp;
+  // motor.LPF_current_d.Tf = lpQDFilter;
 
-  // velocity PI controller parameterstorque
-  motor.PID_velocity.P = vp;
-  motor.PID_velocity.I = vi;
-  motor.PID_velocity.D = vd;
-  motor.PID_velocity.output_ramp = voltageRamp;
-  motor.LPF_velocity.Tf = lpVelFilter;
-  motor.velocity_limit = velocity_limit;       // maximal velocity of the position control
+  // // velocity PI controller parameterstorque
+  // motor.PID_velocity.P = vp;
+  // motor.PID_velocity.I = vi;
+  // motor.PID_velocity.D = vd;
+  // motor.PID_velocity.output_ramp = voltageRamp;
+  // motor.LPF_velocity.Tf = lpVelFilter;
+  // motor.velocity_limit = velocity_limit;       // maximal velocity of the position control
   
-  // angle P controller
-  motor.P_angle.P = ap;
-  motor.P_angle.I = ai;
-  motor.P_angle.D = ad;
-  motor.LPF_angle.Tf = lpPosFilter;
+  // // angle P controller
+  // motor.P_angle.P = ap;
+  // motor.P_angle.I = ai;
+  // motor.P_angle.D = ad;
+  // motor.LPF_angle.Tf = lpPosFilter;
   /* ------------------------------------ */
 
   // // Downsampling value of the motion control loops with respect to torque loops
@@ -169,13 +171,12 @@ void setup() {
 
   // use monitoring with serial
   // comment out if not needed
-  // motor.useMonitoring(Serial);
+  motor.useMonitoring(Serial);
+  motor.monitor_downsample = 100; // set downsampling can be even more > 100
+  motor.monitor_variables = _MON_CURR_Q | _MON_CURR_D; // set monitoring of Q and D currents
 
   // initialize motor
-  if(!motor.init()){
-    Serial.println("Motor init failed!");
-    return;
-  }
+  motor.init();
   // align sensor and start FOC
   if(!motor.initFOC()){
     Serial.println("FOC init failed!");
@@ -183,7 +184,7 @@ void setup() {
   }
 
   // set the initial motor target
-  motor.target = 0.3; // Amps
+  motor.target = 0.0; // Amps
 
   // add target command M
   command.add('M', doMotor, "Motor");
@@ -199,6 +200,24 @@ void loop() {
 
   // Motion control function
   motor.move();
+
+  // real-time monitoring calls
+  // motor.monitor();
+
+  // Display Q & D currents in a Serial Plotter friendly way
+  static uint16_t cnt = 0;
+  if (++cnt >= 50) {        // same down-sampling used before
+    cnt = 0;
+
+    // get D-Q currents *now*, with the latest electrical angle
+    DQCurrent_s iq = current_sense.getFOCCurrents(motor.electrical_angle);
+
+    Serial.print("Iq:"); 
+    Serial.print(iq.q, 3);  // [Amps] 3 decimals
+    Serial.print('\t');
+    Serial.print("Id:");
+    Serial.println(iq.d, 3); // [Amps] 3 decimals
+  }
 
   // user communication
   command.run();

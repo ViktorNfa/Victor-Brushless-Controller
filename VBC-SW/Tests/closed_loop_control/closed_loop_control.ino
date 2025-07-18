@@ -127,10 +127,7 @@ void setup() {
   motor.useMonitoring(Serial);
 
   // initialize motor
-  if(!motor.init()){
-    Serial.println("Motor init failed!");
-    return;
-  }
+  motor.init();
   // align sensor and start FOC
   if(!motor.initFOC()){
     Serial.println("FOC init failed!");

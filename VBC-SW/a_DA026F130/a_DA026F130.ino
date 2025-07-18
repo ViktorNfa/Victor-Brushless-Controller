@@ -45,10 +45,10 @@ MotionControlType controlType = MotionControlType::torque;      // control types
 
 
 //#######_START-UP CONTROLLER PARAMETERS_#######                                         //  Commander IDs:
-const float cp = 0.015;                   // QD current loops PROPORTONAL gain value           - MQP & MDP
-const float ci = 40.0;                    // QD current loops INTEGRAL gain value              - MQI & MDI
-const float cd = 0.0;                     // QD current loops DERIVATIVE gain value            - MQD & MDD
-const float lpQDFilter = 0.001;           // QD current loops measurement low-pass filter      - QF & DF
+const float cp = 7.0;                   // QD current loops PROPORTONAL gain value           - MQP & MDP
+const float ci = 2.0;                    // QD current loops INTEGRAL gain value              - MQI & MDI
+const float cd = 0.000;                     // QD current loops DERIVATIVE gain value            - MQD & MDD
+const float lpQDFilter = 0.02;           // QD current loops measurement low-pass filter      - QF & DF
 
 const float vp = 0.1;                     // Velocity control loop PROPORTIONAL gain value     - VP
 const float vi = 1.0;                     // Velocity control loop INTEGRAL gain value         - VI
@@ -60,14 +60,14 @@ const float ap = 5.0;                     // Position control loop PROPORTIONAL 
 const float ai = 0.0;                     // Position control loop INTEGRAL gain value         - AI
 const float ad = 0.3;                     // Position control loop DERIVATIVE gain value       - AD
 const float lpPosFilter = 0.000;          // Position measurement low-pass filter              - AF
-const float voltageRamp = 2000;           // Change in voltage allowed [Volts per sec]         - VR
+const float voltageRamp = 1000;           // Change in voltage allowed [Volts per sec]         - VR
 
 
 //########_ADVANCED PARAMETERS_##########
 #define CURRENT_SENSE                     // Define if using current sense, difference between current control or voltage control mode.  
 const bool trueTorque = true;             // Even if using current sense, torque mode can be voltage torque mode if set to false
-const bool print_currents = false;        // Monitor currents through the serial terminal 
-const bool print_dq_currents = false;     // true-> print DQ currents, false -> print phase currents
+const bool print_currents = true;        // Monitor currents through the serial terminal 
+const bool print_dq_currents = true;     // true-> print DQ currents, false -> print phase currents
 
 #define MONITOR_TEMP                      // define -> monitor and evaluate controllers temperature, parameters below ignored if undef
 const bool print_temp = false;            // Monitor temperature through the serial terminal
@@ -76,7 +76,7 @@ const float overTempTime = 1.0;           // Time to elapse in an over-temperatu
 
 #undef MONITOR_BUS_VOLTAGE                // Monitor bus voltage, automatically adjust to the lowering battery voltage
 const bool print_bus_voltage = false;     // Monitor the bus voltage through the serial terminal
-const float voltageOverride = 12.0;       // Voltage of your power source [Volts], overrides source voltage if MONITOR_BUS_VOLTAGE is undefined
+const float voltageOverride = 11.0;       // Voltage of your power source [Volts], overrides source voltage if MONITOR_BUS_VOLTAGE is undefined
 
 #define MONITOR_ROTOR                     // Monitor rotor position and velocity, parameters below ignored if undef
 const bool print_rotor_data = false;      // Monitor roto's position and velocity (respectively) through the serial terminal

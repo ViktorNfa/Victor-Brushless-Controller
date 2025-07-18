@@ -145,10 +145,7 @@ void setup() {
   motor.monitor_variables = _MON_CURR_Q | _MON_CURR_D; // set monitoring of Q and D currents
 
   // initialize motor
-  if(!motor.init()){
-    Serial.println("Motor init failed!");
-    return;
-  }
+  motor.init();
   // align sensor and start FOC
   if(!motor.initFOC()){
     Serial.println("FOC init failed!");

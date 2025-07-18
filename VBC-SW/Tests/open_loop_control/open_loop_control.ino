@@ -92,10 +92,7 @@ void setup() {
   motor.controller = MotionControlType::velocity_openloop;
 
   // init motor hardware
-  if(!motor.init()){
-    Serial.println("Motor init failed!");
-    return;
-  }
+  motor.init();
 
   // set the target velocity [rad/s]
   motor.target = 3.0; // one rotation per second
