@@ -22,7 +22,7 @@
 //#######_USER SET-UP PARAMETERS_#######
 #define ACT_ID 100                                              // Actuator ID, used for ESP-NOW or RS-485 comms
 const int pp = 11;                                              // BLDC motor number of pole pairs
-const float phaseRes = 5.5/2;                                   // Phase winding resistance [ohms]
+const float phaseRes = 5.6/2;                                   // Phase winding resistance [ohms]
 const float amp_limit = 1.0;                                    // IQ current limit [amps] - requires trueTorque mode                           
 const float alignStrength = 0.15;                               // Percentage of available bus voltage used to calibrate the sensor on start-up
 MotionControlType controlType = MotionControlType::torque;      // control types: angle, velocity, torque
@@ -45,22 +45,22 @@ MotionControlType controlType = MotionControlType::torque;      // control types
 
 
 //#######_START-UP CONTROLLER PARAMETERS_#######                                         //  Commander IDs:
-const float cp = 7.0;                   // QD current loops PROPORTONAL gain value           - MQP & MDP
-const float ci = 2.0;                    // QD current loops INTEGRAL gain value              - MQI & MDI
-const float cd = 0.000;                     // QD current loops DERIVATIVE gain value            - MQD & MDD
-const float lpQDFilter = 0.02;           // QD current loops measurement low-pass filter      - QF & DF
+const float cp = 3.0;                     // QD current loops PROPORTONAL gain value           - MQP & MDP
+const float ci = 300.0;                   // QD current loops INTEGRAL gain value              - MQI & MDI
+const float cd = 0.0;                     // QD current loops DERIVATIVE gain value            - MQD & MDD
+const float lpQDFilter = 0.005;           // QD current loops measurement low-pass filter      - QF & DF
 
 const float vp = 0.1;                     // Velocity control loop PROPORTIONAL gain value     - VP
 const float vi = 1.0;                     // Velocity control loop INTEGRAL gain value         - VI
 const float vd = 0.0;                     // Velocity control loop DERIVATIVE gain value       - VD
 const float lpVelFilter = 0.01;           // Velocity measurement low-pass filter              - VF
-const float velocity_limit = 150;         // Velocity limit [rad/s]                            - LV
+const float velocity_limit = 100;         // Velocity limit [rpm]                              - LV
 
 const float ap = 5.0;                     // Position control loop PROPORTIONAL gain value     - AP
 const float ai = 0.0;                     // Position control loop INTEGRAL gain value         - AI
-const float ad = 0.3;                     // Position control loop DERIVATIVE gain value       - AD
-const float lpPosFilter = 0.000;          // Position measurement low-pass filter              - AF
-const float voltageRamp = 1000;           // Change in voltage allowed [Volts per sec]         - VR
+const float ad = 0.0;                     // Position control loop DERIVATIVE gain value       - AD
+const float lpPosFilter = 0.000;          // Position measurment low-pass filter               - AF
+const float voltageRamp = 2000;           // Change in voltage allowed [Volts per sec]         - VR
 
 
 //########_ADVANCED PARAMETERS_##########

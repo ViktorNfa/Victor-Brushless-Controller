@@ -57,7 +57,7 @@ const float voltageRamp = 2000;           // Change in voltage allowed [Volts pe
 
 // BLDCMotor(pole pair number, phase resistance (optional) );
 const int pp = 11;
-const float phaseRes = 5.5/2.0;
+const float phaseRes = 5.6/2.0;
 BLDCMotor motor = BLDCMotor(pp);
 // BLDCDriver3PWM(pwmA, pwmB, pwmC, Enable(optional));
 #define INHA 27 // PWM input signal for bridge A high side

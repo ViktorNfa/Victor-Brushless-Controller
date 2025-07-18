@@ -80,7 +80,8 @@ int SimpleFOCinit(float bus_v){
     motor.linkCurrentSense(&current_sense);
     if (trueTorque) {
       motor.torque_controller = TorqueControlType::foc_current;
-      motor.voltage_limit = bus_v;
+      motor.voltage_limit = amp_limit*phaseRes;
+      motor.current_limit = amp_limit;
     }
     else {
       motor.torque_controller = TorqueControlType::voltage; 
@@ -102,7 +103,7 @@ int SimpleFOCinit(float bus_v){
   motor.PID_current_q.P = cp;
   motor.PID_current_q.I = ci;
   motor.PID_current_q.D = cd;
-  // motor.PID_current_q.limit = amp_limit;
+  // motor.PID_current_q.limit = amp_limit*phaseRes;
   motor.PID_current_q.output_ramp = voltageRamp;
   motor.LPF_current_q.Tf = lpQDFilter;
 
@@ -110,7 +111,7 @@ int SimpleFOCinit(float bus_v){
   motor.PID_current_d.P = cp;
   motor.PID_current_d.I = ci;
   motor.PID_current_d.D = cd;
-  // motor.PID_current_d.limit = amp_limit;
+  // motor.PID_current_d.limit = amp_limit*phaseRes;
   motor.PID_current_d.output_ramp = voltageRamp;
   motor.LPF_current_d.Tf = lpQDFilter;
 
