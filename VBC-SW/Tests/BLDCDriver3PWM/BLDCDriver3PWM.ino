@@ -16,9 +16,9 @@ void setup() {
   SimpleFOCDebug::enable(&Serial);
   
   // power supply voltage [V]
-  driver.voltage_power_supply = 22;
+  driver.voltage_power_supply = 12;
   // Max DC voltage allowed - default voltage_power_supply
-  driver.voltage_limit = 22;
+  driver.voltage_limit = 12;
 
   // driver init
   if (!driver.init()){
