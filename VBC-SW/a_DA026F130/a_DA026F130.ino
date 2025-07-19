@@ -21,9 +21,9 @@
 
 //#######_USER SET-UP PARAMETERS_#######
 #define ACT_ID 100                                              // Actuator ID, used for ESP-NOW or RS-485 comms
-const int pp = 11;                                              // BLDC motor number of pole pairs
-const float phaseRes = 5.5/2;                                   // Phase winding resistance [ohms]
-const float amp_limit = 1.0;                                    // IQ current limit [amps] - requires trueTorque mode                           
+const int pp = 20;                                              // BLDC motor number of pole pairs
+const float phaseRes = 0.186;                                   // Phase winding resistance [ohms]
+const float amp_limit = 7.0;                                    // IQ current limit [amps] - requires trueTorque mode                           
 const float alignStrength = 0.15;                               // Percentage of available bus voltage used to calibrate the sensor on start-up
 MotionControlType controlType = MotionControlType::torque;      // control types: angle, velocity, torque
 
@@ -76,7 +76,7 @@ const float overTempTime = 1.0;           // Time to elapse in an over-temperatu
 
 #undef MONITOR_BUS_VOLTAGE                // Monitor bus voltage, automatically adjust to the lowering battery voltage
 const bool print_bus_voltage = false;     // Monitor the bus voltage through the serial terminal
-const float voltageOverride = 11.0;       // Voltage of your power source [Volts], overrides source voltage if MONITOR_BUS_VOLTAGE is undefined
+const float voltageOverride = 22.0;       // Voltage of your power source [Volts], overrides source voltage if MONITOR_BUS_VOLTAGE is undefined
 
 #define MONITOR_ROTOR                     // Monitor rotor position and velocity, parameters below ignored if undef
 const bool print_rotor_data = false;      // Monitor roto's position and velocity (respectively) through the serial terminal
