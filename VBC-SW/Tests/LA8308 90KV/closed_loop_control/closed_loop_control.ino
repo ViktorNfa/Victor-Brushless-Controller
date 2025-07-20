@@ -42,15 +42,17 @@ void gpio_init(){
 
 
 /* ------------ PID Tuning ------------ */
+const float amp_limit = 7.0;              // IQ current limit [amps] - requires trueTorque mode
+
 const float vp = 0.1;                     // Velocity control loop PROPORTIONAL gain value     - VP
 const float vi = 1.0;                     // Velocity control loop INTEGRAL gain value         - VI
 const float vd = 0.0;                     // Velocity control loop DERIVATIVE gain value       - VD
 const float lpVelFilter = 0.01;           // Velocity measurement low-pass filter              - VF
-const float velocity_limit = 150;         // Velocity limit [rad/s]                            - LV
+const float velocity_limit = 100;         // Velocity limit [rad/s]                            - LV
 
 const float ap = 5.0;                     // Position control loop PROPORTIONAL gain value     - AP
 const float ai = 0.0;                     // Position control loop INTEGRAL gain value         - AI
-const float ad = 0.3;                     // Position control loop DERIVATIVE gain value       - AD
+const float ad = 0.0;                     // Position control loop DERIVATIVE gain value       - AD
 const float lpPosFilter = 0.000;          // Position measurement low-pass filter              - AF
 const float voltageRamp = 2000;           // Change in voltage allowed [Volts per sec]         - VR
 /* ------------------------------------ */
@@ -101,26 +103,28 @@ void setup() {
   motor.linkDriver(&driver);
 
   // aligning voltage
-  motor.voltage_sensor_align = 5;
+  motor.voltage_sensor_align = 2;
+  motor.voltage_limit = amp_limit*phaseRes;
+  motor.current_limit = amp_limit;
 
   // set motion control loop to be used
   motor.torque_controller = TorqueControlType::voltage;
   motor.controller = MotionControlType::torque;
 
   /* ------------ PID Tuning ------------ */
-  // velocity PI controller parameterstorque
+  // // velocity PI controller parameterstorque
   motor.PID_velocity.P = vp;
   motor.PID_velocity.I = vi;
   motor.PID_velocity.D = vd;
   motor.PID_velocity.output_ramp = voltageRamp;
   motor.LPF_velocity.Tf = lpVelFilter;
-  motor.velocity_limit = velocity_limit;       // maximal velocity of the position control
+  // motor.velocity_limit = velocity_limit;       // maximal velocity of the position control
   
-  // angle P controller
-  motor.P_angle.P = ap;
-  motor.P_angle.I = ai;
-  motor.P_angle.D = ad;
-  motor.LPF_angle.Tf = lpPosFilter;
+  // // angle P controller
+  // motor.P_angle.P = ap;
+  // motor.P_angle.I = ai;
+  // motor.P_angle.D = ad;
+  // motor.LPF_angle.Tf = lpPosFilter;
   /* ------------------------------------ */
 
   // comment out if not needed

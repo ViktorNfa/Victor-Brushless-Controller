@@ -62,7 +62,7 @@ void setup() {
   Serial.begin(115200);
   // enable more verbose output for debugging
   // comment out if not needed
-  SimpleFOCDebug::enable(&Serial);
+  // SimpleFOCDebug::enable(&Serial);
 
   gpio_init();  // sets pin modes and pulls EN_GATE low
   spi_init();   // SPI MODE1, MSB first
@@ -70,11 +70,11 @@ void setup() {
 
   // driver config
   // power supply voltage [V]
-  driver.voltage_power_supply = 22.0;
+  driver.voltage_power_supply = 12.0;
   // limit the maximal dc voltage the driver can set
   // as a protection measure for the low-resistance motors
   // this value is fixed on startup
-  driver.voltage_limit = 22.0;
+  driver.voltage_limit = 12.0;
   if(!driver.init()){
     Serial.println("Driver init failed!");
     return;
@@ -95,7 +95,7 @@ void setup() {
   motor.init();
 
   // set the target velocity [rad/s]
-  motor.target = 3.0; // one rotation per second
+  motor.target = 1.0;
 
   // add target command T
   command.add('T', doTarget, "target velocity");

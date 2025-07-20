@@ -98,9 +98,9 @@ void setup() {
   // link driver
   motor.linkDriver(&driver);
 
-  motor.voltage_limit = 3.0;
+  motor.voltage_limit = 5.0;
   // aligning voltage
-  motor.voltage_sensor_align = 5.0;
+  motor.voltage_sensor_align = 3.0;
 
   // set motion control loop to be used
   motor.controller = MotionControlType::torque;

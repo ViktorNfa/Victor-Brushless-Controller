@@ -126,13 +126,13 @@ void setup() {
   current_sense.skip_align = false;
 
   // aligning voltage
-  motor.voltage_sensor_align = 5.0;
+  motor.voltage_sensor_align = 2.0;
+  motor.voltage_limit = amp_limit*phaseRes;
+  motor.current_limit = amp_limit;
 
   // set motion control loop to be used
   motor.torque_controller = TorqueControlType::foc_current;
   motor.controller = MotionControlType::torque;
-  motor.voltage_limit = amp_limit*phaseRes;
-  motor.current_limit = amp_limit;
 
   /* ------------ PID Tuning ------------ */
   // // Current PI controller parameters - q_axis
