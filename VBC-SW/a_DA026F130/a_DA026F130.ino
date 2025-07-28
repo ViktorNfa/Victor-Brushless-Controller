@@ -1,6 +1,7 @@
 //####################################################################################
 //                         Dagor Controller Alpha Firmware
 //                   Compatible with Alpha versions 2.4 and above
+//            [Modified by Victor Nan Fernandez-Ayala for the VBC board]
 //####################################################################################
 
 #include <SimpleFOC.h>
@@ -54,7 +55,7 @@ const float vp = 0.3;                     // Velocity control loop PROPORTIONAL 
 const float vi = 2.0;                     // Velocity control loop INTEGRAL gain value          - VI
 const float vd = 0.0;                     // Velocity control loop DERIVATIVE gain value        - VD
 const float lpVelFilter = 0.01;           // Velocity measurement low-pass filter               - VF
-const float velocity_limit = 60;          // Velocity limit [rAD/S]                             - LV
+const float velocity_limit = 60;          // Velocity limit [rad/s]                             - LV
 
 const float ap = 30.0;                    // Position control loop PROPORTIONAL gain value      - AP
 const float ai = 0.0;                     // Position control loop INTEGRAL gain value          - AI

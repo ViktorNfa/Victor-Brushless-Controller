@@ -192,8 +192,10 @@ void rotorMonitor(void * print_data){
     }
 
     if(debug){
+      Serial.print("Angle:"); 
       Serial.print(motor.shaft_angle,4); 
       Serial.print("\t");  
+      Serial.print("Velocity:"); 
       Serial.println(motor.shaft_velocity,4); 
     }
     
@@ -222,10 +224,13 @@ void printCurrents(void * print_type){
     }
     else{
       PhaseCurrent_s currents = current_sense.getPhaseCurrents();
+      Serial.print("Ia:"); 
       Serial.print(currents.a); // [Amps]
       Serial.print("\t");
+      Serial.print("Ib:"); 
       Serial.print(currents.b); // [Amps]
       Serial.print("\t");
+      Serial.print("Ic:"); 
       Serial.println(currents.c); // [Amps]
     }
   #else
@@ -247,16 +252,21 @@ void printVoltages(void * print_type){
 
     if (DQspace){
       //DQVoltage_s voltage;
+      Serial.print("Vd:"); 
       Serial.print(motor.voltage.d); // milli Amps
       Serial.print("\t");
+      Serial.print("Vq:"); 
       Serial.print(motor.voltage.q); // milli Amps
       Serial.print("\t");
     }
     else{
+      Serial.print("Va:"); 
       Serial.print(motor.Ua); // [volts]
       Serial.print("\t");
+      Serial.print("Vb:"); 
       Serial.print(motor.Ub); // [volts]
       Serial.print("\t");
+      Serial.print("Vc:"); 
       Serial.print(motor.Uc); // [volts]
       Serial.print("\t");
     }
