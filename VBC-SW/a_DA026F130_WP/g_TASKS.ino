@@ -162,7 +162,7 @@ void busVoltageMonitor(void * print_voltage){
     }
 
     if (debug == true){
-      Serial.print("Volate: ");
+      Serial.print("Voltage: ");
       Serial.println(bVoltage,2);
     }
 
