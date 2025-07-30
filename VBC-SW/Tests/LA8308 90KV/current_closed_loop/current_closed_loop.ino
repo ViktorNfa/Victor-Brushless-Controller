@@ -9,6 +9,7 @@
 #define SO1      36   // phase-A current
 #define SO2      35   // phase-B current
 #define SO3      34   // phase-C current
+#define vMonitor 33   // Bus voltage monitor 
 
 // Two dummy symbols the Dagor file references – keep it happy
 enum { LIFE_IS_GOOD = 0, DRV_ERROR = 1 };
@@ -42,11 +43,11 @@ void gpio_init(){
 
 
 /* ------------ PID Tuning & others ------------ */
-const float amp_limit = 7.0;              // IQ current limit [amps] - requires trueTorque mode
+const float amp_limit = 29.0;             // IQ current limit [amps] - requires trueTorque mode
 const int motionDownSample = 4;           // Downsample the motion control loops with respect to the torque control loop [amount of loops]
 
-const float cp = 3.0;                     // QD current loops PROPORTONAL gain value           - MQP & MDP
-const float ci = 300.0;                   // QD current loops INTEGRAL gain value              - MQI & MDI
+const float cp = 0.1;                     // QD current loops PROPORTONAL gain value           - MQP & MDP
+const float ci = 10.0;                    // QD current loops INTEGRAL gain value              - MQI & MDI
 const float cd = 0.0;                     // QD current loops DERIVATIVE gain value            - MQD & MDD
 const float lpQDFilter = 0.005;           // QD current loops measurement low-pass filter      - QF & DF
 
@@ -60,7 +61,7 @@ const float ap = 5.0;                     // Position control loop PROPORTIONAL 
 const float ai = 0.0;                     // Position control loop INTEGRAL gain value         - AI
 const float ad = 0.0;                     // Position control loop DERIVATIVE gain value       - AD
 const float lpPosFilter = 0.000;          // Position measurment low-pass filter               - AF
-const float voltageRamp = 2000;           // Change in voltage allowed [Volts per sec]         - VR
+const float voltageRamp = 500;            // Change in voltage allowed [Volts per sec]         - VR
 /* --------------------------------------------- */
 
 // BLDCMotor(pole pair number, phase resistance (optional) );
@@ -77,7 +78,7 @@ BLDCDriver3PWM driver = BLDCDriver3PWM(INHC, INHB, INHA);
 MagneticSensorSPI sensor = MagneticSensorSPI(AS5147_SPI, 16);
 
 // current sensor
-LowsideCurrentSense current_sense = LowsideCurrentSense(0.002f, 80.0f, SO1, SO2);
+LowsideCurrentSense current_sense = LowsideCurrentSense(0.002f, 20.0f, SO1, SO2);
 
 // instantiate the commander
 Commander command = Commander(Serial);
@@ -166,6 +167,12 @@ void setup() {
   motor.LPF_angle.Tf = lpPosFilter;
   /* ------------------------------------ */
 
+  // Check DRV gain is setup correctly
+  uint16_t reg9 = drvRead(0x09);   // should show 1010 0000
+  uint16_t regA = drvRead(0x0A); // 11 11 11 = 80x; 10 10 10 = 40x; 01 01 01 = 20x;
+  Serial.print("reg9=");    Serial.println(reg9, 2);
+  Serial.print("regA=");    Serial.println(regA, 2);
+
   // // Downsampling value of the motion control loops with respect to torque loops
   // motor.motion_downsample = motionDownSample; // - times (default 0 - disabled)
 
@@ -206,7 +213,7 @@ void loop() {
 
   // Display Q & D currents in a Serial Plotter friendly way
   static uint16_t cnt = 0;
-  if (++cnt >= 50) {        // same down-sampling used before
+  if (++cnt >= 100) {        // same down-sampling used before
     cnt = 0;
 
     // get D-Q currents *now*, with the latest electrical angle

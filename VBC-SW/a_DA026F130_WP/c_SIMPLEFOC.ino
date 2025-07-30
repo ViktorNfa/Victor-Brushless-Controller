@@ -17,7 +17,7 @@ BLDCMotor motor = BLDCMotor(pp);                                                
 BLDCDriver3PWM driver = BLDCDriver3PWM(INHC, INHB, INHA);                               //3PWM Driver instance
 
 #ifdef CURRENT_SENSE
-  LowsideCurrentSense current_sense = LowsideCurrentSense(0.002f, 80.0f, SO1, SO2);     //Current sensing instance
+  LowsideCurrentSense current_sense = LowsideCurrentSense(0.002f, 20.0f, SO1, SO2);     //Current sensing instance
 #endif
 
 #ifdef ENCODER
@@ -153,7 +153,7 @@ int SimpleFOCinit(float bus_v){
   #ifdef CURRENT_SENSE
     current_sense.init();                           // current sense init hardware
     motor.linkCurrentSense(&current_sense);         // link motor and current sense
-    current_sense.skip_align = true;                // skip alignment procedure
+    current_sense.skip_align = false;               // don't skip alignment procedure
   #endif
 
   int initFOC_exit_code = -1;

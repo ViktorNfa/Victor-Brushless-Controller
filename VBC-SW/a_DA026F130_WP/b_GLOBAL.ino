@@ -4,7 +4,7 @@
 
 // Libraries, pin number assignment and instance initialization
 
-//SimpleFOC Version 2.3
+//SimpleFOC Version 2.5
 //#include <SimpleFOC.h>
 #include <SPI.h>
 

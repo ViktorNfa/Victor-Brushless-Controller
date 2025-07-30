@@ -24,8 +24,8 @@
 #define ACT_ID 100                                              // Actuator ID, used for ESP-NOW or RS-485 comms
 const int pp = 20;                                              // BLDC motor number of pole pairs
 const float phaseRes = 0.186;                                   // Phase winding resistance [ohms]
-const float amp_limit = 21.0;                                   // IQ current limit [amps] - requires trueTorque mode                           
-const float alignStrength = 0.1;                                // Percentage of available bus voltage used to calibrate the sensor on start-up
+const float amp_limit = 29.0;                                   // IQ current limit [amps] - requires trueTorque mode                           
+const float alignStrength = 0.08;                                // Percentage of available bus voltage used to calibrate the sensor on start-up
 MotionControlType controlType = MotionControlType::angle;       // control types: angle, velocity, torque
 
 

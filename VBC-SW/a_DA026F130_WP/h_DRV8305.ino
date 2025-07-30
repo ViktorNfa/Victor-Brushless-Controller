@@ -10,6 +10,17 @@
   Z = ((X<<8)+Y);
 
 
+uint16_t drvRead(uint8_t addr) {
+  // bit15 = 1 → READ,  bits14:11 = register address
+  uint16_t tx = (1u << 15) | (addr << 11);
+
+  digitalWrite(cs, LOW);
+  uint16_t rx = SPI.transfer16(tx); // two-byte SPI transfer
+  digitalWrite(cs, HIGH);
+
+  return rx & 0x07FF; // strip RW + address bits
+}
+
 //Configure DRV8305 to desired operation mode
 int drv_init(bool resp){
   Serial.println("DAGOR: DRV8305 INIT");
@@ -31,36 +42,44 @@ int drv_init(bool resp){
     }
   }
   
-
   //Clamp sense amplifier output to 3.3V - protect ESP32 adc
   digitalWrite(cs, LOW);
-  byte resp3 = SPI.transfer(B01001100);
-  byte resp4 = SPI.transfer(B10100000);
+  byte resp3 = SPI.transfer16(0x48A0); // W=0, Addr=0x09, Data=0x0A0
   digitalWrite(cs, HIGH);
   //Serial.println(resp3, BIN);
-  //Serial.println(resp4, BIN);
 
   if(resp){
-    if (resp3 != 0b00000100 || resp4 != 0b10100000){
-      Serial.println(resp3, BIN);
-      Serial.println(resp4, BIN);
+    if ( (resp3 & 0x07FF) != 0x0A0){
+      Serial.print("REG9 bad = 0x"); 
+      Serial.println(resp3 & 0x07FF, HEX);
       Serial.println("Dagor: DRV cannot init.");
       return DRV_ERROR;
     }
   }
 
-  //Set DRV83045's amplifier gain to 80x
+  // //Set DRV83045's amplifier gain to 80x
+  // digitalWrite(cs, LOW);
+  // byte resp7 = SPI.transfer16(0x503F); // W=0, Addr=0xA, Data=0x03F  → 80× gain
+  // digitalWrite(cs, HIGH);
+  // //Serial.println(resp7, BIN);
+
+  // //Set DRV83045's amplifier gain to 40x
+  // digitalWrite(cs, LOW);
+  // byte resp7 = SPI.transfer16(0x502A); // W=0, Addr=0xA, Data=0x02A  → 40× gain 
+  // digitalWrite(cs, HIGH);
+  // //Serial.println(resp7, BIN);
+
+  //Set DRV83045's amplifier gain to 20x
   digitalWrite(cs, LOW);
-  byte resp7 = SPI.transfer(B01010000);
-  byte resp8 = SPI.transfer(B00111111);
+  byte resp7 = SPI.transfer16(0x5015); // W=0, Addr=0xA, Data=0x015  → 20× gain
   digitalWrite(cs, HIGH);
   //Serial.println(resp7, BIN);
-  //Serial.println(resp8, BIN);
 
+  // Checking for 20x
   if(resp){
-    if (resp7 != 0b00000000 || resp8 != 0b00111111){
-      Serial.println(resp7, BIN);
-      Serial.println(resp8, BIN);
+    if ( (resp7 & 0x07FF) != 0x015){
+      Serial.print  ("REGA bad = 0x"); 
+      Serial.println(resp7 & 0x07FF, HEX);
       Serial.println("Dagor: DRV cannot init.");
       return DRV_ERROR;
     }
@@ -87,24 +106,17 @@ void drv_enable(bool enabled){
 }
 
 // Use the DRV8305 DC calibration mode, shorts the current control inputs to register 0 amps through the phase shunt resistor
-void current_dc_calib(bool activate){
-  
-  if (activate){
-    digitalWrite(cs, LOW);
-    byte resp5 = SPI.transfer(B01010111);
-    byte resp6 = SPI.transfer(B00000000);
-    digitalWrite(cs, HIGH);
-    //Serial.println(resp5, BIN);
-    //Serial.println(resp6, BIN);
-  } //Activate DC calibration mode on DRV8305
-  else {
-    digitalWrite(cs, LOW);
-    byte resp5 = SPI.transfer(B01010000);
-    byte resp6 = SPI.transfer(B00000000);
-    digitalWrite(cs, HIGH);
-    //Serial.println(resp5, BIN);
-    //Serial.println(resp6, BIN);
-  } //Deactivate DC calibration mode on DRV8305
+void current_dc_calib(bool activate)
+{
+  uint16_t regA = drvRead(0x0A);        // keep the current gain & blanking
+  if (activate)
+      regA |= 0x700;                    // set bits 10-8  (DC_CAL_CH3/2/1)
+  else
+      regA &= ~0x700;                   // clear them
+
+  digitalWrite(cs, LOW);
+  SPI.transfer16(0x5000 | (regA & 0x07FF));   // write back to 0x0A
+  digitalWrite(cs, HIGH);
 }
 
 // Fault status and manager for the DRV8305 -> Datahseet pages 37 and 38
