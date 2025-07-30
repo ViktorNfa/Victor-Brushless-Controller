@@ -57,11 +57,11 @@ int drv_init(bool resp){
     }
   }
 
-  // //Set DRV83045's amplifier gain to 80x
-  // digitalWrite(cs, LOW);
-  // byte resp7 = SPI.transfer16(0x503F); // W=0, Addr=0xA, Data=0x03F  → 80× gain
-  // digitalWrite(cs, HIGH);
-  // //Serial.println(resp7, BIN);
+  //Set DRV83045's amplifier gain to 80x
+  digitalWrite(cs, LOW);
+  byte resp7 = SPI.transfer16(0x503F); // W=0, Addr=0xA, Data=0x03F  → 80× gain
+  digitalWrite(cs, HIGH);
+  //Serial.println(resp7, BIN);
 
   // //Set DRV83045's amplifier gain to 40x
   // digitalWrite(cs, LOW);
@@ -69,11 +69,11 @@ int drv_init(bool resp){
   // digitalWrite(cs, HIGH);
   // //Serial.println(resp7, BIN);
 
-  //Set DRV83045's amplifier gain to 20x
-  digitalWrite(cs, LOW);
-  byte resp7 = SPI.transfer16(0x5015); // W=0, Addr=0xA, Data=0x015  → 20× gain
-  digitalWrite(cs, HIGH);
-  //Serial.println(resp7, BIN);
+  // //Set DRV83045's amplifier gain to 20x
+  // digitalWrite(cs, LOW);
+  // byte resp7 = SPI.transfer16(0x5015); // W=0, Addr=0xA, Data=0x015  → 20× gain
+  // digitalWrite(cs, HIGH);
+  // //Serial.println(resp7, BIN);
 
   // Checking for 20x
   if(resp){

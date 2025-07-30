@@ -24,9 +24,9 @@
 #define ACT_ID 100                                              // Actuator ID, used for ESP-NOW or RS-485 comms
 const int pp = 20;                                              // BLDC motor number of pole pairs
 const float phaseRes = 0.186;                                   // Phase winding resistance [ohms]
-const float amp_limit = 29.0;                                   // IQ current limit [amps] - requires trueTorque mode                           
-const float alignStrength = 0.08;                                // Percentage of available bus voltage used to calibrate the sensor on start-up
-MotionControlType controlType = MotionControlType::angle;       // control types: angle, velocity, torque
+const float amp_limit = 28.0;                                   // IQ current limit [amps] - requires trueTorque mode                           
+const float alignStrength = 0.05;                               // Percentage of available bus voltage used to calibrate the sensor on start-up
+MotionControlType controlType = MotionControlType::torque;      // control types: angle, velocity, torque
 
 
 // Below are the control loops start-up parameters, to obtain the desired response out of the  
@@ -67,8 +67,8 @@ const float voltageRamp = 2000;           // Change in voltage allowed [Volts pe
 //########_ADVANCED PARAMETERS_##########
 #define CURRENT_SENSE                     // Define if using current sense, difference between current control or voltage control mode.  
 const bool trueTorque = true;             // Even if using current sense, torque mode can be voltage torque mode if set to false
-const bool print_currents = false;        // Monitor currents through the serial terminal 
-const bool print_dq_currents = false;     // true-> print DQ currents, false -> print phase currents
+const bool print_currents = true;         // Monitor currents through the serial terminal 
+const bool print_dq_currents = true;      // true-> print DQ currents, false -> print phase currents
 
 #define MONITOR_TEMP                      // define -> monitor and evaluate controllers temperature, parameters below ignored if undef
 const bool print_temp = true;             // Monitor temperature through the serial terminal

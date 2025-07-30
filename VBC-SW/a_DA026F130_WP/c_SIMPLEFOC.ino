@@ -128,6 +128,12 @@ int SimpleFOCinit(float bus_v){
   motor.P_angle.I = ai;
   motor.P_angle.D = ad;
   motor.LPF_angle.Tf = lpPosFilter;
+
+  // Check DRV gain is setup correctly
+  uint16_t reg9 = drvRead(0x09);   // should show 1010 0000
+  uint16_t regA = drvRead(0x0A); // 11 11 11 = 80x; 10 10 10 = 40x; 01 01 01 = 20x;
+  Serial.print("reg9=");    Serial.println(reg9, 2);
+  Serial.print("regA=");    Serial.println(regA, 2);
   
   // Position offset, used to define a MECHANICAL absolute 0 position [rads]
   motor.sensor_offset = sensorOffset;
