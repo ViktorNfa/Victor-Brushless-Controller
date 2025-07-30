@@ -50,7 +50,7 @@ void calibratePhaseZeroOffset(){
   const float calibration_rounds = 2000;
   float adc_voltage_conv = (3.3f)/(4095.0f);
 
-  drv_enable(true);
+  // drv_enable(true);
   current_dc_calib(true);
 
   for (int i = 0; i < calibration_rounds; i++) {
@@ -61,7 +61,7 @@ void calibratePhaseZeroOffset(){
   }
 
   current_dc_calib(false);
-  drv_enable(false);
+  // drv_enable(false);
   
   // calculate the mean offsets
   offset_ia = offset_ia / calibration_rounds;

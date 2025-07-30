@@ -10,6 +10,17 @@
   Z = ((X<<8)+Y);
 
 
+uint16_t drvRead(uint8_t addr) {
+  // bit15 = 1 → READ,  bits14:11 = register address
+  uint16_t tx = (1u << 15) | (addr << 11);
+
+  digitalWrite(cs, LOW);
+  uint16_t rx = SPI.transfer16(tx);        // two-byte SPI transfer
+  digitalWrite(cs, HIGH);
+
+  return rx & 0x07FF;                      // strip RW + address bits
+}
+
 //Configure DRV8305 to desired operation mode
 int drv_init(bool resp){
   Serial.println("DAGOR: DRV8305 INIT");
@@ -51,11 +62,14 @@ int drv_init(bool resp){
 
   //Set DRV83045's amplifier gain to 80x
   digitalWrite(cs, LOW);
-  byte resp7 = SPI.transfer(B01010000);
-  byte resp8 = SPI.transfer(B00111111);
+  // byte resp7 = SPI.transfer(0x2A); //20x
+  // byte resp8 = SPI.transfer(0x9F); //20x
+  byte resp7 = SPI.transfer(0x2E); //80x
+  byte resp8 = SPI.transfer(0x9F); //80x
   digitalWrite(cs, HIGH);
   //Serial.println(resp7, BIN);
   //Serial.println(resp8, BIN);
+
 
   if(resp){
     if (resp7 != 0b00000000 || resp8 != 0b00111111){
