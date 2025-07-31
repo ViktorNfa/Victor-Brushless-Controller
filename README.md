@@ -1,4 +1,4 @@
-# Victor Brushless Controller
+# Victor Brushless Controller (VBC)
 
 This repository contains the **firmware** and **KiCad hardware design files** for the **Victor Brushless Controller (VBC)**, a custom BLDC motor controller inspired by the [Dagor Brushless Controller](https://github.com/byDagor/Dagor-Brushless-Controller).
 
