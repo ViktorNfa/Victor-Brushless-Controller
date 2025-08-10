@@ -3,3 +3,5 @@ Similarly, for Motor Phase Terminal A to DRV phase and amplifiers pins C and 3, 
 
 Not sure why he did this, maybe from his current motor setup or an error. 
 It doesn't really affect anything as long as the BLDCDriver construct in the code is properly called reverted.
+
+For my KiCad version I correctly connected A to A and C to C so no need to switch on the code.
