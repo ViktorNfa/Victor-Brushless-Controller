@@ -14441,7 +14441,7 @@
 				)
 			)
 		)
-		(property "Value" "i2c QWIIC"
+		(property "Value" "i2c/UART"
 			(at 120.65 157.48 90)
 			(effects
 				(font
@@ -20785,7 +20785,7 @@
 				)
 			)
 		)
-		(property "Value" "External SPI"
+		(property "Value" "SPI"
 			(at 160.02 161.29 90)
 			(effects
 				(font
