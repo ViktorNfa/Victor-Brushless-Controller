@@ -159,7 +159,7 @@ int SimpleFOCinit(float bus_v){
   #ifdef CURRENT_SENSE
     current_sense.init();                           // current sense init hardware
     motor.linkCurrentSense(&current_sense);         // link motor and current sense
-    current_sense.skip_align = false;               // don't skip alignment procedure
+    current_sense.skip_align = true;               // skip alignment procedure
   #endif
 
   int initFOC_exit_code = -1;

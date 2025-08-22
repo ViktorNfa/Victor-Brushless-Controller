@@ -46,8 +46,8 @@ MotionControlType controlType = MotionControlType::torque;      // control types
 
 
 //#######_START-UP CONTROLLER PARAMETERS_#######                                         //  Commander IDs:
-const float cp = 1.0;                     // QD current loops PROPORTONAL gain value            - MQP & MDP
-const float ci = 10.0;                    // QD current loops INTEGRAL gain value                - MQI & MDI
+const float cp = 0.5;                     // QD current loops PROPORTONAL gain value            - MQP & MDP
+const float ci = 20.0;                    // QD current loops INTEGRAL gain value                - MQI & MDI
 const float cd = 0.0;                     // QD current loops DERIVATIVE gain value             - MQD & MDD
 const float lpQDFilter = 0.01;            // QD current loops measurement low-pass filter       - QF & DF
 
