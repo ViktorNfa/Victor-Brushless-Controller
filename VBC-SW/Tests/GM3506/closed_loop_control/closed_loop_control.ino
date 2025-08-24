@@ -50,7 +50,7 @@ const float velocity_limit = 150;         // Velocity limit [rad/s]             
 
 const float ap = 5.0;                     // Position control loop PROPORTIONAL gain value     - AP
 const float ai = 0.0;                     // Position control loop INTEGRAL gain value         - AI
-const float ad = 0.3;                     // Position control loop DERIVATIVE gain value       - AD
+const float ad = 0.0;                     // Position control loop DERIVATIVE gain value       - AD
 const float lpPosFilter = 0.000;          // Position measurement low-pass filter              - AF
 const float voltageRamp = 2000;           // Change in voltage allowed [Volts per sec]         - VR
 /* ------------------------------------ */

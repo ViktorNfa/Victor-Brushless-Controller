@@ -45,10 +45,10 @@ void gpio_init(){
 const float amp_limit = 1.0;              // IQ current limit [amps] - requires trueTorque mode
 const int motionDownSample = 4;           // Downsample the motion control loops with respect to the torque control loop [amount of loops]
 
-const float cp = 3.0;                     // QD current loops PROPORTONAL gain value           - MQP & MDP
-const float ci = 300.0;                   // QD current loops INTEGRAL gain value              - MQI & MDI
+const float cp = 0.015;                     // QD current loops PROPORTONAL gain value           - MQP & MDP
+const float ci = 40.0;                   // QD current loops INTEGRAL gain value              - MQI & MDI
 const float cd = 0.0;                     // QD current loops DERIVATIVE gain value            - MQD & MDD
-const float lpQDFilter = 0.005;           // QD current loops measurement low-pass filter      - QF & DF
+const float lpQDFilter = 0.001;           // QD current loops measurement low-pass filter      - QF & DF
 
 const float vp = 0.1;                     // Velocity control loop PROPORTIONAL gain value     - VP
 const float vi = 1.0;                     // Velocity control loop INTEGRAL gain value         - VI
@@ -56,7 +56,7 @@ const float vd = 0.0;                     // Velocity control loop DERIVATIVE ga
 const float lpVelFilter = 0.01;           // Velocity measurement low-pass filter              - VF
 const float velocity_limit = 100;         // Velocity limit [rpm]                              - LV
 
-const float ap = 5.0;                     // Position control loop PROPORTIONAL gain value     - AP
+const float ap = 15.0;                     // Position control loop PROPORTIONAL gain value     - AP
 const float ai = 0.0;                     // Position control loop INTEGRAL gain value         - AI
 const float ad = 0.0;                     // Position control loop DERIVATIVE gain value       - AD
 const float lpPosFilter = 0.000;          // Position measurment low-pass filter               - AF
@@ -123,7 +123,7 @@ void setup() {
   // link the current sense to the motor
   motor.linkCurrentSense(&current_sense);
   // skip alignment procedure
-  current_sense.skip_align = false;
+  current_sense.skip_align = true;
 
   // aligning voltage
   motor.voltage_sensor_align = 2.5;
@@ -135,11 +135,11 @@ void setup() {
   motor.current_limit = amp_limit;
 
   /* ------------ PID Tuning ------------ */
-  // // Current PI controller parameters - q_axis
+  // Current PI controller parameters - q_axis
   motor.PID_current_q.P = cp;
   motor.PID_current_q.I = ci;
   motor.PID_current_q.D = cd;
-  // motor.PID_current_q.limit = amp_limit*phaseRes;
+  motor.PID_current_q.limit = amp_limit*phaseRes;
   motor.PID_current_q.output_ramp = voltageRamp;
   motor.LPF_current_q.Tf = lpQDFilter;
 
@@ -147,7 +147,7 @@ void setup() {
   motor.PID_current_d.P = cp;
   motor.PID_current_d.I = ci;
   motor.PID_current_d.D = cd;
-  // motor.PID_current_d.limit = amp_limit*phaseRes;
+  motor.PID_current_d.limit = amp_limit*phaseRes;
   motor.PID_current_d.output_ramp = voltageRamp;
   motor.LPF_current_d.Tf = lpQDFilter;
 
