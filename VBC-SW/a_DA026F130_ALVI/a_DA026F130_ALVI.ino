@@ -65,8 +65,8 @@ const float voltageRamp = 2000;           // Change in voltage allowed [Volts pe
 //########_ADVANCED PARAMETERS_##########
 #define CURRENT_SENSE                     // Define if using current sense, difference between current control or voltage control mode.  
 const bool trueTorque = true;             // Even if using current sense, torque mode can be voltage torque mode if set to false
-const bool print_currents = true;         // Monitor currents through the serial terminal 
-const bool print_dq_currents = true;      // true-> print DQ currents, false -> print phase currents
+const bool print_currents = false;         // Monitor currents through the serial terminal 
+const bool print_dq_currents = false;      // true-> print DQ currents, false -> print phase currents
 
 #define MONITOR_TEMP                      // define -> monitor and evaluate controllers temperature, parameters below ignored if undef
 const bool print_temp = true;             // Monitor temperature through the serial terminal

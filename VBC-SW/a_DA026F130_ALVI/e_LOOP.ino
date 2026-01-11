@@ -15,8 +15,6 @@ void loop() {
 
     if (print_foc_freq) printFOCfreq();
 
-    if(!motor.enabled) motor.target = motor.shaft_angle;
-
     #ifdef DEBUG_ADAPTER
       command.run();
       //motor.monitor();

@@ -180,6 +180,11 @@ void rotorMonitor(void * print_data){
   bool debug = *((bool *)print_data);
 
   while(1){
+
+    if (!rotor_limits_found) {
+      vTaskDelay((1000/monitor_freq) / portTICK_PERIOD_MS);
+      continue;
+    }
   
     if((motor.shaft_angle>max_rotor_position) || (motor.shaft_angle<min_rotor_position)){
       //enable = false;

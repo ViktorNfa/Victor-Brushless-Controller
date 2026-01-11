@@ -155,90 +155,119 @@ void findRotorLimits() {
   rotor_limits_found = false;
   return;
 #else
-  // Ensure the motor is running in velocity mode for the search
+
+  // Ensure velocity mode for the search
   MotionControlType prev = motor.controller;
   motor.controller = MotionControlType::velocity;
 
-  // Small helper for “trip detect” with debounce
-  auto tripped = []() -> bool {
-    static int over = 0;
-    const float iq = motor.current.q;
-    if (fabsf(iq) >= iq_trip) over++;
-    else over = 0;
-    return (over >= 20); // ~20 consecutive loops to ignore spikes
+  auto stopMotor = [](){
+    motor.target = 0;
+    // run a bit to actually apply 0 target
+    for (int i = 0; i < 200; i++) {
+      motor.loopFOC();
+      motor.move();
+      _delay(1);
+    }
   };
 
-  Serial.println("Homing: searching for MIN limit...");
-  motor.enable();
+  auto tripDetected = [&](int required_samples) -> bool {
+    int over = 0;  // <-- NOT static, resets each call-site use
+    while (1) {
+      motor.loopFOC();
+      motor.move();
 
-  // Search negative direction first (define this as “min”)
-  motor.target = -homing_velocity;
+      if (fabsf(motor.current.q) >= iq_trip) over++;
+      else over = 0;
 
-  const unsigned long t0 = millis();
+      if (over >= required_samples) return true;
+      return false;
+    }
+  };
+
+  // A “continuous” version used inside the while loops (also non-static)
+  auto waitForTrip = [&](unsigned long timeout_ms, int required_samples) -> bool {
+    unsigned long t0 = millis();
+    int over = 0;
+
+    while (1) {
+      motor.loopFOC();
+      motor.move();
+
+      if (fabsf(motor.current.q) >= iq_trip) over++;
+      else over = 0;
+
+      if (over >= required_samples) return true;
+
+      if (millis() - t0 > timeout_ms) return false;
+
+      _delay(1);
+    }
+  };
+
   const unsigned long timeout_ms = 15000;
 
-  while (!tripped()) {
-    motor.loopFOC();
-    motor.move();
+  // ---- MIN search (negative velocity) ----
+  Serial.println("Homing: searching for MIN limit...");
+  motor.enable();
+  motor.target = -homing_velocity;
 
-    if (millis() - t0 > timeout_ms) {
-      Serial.println("Homing MIN: timeout. Keeping default limits.");
-      motor.target = 0;
-      motor.move();
-      motor.disable();
-      motor.controller = prev;
-      rotor_limits_found = false;
-      return;
-    }
-    _delay(1);
+  if (!waitForTrip(timeout_ms, 30)) {   // 30 samples debounce
+    Serial.println("Homing MIN: timeout. Keeping default limits.");
+    stopMotor();
+    motor.disable();
+    motor.controller = prev;
+    rotor_limits_found = false;
+    return;
   }
 
-  motor.target = 0;
-  motor.move();
-  motor.disable();
-
+  stopMotor();
   min_rotor_position = motor.shaft_angle;
   Serial.print("Homing: MIN found at ");
   Serial.println(min_rotor_position, 6);
 
-  _delay(300);
-
-  Serial.println("Homing: searching for MAX limit...");
-  motor.enable();
-  motor.target = +homing_velocity;
-
-  const unsigned long t1 = millis();
-  while (!tripped()) {
+  // ---- Back off from MIN so MAX doesn't instantly re-trip ----
+  motor.target = +homing_velocity;  // move away from the stop
+  unsigned long t_back = millis();
+  while (millis() - t_back < 400) { // 0.4s backoff (adjust if needed)
     motor.loopFOC();
     motor.move();
-
-    if (millis() - t1 > timeout_ms) {
-      Serial.println("Homing MAX: timeout. Keeping default limits.");
-      motor.target = 0;
-      motor.move();
-      motor.disable();
-      motor.controller = prev;
-      rotor_limits_found = false;
-      return;
-    }
     _delay(1);
   }
+  stopMotor();
 
-  motor.target = 0;
-  motor.move();
-  motor.disable();
+  _delay(200);
 
+  // ---- MAX search (positive velocity) ----
+  Serial.println("Homing: searching for MAX limit...");
+  motor.target = +homing_velocity;
+
+  if (!waitForTrip(timeout_ms, 30)) {
+    Serial.println("Homing MAX: timeout. Keeping default limits.");
+    stopMotor();
+    motor.disable();
+    motor.controller = prev;
+    rotor_limits_found = false;
+    return;
+  }
+
+  stopMotor();
   max_rotor_position = motor.shaft_angle;
   Serial.print("Homing: MAX found at ");
   Serial.println(max_rotor_position, 6);
 
-  // Restore previous control mode
-  motor.controller = prev;
+  motor.disable();
 
-  // Compute 80% span (centered): keep 10% margin on each side
+  // ---- Enforce ordering (critical for your out-of-bounds check) ----
+  if (max_rotor_position < min_rotor_position) {
+    float tmp = max_rotor_position;
+    max_rotor_position = min_rotor_position;
+    min_rotor_position = tmp;
+  }
+
+  // Compute 80% span centered
   const float range = (max_rotor_position - min_rotor_position);
-  const float margin = 0.5f * (1.0f - sweep_span_ratio) * range; // for 0.80 => 0.10*range each side
-  sweep_low = min_rotor_position + margin;
+  const float margin = 0.5f * (1.0f - sweep_span_ratio) * range;
+  sweep_low  = min_rotor_position + margin;
   sweep_high = max_rotor_position - margin;
 
   rotor_limits_found = true;
@@ -248,6 +277,12 @@ void findRotorLimits() {
   Serial.print(", ");
   Serial.print(sweep_high, 6);
   Serial.println("]");
+
+  // Start sweeping immediately after homing
+  motor.controller = MotionControlType::velocity;
+  sweep_dir = +1;
+  motor.enable();
+  motor.target = (float)sweep_dir * sweep_velocity;
 
 #endif
 }
